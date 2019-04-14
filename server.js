@@ -1,24 +1,25 @@
 const express = require('express');
 const bp = require('body-parser');
-const bcrypt = require('bcrypt-nodejs');
+// const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
-const knex = require('knex');
+// const knex = require('knex');
 const morgan = require('morgan');
-const register = require('./controllers/register');
-const signIn = require('./controllers/signIn');
-const profile = require('./controllers/profile');
-const auth = require('./middleware/authorization');
+// const register = require('./controllers/register');
+// const signIn = require('./controllers/signIn');
+// const profile = require('./controllers/profile');
+// const auth = require('./middleware/authorization');
+const infoInn = require('./controllers/infoInn');
 
 const PORT = process.env.PORT || 3001;
 const DATABASE_LINK = process.env.DATABASE_URL;
 
-const pg = knex({
-   client: 'pg',
-   connection: {
-      connectionString: DATABASE_LINK,
-      ssl: false
-   }
-});
+// const pg = knex({
+//    client: 'pg',
+//    connection: {
+//       connectionString: DATABASE_LINK,
+//       ssl: false
+//    }
+// });
 
 const app = express();
 app.use(cors());
@@ -31,13 +32,16 @@ app.get('/', (req, res)=>{
 });
 
 
-app.post('/signIn', signIn.signInAuth(pg, bcrypt));
+// app.post('/signIn', signIn.signInAuth(pg, bcrypt));
+//
+// app.post('/register', (req,res) => register.handleRegister(req, res, pg, bcrypt));
+//
+// app.get('/profile/:id', auth.requireAuth, (req, res) => {profile.handleProfileGet(req, res, pg)});
+//
+// app.post('/profile/:id', auth.requireAuth, (req, res) => {profile.handleProfileUpdate(req,res,pg)});
 
-app.post('/register', (req,res) => register.handleRegister(req, res, pg, bcrypt));
+app.get('/info/:inn', (req,res) => infoInn.checkInnInfo(req,res));
 
-app.get('/profile/:inn', auth.requireAuth, (req, res) => {profile.handleProfileGet(req, res, pg)});
-
-app.post('/profile/:inn', auth.requireAuth, (req, res) => {profile.handleProfileUpdate(req,res,pg)});
 
 
 
