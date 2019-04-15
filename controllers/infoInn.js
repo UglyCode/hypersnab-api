@@ -47,7 +47,7 @@ const getInfoByInn = (INN) => {
             return {
                 inn: dataObject.inn,
                 kpp: dataObject.kpp,
-                name: dataObject.name.short_with_opf,
+                companyName: dataObject.name.short_with_opf,
                 management: dataObject.management.name,
                 address: dataObject.address.value,
                 phone: dataObject.phones ? dataObject.phones[0] : null,
