@@ -3,18 +3,12 @@ const fetch = require('node-fetch');
 
 const checkInnInfo = (req, res) => {
 
-    const userId = userByInn(req.params.inn);
-
-    if (userId){
-        res.json({userId});
-    } else {
-        getInfoByInn(req.params.inn)
-            .then(innInfo => res.json(innInfo))
-            .catch(error =>{
-                console.log('getInfoByInn error: ' + error);
-                res.status(400).json("can't get info by INN");
-            })
-    }
+    getInfoByInn(req.params.inn)
+        .then(innInfo => res.json(innInfo))
+        .catch(error =>{
+            console.log('getInfoByInn error: ' + error);
+            res.status(400).json("can't get info by INN");
+        });
 };
 
 const userByInn = (INN) =>{

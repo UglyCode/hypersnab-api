@@ -48,3 +48,11 @@ app.get('/info/:inn', (req,res) => infoInn.checkInnInfo(req,res));
 app.listen(PORT, ()=>{
    console.log(`server started at port: ${PORT}`);
 });
+
+
+//TODO:
+// 1. GET \userInn -> checks token and return inn if it's valid or ''\null otherwise
+// 2. POST \SignIn -> checks password for inn and return token
+// 3. POST \Register -> adds new user and return token
+// 4. POST \Profile\:inn -> updates user data !AUTH
+// 5. GET \Profile\:inn -> getting data from profile !AUTH
