@@ -1,0 +1,10 @@
+BEGIN TRANSACTION;
+
+CREATE TABLE goods(
+    good INTEGER(16) PRIMARY KEY,
+    amount INTEGER(16),
+    maxorder INTEGER(16)
+    updated TIMESTAMP
+);
+
+COMMIT;
