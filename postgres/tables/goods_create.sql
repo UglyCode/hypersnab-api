@@ -5,7 +5,7 @@ CREATE TABLE goods(
     name VARCHAR(128) NOT NULL,
     description VARCHAR(512),
     measure VARCHAR(32),
-    avalible BIT,
+    available BIT,
     image VARCHAR(256),
     updated TIMESTAMP
 );
