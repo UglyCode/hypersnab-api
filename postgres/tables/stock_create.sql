@@ -1,9 +1,9 @@
 BEGIN TRANSACTION;
 
-CREATE TABLE goods(
-    good INTEGER(16) PRIMARY KEY,
-    amount INTEGER(16),
-    maxorder INTEGER(16)
+CREATE TABLE stock(
+    good INTEGER PRIMARY KEY,
+    amount NUMERIC(10,2),
+    maxorder INTEGER,
     updated TIMESTAMP
 );
 

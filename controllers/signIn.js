@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const redis = require('redis');
+const ENV = require('../settings/env');
 
 //setup Redis!
 const redisURI = process.env.REDIS_URL || 'localhost:6379';

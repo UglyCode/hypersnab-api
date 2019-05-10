@@ -14,7 +14,6 @@ services:
     volumes:
       - ./:/usr/src/hypersnab-api
     environment:
-      CLARIFAI_API_KEY: 2c149afabd8141448623c02e728db777
       NODE_ENV: development
       DATABASE_URL: postgres://anton:lalala@postgres:5432/hypersnab
       REDIS_URL: redis://redis:6379

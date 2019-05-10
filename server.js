@@ -49,10 +49,7 @@ app.listen(PORT, ()=>{
    console.log(`server started at port: ${PORT}`);
 });
 
-
 //TODO:
-// 1. GET \userInn -> checks token and return inn if it's valid or ''\null otherwise
-// 2. POST \SignIn -> checks password for inn and return token
-// 3. POST \Register -> adds new user and return token
-// 4. POST \Profile\:inn -> updates user data !AUTH
-// 5. GET \Profile\:inn -> getting data from profile !AUTH
+// 1. GET /info/:inn - check if there is inn in data base, or fetch data from API by inn otherwise. field userExists - obligatory in return
+// 2. POST /register - creates user using form data, returns JWT if success
+// 3. GET /profile/:inn - returns user data from database. AUTHCHECK!

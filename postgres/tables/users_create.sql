@@ -1,13 +1,13 @@
 BEGIN TRANSACTION;
 
 CREATE TABLE users(
-    inn INTEGER(16) PRIMARY KEY,
-    kpp INTEGER(16),
+    inn BIGINT PRIMARY KEY,
+    kpp BIGINT,
     name VARCHAR(128),
     email VARCHAR(128),
-    phone INTEGER(32),
+    phone BIGINT,
     contact VARCHAR(128),
-    address VARCHAR(256)
+    address VARCHAR(256),
     joined TIMESTAMP NOT NULL
 );
 

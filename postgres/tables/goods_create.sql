@@ -1,7 +1,7 @@
 BEGIN TRANSACTION;
 
 CREATE TABLE goods(
-    code INTEGER(16) PRIMARY KEY,
+    code INTEGER PRIMARY KEY,
     name VARCHAR(128) NOT NULL,
     description VARCHAR(512),
     measure VARCHAR(32),
