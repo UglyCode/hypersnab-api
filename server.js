@@ -36,11 +36,11 @@ app.post('/signIn', signIn.signInAuth(pg, bcrypt));
 
 app.post('/register', (req,res) => register.handleRegister(req, res, pg, bcrypt));
 
-// app.get('/profile/:id', auth.requireAuth, (req, res) => {profile.handleProfileGet(req, res, pg)});
-//
-// app.post('/profile/:id', auth.requireAuth, (req, res) => {profile.handleProfileUpdate(req,res,pg)});
+app.get('/profile/:inn', auth.requireAuth, (req, res) => {profile.handleProfileGet(req, res, pg)});
 
-app.get('/info/:inn', (req,res) => infoInn.checkInnInfo(req,res));
+app.post('/profile/:inn', auth.requireAuth, (req, res) => {profile.handleProfileUpdate(req,res,pg)});
+
+app.get('/info/:inn', (req,res) => infoInn.checkInnInfo(req,res, pg));
 
 
 
@@ -52,4 +52,6 @@ app.listen(PORT, ()=>{
 //TODO:
 // 1. GET /info/:inn - check if there is inn in data base, or fetch data from API by inn otherwise. field userExists - obligatory in return
 // 2. POST /register - creates user using form data, returns JWT if success
-// 3. GET /profile/:inn - returns user data from database. AUTHCHECK!
+// 3. POST /signIn - checks pwd for inn or authkey JWT.
+// 4. GET /profile/:inn - returns user data from database. AUTHCHECK!
+// 5. POST /profile/:inn - udate prfile data with new credentials. AUTHCHECK!

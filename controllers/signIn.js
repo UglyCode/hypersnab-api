@@ -1,6 +1,5 @@
 const jwt = require('jsonwebtoken');
 const redis = require('redis');
-const ENV = require('../settings/env');
 
 //setup Redis!
 const redisURI = process.env.REDIS_URL || 'localhost:6379';
@@ -14,7 +13,7 @@ const handleSignIn = (pg, bcrypt, req, res) =>{
     }
 
     return pg.select('inn', 'hash').from('login')
-        .where('email', '=', inn)
+        .where('inn', '=', inn)
         .then( userData => {
             if (bcrypt.compareSync(password, userData[0].hash)){
                 return pg.select('*').from('users').
@@ -44,16 +43,16 @@ const signToken = (inn) => {
     return jwt.sign(jwtPayload, 'hypersnab', {expiresIn: '2 years'});
 };
 
-const setToken = (token, id) => {
-    return Promise.resolve(redisClient.set(token, id));
+const setToken = (token, inn) => {
+    return Promise.resolve(redisClient.set(token, inn));
 };
 
 const createSessions = (user) =>{
     const {inn} = user;
     const token = signToken(inn);
-    return setToken(token, id)
+    return setToken(token, inn)
         .then(()=>{
-            return {success: 'true', userId: id, token}
+            return {success: 'true', inn: inn, token}
         })
         .catch(err => console.log);
 };
@@ -68,7 +67,10 @@ const signInAuth = (pg, bcrypt) => (req, res) =>{
                     createSessions(data)
                     : Promise.reject(data);
             }).then(session => res.json(session))
-            .catch(err => res.status(400).json(err));
+            .catch(err => {
+                console.log('handleSignIn error: ' + err);
+                res.status(400).json('cannot verify your pwd')
+            });
 };
 
 module.exports = {signInAuth, redisClient};

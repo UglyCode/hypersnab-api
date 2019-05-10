@@ -1,18 +1,28 @@
 const ENV = require('../settings/env');
 const fetch = require('node-fetch');
 
-const checkInnInfo = (req, res) => {
+const checkInnInfo = (req, res, pg) => {
 
-    getInfoByInn(req.params.inn)
-        .then(innInfo => res.json(innInfo))
-        .catch(error =>{
-            console.log('getInfoByInn error: ' + error);
-            res.status(400).json("can't get info by INN");
+    pg.select('inn').from('users').where('inn', req.params.inn)
+        .then(rows => {
+            if (rows.length){
+                res.json({
+                    userExists: true,
+                    inn: rows[0].inn
+                })
+            } else {
+                getInfoByInn(req.params.inn)
+                    .then(innInfo => res.json(innInfo))
+                    .catch(error =>{
+                        console.log('getInfoByInn error: ' + error);
+                        res.status(400).json("can't get info by INN");
+                    });
+            }
+        })
+        .catch(error => {
+            console.log('pg select error: ' + error);
+            res.status(500).json("can't verify info by INN")
         });
-};
-
-const userByInn = (INN) =>{
-    return null;
 };
 
 const getInfoByInn = (INN) => {
@@ -39,6 +49,7 @@ const getInfoByInn = (INN) => {
             dataObject = resp.suggestions[0].data;
 
             return {
+                userExists: false,
                 inn: dataObject.inn,
                 kpp: dataObject.kpp,
                 companyName: dataObject.name.short_with_opf,

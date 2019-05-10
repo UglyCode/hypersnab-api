@@ -15,7 +15,7 @@ services:
       - ./:/usr/src/hypersnab-api
     environment:
       NODE_ENV: development
-      DATABASE_URL: postgres://anton:lalala@postgres:5432/hypersnab
+      DATABASE_URL: postgres://hypersnab:hypersnab@postgres:5432/hypersnab
       REDIS_URL: redis://redis:6379
 
 

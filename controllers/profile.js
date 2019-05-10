@@ -1,7 +1,7 @@
 const handleProfileGet = (req, res, pg) =>{
 
     return pg.select('*').from('users').
-                where('id', '=', req.params.id)
+                where('inn', req.params.inn)
                     .then(users => {
                         if (users.length){
                             res.json(users[0])

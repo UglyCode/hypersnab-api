@@ -1,7 +1,7 @@
 const handleRegister = (req, res, pg, bcrypt) => {
-    const {inn, kpp, contact, address, email, name, password} = req.body;
+    const {inn, kpp, contact, address, email, phone, name, password} = req.body;
 
-    if(!inn || !email || !password){
+    if(!inn || !password){
         return res.status('400').json('bad request');
     }
 
@@ -31,7 +31,10 @@ const handleRegister = (req, res, pg, bcrypt) => {
             .then(trx.commit)
             .catch(trx.rollback)
     })
-        .catch(err => res.status('400').json('no U'));
+        .catch(err => {
+            console.log(err);
+            res.status('400').json('no U')
+        });
 };
 
 module.exports = {handleRegister};
