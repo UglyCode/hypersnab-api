@@ -3,21 +3,12 @@ const fetch = require('node-fetch');
 
 const checkInnInfo = (req, res, pg) => {
 
-    pg.select('inn').from('users').where('inn', req.params.inn)
-        .then(rows => {
-            if (rows.length){
-                res.json({
-                    userExists: true,
-                    inn: rows[0].inn
-                })
-            } else {
-                getInfoByInn(req.params.inn)
-                    .then(innInfo => res.json(innInfo))
-                    .catch(error =>{
-                        console.log('getInfoByInn error: ' + error);
-                        res.status(400).json("can't get info by INN");
-                    });
-            }
+    userExists(req.params.inn, pg)
+        .then(result => {
+            res.json({
+                userExists: result,
+                inn: result ? req.params.inn : 0
+            })
         })
         .catch(error => {
             console.log('pg select error: ' + error);
@@ -25,7 +16,36 @@ const checkInnInfo = (req, res, pg) => {
         });
 };
 
-const getInfoByInn = (INN) => {
+const userExists = (inn, pg) =>{
+
+    return (
+        pg.select('inn').from('users').where('inn', inn)
+        .then(rows => {
+            return !!rows.length;
+        })
+    )
+};
+
+const getInfoByInn = (req, res, pg) => {
+
+    const inn = req.params.inn;
+
+    userExists(inn)
+        .then(result => {
+            if (result) {
+                return getUserData(inn, pg)
+            } else {
+                return fetchInnData(inn)
+            }
+        })
+        .then(innInfo => res.json(innInfo))
+        .catch(error =>{
+            console.log('getInfoByInn error: ' + error);
+            res.status(400).json("can't get info by INN");
+        });
+};
+
+const fetchInnData = (inn) => {
 
    return (
        fetch('https://suggestions.dadata.ru/suggestions/api/4_1/rs/findById/party',
@@ -37,14 +57,14 @@ const getInfoByInn = (INN) => {
                 "Authorization": "Token " + ENV.dadataToken
             },
             body: JSON.stringify({
-                "query": INN,
+                "query": inn,
                 "branch_type": "MAIN"
             })
         })
         .then(resp=>resp.json())
         .then(resp => {
             if (resp.message) throw new Error(resp.message);
-            if (resp.suggestions.count = 0) throw new Error('no data');
+            if (resp.suggestions.count == 0) throw new Error('no data');
 
             dataObject = resp.suggestions[0].data;
 
@@ -63,5 +83,15 @@ const getInfoByInn = (INN) => {
    )
 };
 
+const getUserData = (inn, pg) => {
+    return (
+        pg.select('*').from('users').where('inn', inn)
+            .then(rows => {
+                if (rows.length) {
+                   return (Object.assign(Object.assign(rows[0]), {userExists: true}))
+                }
+            })
+    )
+};
 
-module.exports = {checkInnInfo};
+module.exports = {checkInnInfo, getInfoByInn};
