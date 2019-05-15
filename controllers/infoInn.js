@@ -30,7 +30,7 @@ const getInfoByInn = (req, res, pg) => {
 
     const inn = req.params.inn;
 
-    userExists(inn)
+    userExists(inn, pg)
         .then(result => {
             if (result) {
                 return getUserData(inn, pg)
@@ -72,8 +72,8 @@ const fetchInnData = (inn) => {
                 userExists: false,
                 inn: dataObject.inn,
                 kpp: dataObject.kpp,
-                companyName: dataObject.name.short_with_opf,
-                management: dataObject.management.name,
+                name: dataObject.name.short_with_opf,
+                contact: dataObject.management.name,
                 address: dataObject.address.value,
                 phone: dataObject.phones ? dataObject.phones[0] : null,
                 email: dataObject.emails ? dataObject.emails[0] : null
