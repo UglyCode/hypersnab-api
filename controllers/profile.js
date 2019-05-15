@@ -14,11 +14,11 @@ const handleProfileGet = (req, res, pg) =>{
 
 
 const handleProfileUpdate = (req, res, pg) => {
-    const {id} = req.params;
-    const {name, age, pet } = req.body.formInput;
+    const {inn} = req.params;
+    const {name, kpp, contact, address, phone, email} = req.body.formInput;
     pg('users')
-        .where({id})
-        .update({name})
+        .where({inn})
+        .update({name, inn, kpp, contact, address, phone, email})
         .then(response =>{
             if (response) {
                 res.json('all done')
