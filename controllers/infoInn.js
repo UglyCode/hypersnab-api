@@ -1,4 +1,8 @@
-const ENV = require('../settings/env');
+if (!process.env.DADATA_TOKEN) {
+    const ENV = require('../settings/env');
+}
+
+
 const fetch = require('node-fetch');
 
 const checkInnInfo = (req, res, pg) => {
@@ -54,7 +58,7 @@ const fetchInnData = (inn) => {
             headers:{
                 "Content-Type": "application/json",
                 "Accept": "application/json",
-                "Authorization": "Token " + ENV.dadataToken
+                "Authorization": "Token " + (process.env.DADATA_TOKEN || ENV.dadataToken)
             },
             body: JSON.stringify({
                 "query": inn,
