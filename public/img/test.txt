@@ -1,0 +1,1 @@
+test static folder content delivery
