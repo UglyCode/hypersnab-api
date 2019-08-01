@@ -1,7 +1,7 @@
-if (!process.env.DADATA_TOKEN) {
-    const ENV = require('../settings/env');
-}
-
+// if (!process.env.DADATA_TOKEN) {
+//     const ENV = require('../settings/env');
+// }
+const ENV = require('../settings/env');
 
 const fetch = require('node-fetch');
 
