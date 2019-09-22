@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres/tables/filters_create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres/tables/foldersFiltersMatching_create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres/tables/folders_create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/deploy_scemas.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/deploy_scemas.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/seed/seed.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/seed/seed.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/goods_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/goods_create.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +46,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/controllers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,8 +60,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Web_projects\hypersnab-api\public" />
+      <recent name="D:\Web_projects\hypersnab-api\controllers" />
       <recent name="D:\Web_projects\hypersnab-api\postgres\tables" />
+      <recent name="D:\Web_projects\hypersnab-api\public" />
       <recent name="D:\Web_projects\hypersnab-api" />
     </key>
   </component>
@@ -98,6 +107,7 @@
       <workItem from="1568832590945" duration="113000" />
       <workItem from="1568832764932" duration="59000" />
       <workItem from="1568832886535" duration="946000" />
+      <workItem from="1569178720811" duration="1480000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for hypersnab api">
       <created>1555012707919</created>
@@ -297,7 +307,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

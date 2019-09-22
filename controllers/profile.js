@@ -12,7 +12,6 @@ const handleProfileGet = (req, res, pg) =>{
         .catch(err => res.status('400').json("can't get user"));
 };
 
-
 const handleProfileUpdate = (req, res, pg) => {
     const {inn} = req.params;
     const {name, kpp, contact, address, phone, email} = req.body.formInput;

@@ -1,0 +1,10 @@
+BEGIN TRANSACTION;
+
+CREATE TABLE filters(
+    code INTEGER PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    goodAttributeName VARCHAR(128),
+    updated TIMESTAMP
+);
+
+COMMIT;
