@@ -29,4 +29,9 @@ const handleFoldersGet = (req, res, pg) => {
     //     .catch(err => res.status(500).json('error appeared while updating'))
 };
 
+const handleFiltersGet = (req, res, pg) => {
+
+    // return [{filter:'name'}, values:['val1','val2',...]},...]
+};
+
 module.exports = {handleGoodsGet, handleFoldersGet};

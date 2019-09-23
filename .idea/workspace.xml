@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/filters_create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/foldersFiltersMatching_create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/folders_create.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/deploy_scemas.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/deploy_scemas.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/seed/seed.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/seed/seed.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/goods_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/goods_create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +100,7 @@
       <workItem from="1568832590945" duration="113000" />
       <workItem from="1568832764932" duration="59000" />
       <workItem from="1568832886535" duration="946000" />
-      <workItem from="1569178720811" duration="1480000" />
+      <workItem from="1569178720811" duration="2329000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for hypersnab api">
       <created>1555012707919</created>
@@ -284,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568918864368</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="goods api methods and database tables creation added">
+      <created>1569180274202</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1569180274202</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -337,6 +337,7 @@
     <MESSAGE value="ENV" />
     <MESSAGE value="images added" />
     <MESSAGE value="images updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="images updated" />
+    <MESSAGE value="goods api methods and database tables creation added" />
+    <option name="LAST_COMMIT_MESSAGE" value="goods api methods and database tables creation added" />
   </component>
 </project>
