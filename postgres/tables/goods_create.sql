@@ -5,7 +5,7 @@ CREATE TABLE goods(
     folder INTEGER NOT NULL,
     description VARCHAR(512),
     measure VARCHAR(32),
-    available BIT,
+    available BOOLEAN,
     image VARCHAR(256),
     updated TIMESTAMP
 );

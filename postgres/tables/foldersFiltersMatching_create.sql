@@ -1,8 +1,9 @@
 BEGIN TRANSACTION;
 
 CREATE TABLE folders_filters_matching(
-    filter INTEGER PRIMARY KEY,
-    folder INTEGER PRIMARY KEY,
+    id serial PRIMARY KEY,
+    filter INTEGER,
+    folder INTEGER,
     filterOrder INTEGER,
     updated TIMESTAMP
 );
