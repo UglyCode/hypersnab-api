@@ -1,3 +1,10 @@
+const {Client} = require('pg');
+const connectionString = process.env.DATABASE_URL;
+const client = new Client({
+    connectionString: connectionString,
+});
+client.connect();
+
 const handleGoodsGet = (req, res, pg) =>{
 
     // return pg.select('*').from('users').
@@ -30,15 +37,12 @@ const handleFoldersGet = (req, res, pg) => {
 };
 
 const handleFiltersGet = (req, res, pg) => {
-    // return pg('folders').innerJoin('folders',)
-    //                 .then(users => {
-    //                     if (users.length){
-    //                         res.json(users[0])
-    //                     } else {
-    //                         res.status(404).json('Not found')
-    //                     }
-    //                 })
-    //     .catch(err => res.status('400').json("can't get user"));
+    client
+        .query('SELECT f.name AS folder, p.name AS parent\n' +
+            'FROM folders f\n' +
+            'INNER JOIN folders p ON f.parent = p.code')
+        .then(res => console.log(res.rows[0]))
+        .catch(e => console.error(e.stack))
 };
 
 module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet};

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/postgres/tables/folders_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/folders_create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +102,7 @@
       <workItem from="1568832590945" duration="113000" />
       <workItem from="1568832764932" duration="59000" />
       <workItem from="1568832886535" duration="946000" />
-      <workItem from="1569178720811" duration="9327000" />
+      <workItem from="1569178720811" duration="9949000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for hypersnab api">
       <created>1555012707919</created>
@@ -318,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569525265145</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="pg seed file data updated">
+      <created>1569525647805</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1569525647805</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView">
