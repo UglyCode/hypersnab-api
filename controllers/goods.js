@@ -30,8 +30,15 @@ const handleFoldersGet = (req, res, pg) => {
 };
 
 const handleFiltersGet = (req, res, pg) => {
-
-    // return [{filter:'name'}, values:['val1','val2',...]},...]
+    // return pg('folders').innerJoin('folders',)
+    //                 .then(users => {
+    //                     if (users.length){
+    //                         res.json(users[0])
+    //                     } else {
+    //                         res.status(404).json('Not found')
+    //                     }
+    //                 })
+    //     .catch(err => res.status('400').json("can't get user"));
 };
 
-module.exports = {handleGoodsGet, handleFoldersGet};
+module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet};
