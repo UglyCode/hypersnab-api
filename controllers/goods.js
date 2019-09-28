@@ -20,7 +20,7 @@ const handleGoodsGet = (req, res, pg) =>{
 
 };
 
-const handleFoldersGet = (req, res, pg) => {
+const handleFiltersGet = (req, res, pg) => {
     // const {inn} = req.params;
     // const {name, kpp, contact, address, phone, email} = req.body.formInput;
     // pg('users')
@@ -36,13 +36,36 @@ const handleFoldersGet = (req, res, pg) => {
     //     .catch(err => res.status(500).json('error appeared while updating'))
 };
 
-const handleFiltersGet = (req, res, pg) => {
+const handleFoldersGet = (req, res) => {
     client
         .query('SELECT f.name AS folder, p.name AS parent\n' +
             'FROM folders f\n' +
-            'INNER JOIN folders p ON f.parent = p.code')
-        .then(res => console.log(res.rows[0]))
+            'INNER JOIN folders p ON f.parent = p.code\n' +
+            'ORDER BY p.name')
+        .then(folders => res.json(createFoldersStructure(folders.rows)))
         .catch(e => console.error(e.stack))
+};
+
+const createFoldersStructure = (foldersRows) => {
+
+    let currParent = {};
+    let foldersStructure = [];
+    foldersRows.forEach(elem => {
+        if (currParent.name !== elem.parent) {
+            currParent = createFolderObject(elem.parent);
+            foldersStructure.push(currParent);
+        }
+        currParent.children.push(createFolderObject(elem.folder));
+    });
+
+    return foldersStructure;
+};
+
+const createFolderObject = (folderName) => {
+    return {
+        name: folderName,
+        children: []
+    }
 };
 
 module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet};
