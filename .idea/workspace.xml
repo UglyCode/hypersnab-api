@@ -102,7 +102,7 @@
       <workItem from="1568832764932" duration="59000" />
       <workItem from="1568832886535" duration="946000" />
       <workItem from="1569178720811" duration="10589000" />
-      <workItem from="1569694585958" duration="2450000" />
+      <workItem from="1569694585958" duration="3436000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for hypersnab api">
       <created>1555012707919</created>
@@ -335,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569526297501</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="folders structure get handler added">
+      <created>1569697251870</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1569697251870</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -391,6 +398,7 @@
     <MESSAGE value="goods api methods and database tables creation added" />
     <MESSAGE value="pg seed file data updated" />
     <MESSAGE value="first folder query added today!" />
-    <option name="LAST_COMMIT_MESSAGE" value="first folder query added today!" />
+    <MESSAGE value="folders structure get handler added" />
+    <option name="LAST_COMMIT_MESSAGE" value="folders structure get handler added" />
   </component>
 </project>

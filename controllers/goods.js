@@ -6,17 +6,11 @@ const client = new Client({
 client.connect();
 
 const handleGoodsGet = (req, res, pg) =>{
-
-    // return pg.select('*').from('users').
-    //             where('inn', req.params.inn)
-    //                 .then(users => {
-    //                     if (users.length){
-    //                         res.json(users[0])
-    //                     } else {
-    //                         res.status(404).json('Not found')
-    //                     }
-    //                 })
-    //     .catch(err => res.status('400').json("can't get user"));
+    client
+        .query('SELECT * FROM public.goods\n' +
+            'ORDER BY code')
+        .then(goods => res.json(goods.rows))
+        .catch(e => console.error(e.stack))
 
 };
 
