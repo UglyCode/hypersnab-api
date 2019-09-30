@@ -8,7 +8,7 @@ CREATE TABLE users(
     phone BIGINT,
     contact VARCHAR(128),
     address VARCHAR(256),
-    joined TIMESTAMP NOT NULL
+    joined TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 COMMIT;

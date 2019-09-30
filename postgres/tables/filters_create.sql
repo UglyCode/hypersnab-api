@@ -4,7 +4,7 @@ CREATE TABLE filters(
     code INTEGER PRIMARY KEY,
     name VARCHAR(128) NOT NULL,
     goodAttributeName VARCHAR(128),
-    updated TIMESTAMP
+    updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 COMMIT;

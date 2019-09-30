@@ -62,4 +62,30 @@ const createFolderObject = (folderName) => {
     }
 };
 
-module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet};
+const handleGoodsPost = (req, res) => {
+
+    Promise.resolve(req.body)
+        .then(goods => updateGoods(goods))
+        .then(gpData => res.json(gpData))
+        .catch(e => {
+            console.log(e.stack);
+            res.status(500).json('can not update goods now');
+        });
+};
+
+const updateGoods = (goods) =>{
+
+    const insertedValues = goods.reduce((accum,elem,i,arr) => {
+        const {code, folder, description, measure} = elem;
+        return(accum + `(${code}, '${folder}', '${description}','${measure}',true,CURRENT_TIMESTAMP)` + ((i===arr.length-1) ?' ':', '));
+    }, '');
+
+    return (client
+            .query('insert into goods (code,folder,description,measure,available,image) \n' +
+                `  values ${insertedValues} \n` +
+                '  ON CONFLICT (code) DO UPDATE SET \n' +
+                '  folder=EXCLUDED.folder,description=EXCLUDED.description,measure=EXCLUDED.measure,\n' +
+                '  available=EXCLUDED.available,image=EXCLUDED.image,updated=CURRENT_TIMESTAMP'));
+};
+
+module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet, handleGoodsPost};

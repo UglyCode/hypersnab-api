@@ -7,7 +7,7 @@ CREATE TABLE goods(
     measure VARCHAR(32),
     available BOOLEAN,
     image VARCHAR(256),
-    updated TIMESTAMP
+    updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 COMMIT;

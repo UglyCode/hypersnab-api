@@ -5,7 +5,7 @@ CREATE TABLE folders_filters_matching(
     filter INTEGER,
     folder INTEGER,
     filterOrder INTEGER,
-    updated TIMESTAMP
+    updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 COMMIT;

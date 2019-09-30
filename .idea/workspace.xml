@@ -4,6 +4,15 @@
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/filters_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/filters_create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/foldersFiltersMatching_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/foldersFiltersMatching_create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/folders_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/folders_create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/goods_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/goods_create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/login_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/login_create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/orders_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/orders_create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/prices_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/prices_create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/stock_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/stock_create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/users_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/users_create.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,7 +111,7 @@
       <workItem from="1568832764932" duration="59000" />
       <workItem from="1568832886535" duration="946000" />
       <workItem from="1569178720811" duration="10589000" />
-      <workItem from="1569694585958" duration="3436000" />
+      <workItem from="1569694585958" duration="9364000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for hypersnab api">
       <created>1555012707919</created>
@@ -342,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569697251870</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="goods GET API point added">
+      <created>1569785695332</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1569785695332</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -374,7 +390,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit for hypersnab api" />
     <MESSAGE value="get info by INN" />
     <MESSAGE value="get info by INN updated" />
     <MESSAGE value="just for fun!" />
@@ -399,6 +414,7 @@
     <MESSAGE value="pg seed file data updated" />
     <MESSAGE value="first folder query added today!" />
     <MESSAGE value="folders structure get handler added" />
-    <option name="LAST_COMMIT_MESSAGE" value="folders structure get handler added" />
+    <MESSAGE value="goods GET API point added" />
+    <option name="LAST_COMMIT_MESSAGE" value="goods GET API point added" />
   </component>
 </project>

@@ -7,7 +7,7 @@ CREATE TABLE orders(
     amount NUMERIC(16,2) NOT NULL,
     price NUMERIC(16,2) NOT NULL,
     status VARCHAR(64),
-    updated TIMESTAMP
+    updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 COMMIT;

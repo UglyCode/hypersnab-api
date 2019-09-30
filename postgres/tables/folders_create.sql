@@ -6,7 +6,7 @@ CREATE TABLE folders(
     level INTEGER,
     parent INTEGER,
     image VARCHAR(256),
-    updated TIMESTAMP
+    updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 COMMIT;
