@@ -5,7 +5,7 @@ const client = new Client({
 });
 client.connect();
 
-const handleGoodsGet = (req, res, pg) =>{
+const handleGoodsGet = (req, res) =>{
     client
         .query('SELECT * FROM public.goods\n' +
             'ORDER BY code')
