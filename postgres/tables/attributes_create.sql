@@ -1,9 +1,8 @@
 BEGIN TRANSACTION;
 
-CREATE TABLE filters(
+CREATE TABLE attributes(
     code INTEGER PRIMARY KEY,
     name VARCHAR(128) NOT NULL,
-    goodAttributeName VARCHAR(128),
     updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

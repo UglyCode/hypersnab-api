@@ -5,7 +5,8 @@
 \i '/docker-entrypoint-initdb.d/tables/stock_create.sql'
 \i '/docker-entrypoint-initdb.d/tables/orders_create.sql'
 \i '/docker-entrypoint-initdb.d/tables/folders_create.sql'
-\i '/docker-entrypoint-initdb.d/tables/filters_create.sql'
+\i '/docker-entrypoint-initdb.d/tables/attributes_create.sql'
+\i '/docker-entrypoint-initdb.d/tables/goodsAttributes_create.sql
 \i '/docker-entrypoint-initdb.d/tables/prices_create.sql'
 \i '/docker-entrypoint-initdb.d/tables/foldersFiltersMatching_create.sql'
 
