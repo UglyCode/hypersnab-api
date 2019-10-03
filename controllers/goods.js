@@ -40,6 +40,10 @@ const handleFoldersGet = (req, res) => {
         .catch(e => console.error(e.stack))
 };
 
+const handleFullGoodsUpdate = (req, res) => {
+
+};
+
 const createFoldersStructure = (foldersRows) => {
 
     let currParent = {};
@@ -88,4 +92,4 @@ const updateGoods = (goods) =>{
                 '  available=EXCLUDED.available,image=EXCLUDED.image,updated=CURRENT_TIMESTAMP'));
 };
 
-module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet, handleGoodsPost};
+module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet, handleGoodsPost, handleFullGoodsUpdate};
