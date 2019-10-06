@@ -68,8 +68,16 @@ const createFolderObject = (folderName) => {
 
 const handleGoodsPost = (req, res) => {
 
-    Promise.resolve(req.body)
-        .then(goods => updateGoods(goods))
+    const nandlers = [new Promise(updateGoods()), apdateStock, updatePrices];
+
+    Promise.resolve(req.bosy)
+        .then(goodsJSON => parseGoodsJSON(goodsJSON))
+        .then(goodsData =>{
+            goodsUpdatePromise = new Promise(updateGoods(goodsData.goods));
+            stockUpdatePromise = new Promise(updateStock(goodsData.stock));
+            pricesUpdatePromise = new Promise(updatePrices(goodsData.prices));
+            return Promise.all([goodsUpdatePromise, stockUpdatePromise, pricesUpdatePromise]);
+        })
         .then(gpData => res.json(gpData))
         .catch(e => {
             console.log(e.stack);
@@ -91,5 +99,13 @@ const updateGoods = (goods) =>{
                 '  folder=EXCLUDED.folder,description=EXCLUDED.description,measure=EXCLUDED.measure,\n' +
                 '  available=EXCLUDED.available,image=EXCLUDED.image,updated=CURRENT_TIMESTAMP'));
 };
+
+const updateStock = (stock) => {
+    return stock;
+};
+
+const updateprices = (prices) => {
+    return prices;
+}
 
 module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet, handleGoodsPost, handleFullGoodsUpdate};
