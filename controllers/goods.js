@@ -85,6 +85,18 @@ const handleGoodsPost = (req, res) => {
         });
 };
 
+const parseGoodsJSON = (goods) =>{
+
+    return goods.reduce((elem, acc) => {
+        return acc;
+    },
+        {
+            goods: {},
+            stock: {},
+            prices: {}
+        })
+};
+
 const updateGoods = (goods) =>{
 
     const insertedValues = goods.reduce((accum,elem,i,arr) => {
