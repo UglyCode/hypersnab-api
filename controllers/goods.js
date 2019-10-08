@@ -88,6 +88,9 @@ const handleGoodsPost = (req, res) => {
 const parseGoodsJSON = (goods) =>{
 
     return goods.reduce((elem, acc) => {
+        acc.goods.push(elem);
+        acc.stock.push(elem);
+        acc.prices.push(elem);
         return acc;
     },
         {
