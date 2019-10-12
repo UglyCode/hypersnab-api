@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +102,8 @@
       <workItem from="1568832886535" duration="946000" />
       <workItem from="1569178720811" duration="10589000" />
       <workItem from="1569694585958" duration="15685000" />
-      <workItem from="1570214838886" duration="2862000" />
+      <workItem from="1570214838886" duration="3484000" />
+      <workItem from="1570646685429" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for hypersnab api">
       <created>1555012707919</created>
@@ -391,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570474931925</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="goods POST parsing method updated">
+      <created>1570560294509</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1570560294509</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView">
@@ -424,7 +432,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="auth" />
     <MESSAGE value="sql tables added (all needed)" />
     <MESSAGE value="goods table updated" />
     <MESSAGE value="docker environment set up and tested" />
@@ -449,6 +456,7 @@
     <MESSAGE value="images update" />
     <MESSAGE value="attributes added to pg" />
     <MESSAGE value="goods POST methods structure added" />
-    <option name="LAST_COMMIT_MESSAGE" value="goods POST methods structure added" />
+    <MESSAGE value="goods POST parsing method updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="goods POST parsing method updated" />
   </component>
 </project>
