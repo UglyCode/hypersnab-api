@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/1876.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/2364.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/256.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/257.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3276.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/19605.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/19605.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/seed/seed.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/seed/seed.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +54,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Web_projects\hypersnab-api\public\img" />
       <recent name="D:\Web_projects\hypersnab-api\postgres\tables" />
       <recent name="D:\Web_projects\hypersnab-api\controllers" />
       <recent name="D:\Web_projects\hypersnab-api\public" />
@@ -109,7 +105,7 @@
       <workItem from="1569178720811" duration="10589000" />
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
-      <workItem from="1570646685429" duration="2072000" />
+      <workItem from="1570646685429" duration="2730000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for hypersnab api">
       <created>1555012707919</created>
@@ -412,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570880267127</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="img">
+      <created>1571079493539</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1571079493539</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -445,7 +448,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="goods table updated" />
     <MESSAGE value="docker environment set up and tested" />
     <MESSAGE value="login and register routes has been finished and tested" />
     <MESSAGE value="test" />
@@ -470,6 +472,7 @@
     <MESSAGE value="goods POST methods structure added" />
     <MESSAGE value="goods POST parsing method updated" />
     <MESSAGE value="minor update" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor update" />
+    <MESSAGE value="img" />
+    <option name="LAST_COMMIT_MESSAGE" value="img" />
   </component>
 </project>
