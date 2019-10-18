@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/postgres/tables/__dbeaver_attributes.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/__dbeaver_folders.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/__dbeaver_foldersattributes.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/__dbeaver_goods.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/__dbeaver_goodsattributes.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/__dbeaver_login.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/__dbeaver_ordergoods.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/__dbeaver_orders.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/__dbeaver_prices.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/__dbeaver_stock.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/__dbeaver_users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_attributes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/4_attributes.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_folders.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/3_folders.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_foldersattributes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/6_foldersattributes.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_goods.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/2_goods.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_goodsattributes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/5_goodsattributes.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_login.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/1_login.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_ordergoods.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/10_ordergoods.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_orders.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/9_orders.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_prices.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/7_prices.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_stock.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/8_stock.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/0_users.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +114,7 @@
       <workItem from="1569178720811" duration="10589000" />
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
-      <workItem from="1570646685429" duration="5666000" />
+      <workItem from="1570646685429" duration="9385000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for hypersnab api">
       <created>1555012707919</created>
@@ -432,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571252434312</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="db structure revised and updated">
+      <created>1571337396713</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1571337396713</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -465,7 +471,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="docker environment set up and tested" />
     <MESSAGE value="login and register routes has been finished and tested" />
     <MESSAGE value="test" />
     <MESSAGE value="backend methods updated for profile page reasosns" />
@@ -490,6 +495,7 @@
     <MESSAGE value="goods POST parsing method updated" />
     <MESSAGE value="minor update" />
     <MESSAGE value="img" />
-    <option name="LAST_COMMIT_MESSAGE" value="img" />
+    <MESSAGE value="db structure revised and updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="db structure revised and updated" />
   </component>
 </project>
