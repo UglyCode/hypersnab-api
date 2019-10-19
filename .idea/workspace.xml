@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_attributes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/4_attributes.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_folders.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/3_folders.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_foldersattributes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/6_foldersattributes.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_goods.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/2_goods.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_goodsattributes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/5_goodsattributes.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_login.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/1_login.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_ordergoods.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/10_ordergoods.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_orders.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/9_orders.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_prices.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/7_prices.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_stock.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/8_stock.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/__dbeaver_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/0_users.sql" afterDir="false" />
-    </list>
+    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +37,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/postgres/tables" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -114,7 +102,7 @@
       <workItem from="1569178720811" duration="10589000" />
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
-      <workItem from="1570646685429" duration="9385000" />
+      <workItem from="1570646685429" duration="10004000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for hypersnab api">
       <created>1555012707919</created>
@@ -438,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571337396713</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="db structure revised and updated">
+      <created>1571423732554</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1571423732554</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView">
