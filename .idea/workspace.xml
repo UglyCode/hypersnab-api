@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="" />
+    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/postgres/tables/deploy_scemas_old.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/deploy_scemas_old.sql" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +53,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Web_projects\hypersnab-api\public\img" />
       <recent name="D:\Web_projects\hypersnab-api\postgres\tables" />
+      <recent name="D:\Web_projects\hypersnab-api\public\img" />
       <recent name="D:\Web_projects\hypersnab-api\controllers" />
       <recent name="D:\Web_projects\hypersnab-api\public" />
       <recent name="D:\Web_projects\hypersnab-api" />
@@ -102,7 +104,7 @@
       <workItem from="1569178720811" duration="10589000" />
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
-      <workItem from="1570646685429" duration="10004000" />
+      <workItem from="1570646685429" duration="10706000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for hypersnab api">
       <created>1555012707919</created>
@@ -433,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571423732554</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="db structure revised and updated">
+      <created>1571508227225</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1571508227225</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView">

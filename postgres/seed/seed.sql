@@ -32,3 +32,7 @@ insert into stock (good,amount,maxorder,updated)
    (126, 212, 0, '2019-01-01'),
    (127, 22, 0,'2019-01-01');
 
+   insert into attributes (code, name)
+      values ('2019-01-01', 'sadfsfdsa'),
+
+
