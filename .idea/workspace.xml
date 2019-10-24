@@ -18,17 +18,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>getAuthTokenId</find>
-      <find>red</find>
-      <find>re</find>
-      <find>id</find>
-      <find>env</find>
-      <find>../settings</find>
-      <find>ENV</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -106,14 +95,7 @@
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
       <workItem from="1570646685429" duration="11372000" />
-      <workItem from="1571683779391" duration="4397000" />
-    </task>
-    <task id="LOCAL-00003" summary="get info by INN updated">
-      <created>1555357615900</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1555357615900</updated>
+      <workItem from="1571683779391" duration="5282000" />
     </task>
     <task id="LOCAL-00004" summary="just for fun!">
       <created>1555872042059</created>
@@ -451,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571861066765</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="goods update function added">
+      <created>1571945370983</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1571945370983</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView">
@@ -484,7 +473,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="test" />
     <MESSAGE value="backend methods updated for profile page reasosns" />
     <MESSAGE value="backend methods updated for profile page reasons" />
     <MESSAGE value="register methods finished - almost" />
@@ -509,6 +497,7 @@
     <MESSAGE value="img" />
     <MESSAGE value="db structure revised and updated" />
     <MESSAGE value="images updated for new ones" />
-    <option name="LAST_COMMIT_MESSAGE" value="images updated for new ones" />
+    <MESSAGE value="goods update function added" />
+    <option name="LAST_COMMIT_MESSAGE" value="goods update function added" />
   </component>
 </project>

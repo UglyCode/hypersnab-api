@@ -7,27 +7,27 @@ client.connect();
 
 const handleGoodsGet = (req, res) =>{
     client
-        .query('SELECT * FROM public.goods\n' +
-            'ORDER BY code')
+        .query('select goods.code as code, \n' +
+            'folders.folder_name as folder, \n' +
+            'goods.description as description, \n' +
+            'goods.measure as measure, \n' +
+            'goods.sort as sort, \n' +
+            'prices.price as price,\n' +
+            'prices.spec as spec,\n' +
+            'stock.stock as quantity\n' +
+            '\tfrom goods as goods\n' +
+            'left join   folders as folders\n' +
+            '\ton goods.folder = folders.code\n' +
+            'left join prices as prices\n' +
+            '\ton goods.code = prices.good\n' +
+            'left join stock as stock\n' +
+            '\ton goods.code = stock.good')
         .then(goods => res.json(goods.rows))
         .catch(e => console.error(e.stack))
-
 };
 
 const handleFiltersGet = (req, res, pg) => {
-    // const {inn} = req.params;
-    // const {name, kpp, contact, address, phone, email} = req.body.formInput;
-    // pg('users')
-    //     .where({inn})
-    //     .update({name, inn, kpp, contact, address, phone, email})
-    //     .then(response =>{
-    //         if (response) {
-    //             res.json('all done')
-    //         } else{
-    //             res.status(400).json('smth went wrong')
-    //         }
-    //     })
-    //     .catch(err => res.status(500).json('error appeared while updating'))
+
 };
 
 const handleFoldersGet = (req, res) => {
@@ -68,8 +68,6 @@ const createFolderObject = (folderName) => {
 
 const handleGoodsPost = (req, res) => {
 
-    const nandlers = [new Promise(updateGoods()), apdateStock, updatePrices];
-
     Promise.resolve(req.body)
         .then(goodsJSON => JSON.parse(goodsJSON))
         .then(goodsData => updateGoodsData(goodsData, true))
@@ -80,14 +78,10 @@ const handleGoodsPost = (req, res) => {
         });
 };
 
-const parseGoodsJSON = (goods) =>{
-
-};
-
-const updateGoodsData = (goods, clearTables=false) =>{
+const updateGoodsData = async (goods, clearTables=false) =>{
 
     if (clearTables){
-        clearGoodsTables();
+        await clearGoodsTables();
     }
 
     const insertedValues = goods.reduce((accum,elem,i,arr) => {
@@ -98,24 +92,27 @@ const updateGoodsData = (goods, clearTables=false) =>{
         return accum;
     }, {goods:'', prices:'',stock:''});
 
-    return (client
-            .query('insert into goods (code,folder,description,measure,available,image) \n' +
-                `  values ${insertedValues} \n` +
-                '  ON CONFLICT (code) DO UPDATE SET \n' +
-                '  folder=EXCLUDED.folder,description=EXCLUDED.description,measure=EXCLUDED.measure,\n' +
-                '  available=EXCLUDED.available,image=EXCLUDED.image,updated=CURRENT_TIMESTAMP'));
+    await updateGoods(insertedValues.goods);
+    await updateStock(insertedValues.prices);
+    await updatePrices(insertedValues.stock);
+
+    return 'goods update successfully, smile-smile';
 };
 
-const clearGoodsTables = () => {
+const clearGoodsTables =  () => {
+    return client.query('');
+};
 
+const updateGoods = (goods) =>{
+    return client.query('INSERT INTO goods (code, folder, description, measure, sort) VALUES ' + goods);
 };
 
 const updateStock = (stock) => {
-    return stock;
+    return client.query('INSERT INTO stock (good, stock, maxorder, updated) VALUES ' + stock);
 };
 
-const updateprices = (prices) => {
-    return prices;
-}
+const updatePrices = (prices) => {
+    return client.query('INSERT INTO public.prices (good, price, updated, spec) VALUES ' + prices);
+};
 
 module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet, handleGoodsPost, handleFullGoodsUpdate};
