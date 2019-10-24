@@ -2,109 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/postgres/tables/SELECT_FOLDERS.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/SELECT_GOODS.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres/tables/new_tables_seed.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/23849.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/24747.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1004.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1004.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1005.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1005.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1022.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1022.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1053.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1053.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1063.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1063.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/10923.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/10923.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1102.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1102.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1182.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1182.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1228.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1228.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1229.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1229.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1244.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1244.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/12991.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/12991.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/12992.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/12992.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/13158.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/13158.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/13225.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/13225.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1384.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1384.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1436.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1436.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1559.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1559.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1560.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1560.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/15856.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/15856.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/15857.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/15857.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/159.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/159.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/160.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/160.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/161.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/161.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1636.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1636.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1642.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1642.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/16629.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/16629.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/16630.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/16630.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/17864.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/17864.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/18319.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/18319.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/18627.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/18627.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/18628.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/18628.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/18665.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/18665.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1938.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1938.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/19903.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/19903.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/19948.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/19948.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/20685.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/20685.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/21189.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/21189.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/21431.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/21431.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/21505.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/21505.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/21529.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/21529.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/2179.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/2179.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/2196.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/2196.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/2219.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/2219.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/22599.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/22599.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/226.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/226.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/2267.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/2267.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/227.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/227.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/22791.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/22791.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/228.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/228.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/229.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/229.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/22976.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/22976.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/22979.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/22979.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/230.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/230.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/231.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/231.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/232.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/232.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/233.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/233.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/234.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/234.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/2342.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/2342.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/23562.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/23562.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/2455.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/2455.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/2458.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/2458.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/2848.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/2848.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/2854.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/2854.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/3044.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/3044.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/3129.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/3129.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/3203.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/3203.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/3317.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/3317.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/3841.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/3841.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/3997.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/3997.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/4317.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/4317.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/4321.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/4321.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/4377.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/4377.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/5366.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/5366.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/5693.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/5693.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/626.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/626.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/641.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/641.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/642.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/642.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/643.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/643.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/644.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/644.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/647.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/647.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/648.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/648.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/649.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/649.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/657.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/657.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/663.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/663.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/664.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/664.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/669.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/669.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/673.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/673.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/674.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/674.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/677.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/677.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/7019.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/7019.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/7225.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/7225.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/8203.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/8203.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/8208.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/8208.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/8310.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/8310.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/8322.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/8322.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/8897.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/8897.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,14 +106,7 @@
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
       <workItem from="1570646685429" duration="11372000" />
-      <workItem from="1571683779391" duration="2161000" />
-    </task>
-    <task id="LOCAL-00002" summary="get info by INN">
-      <created>1555269468693</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1555269468693</updated>
+      <workItem from="1571683779391" duration="4397000" />
     </task>
     <task id="LOCAL-00003" summary="get info by INN updated">
       <created>1555357615900</created>
@@ -552,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571774114246</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="images updated for new ones">
+      <created>1571861066765</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1571861066765</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView">
@@ -585,7 +484,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="login and register routes has been finished and tested" />
     <MESSAGE value="test" />
     <MESSAGE value="backend methods updated for profile page reasosns" />
     <MESSAGE value="backend methods updated for profile page reasons" />
@@ -610,6 +508,7 @@
     <MESSAGE value="minor update" />
     <MESSAGE value="img" />
     <MESSAGE value="db structure revised and updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="db structure revised and updated" />
+    <MESSAGE value="images updated for new ones" />
+    <option name="LAST_COMMIT_MESSAGE" value="images updated for new ones" />
   </component>
 </project>

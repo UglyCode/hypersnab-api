@@ -70,14 +70,9 @@ const handleGoodsPost = (req, res) => {
 
     const nandlers = [new Promise(updateGoods()), apdateStock, updatePrices];
 
-    Promise.resolve(req.bosy)
-        .then(goodsJSON => parseGoodsJSON(goodsJSON))
-        .then(goodsData =>{
-            goodsUpdatePromise = new Promise(updateGoods(goodsData.goods));
-            stockUpdatePromise = new Promise(updateStock(goodsData.stock));
-            pricesUpdatePromise = new Promise(updatePrices(goodsData.prices));
-            return Promise.all([goodsUpdatePromise, stockUpdatePromise, pricesUpdatePromise]);
-        })
+    Promise.resolve(req.body)
+        .then(goodsJSON => JSON.parse(goodsJSON))
+        .then(goodsData => updateGoodsData(goodsData, true))
         .then(gpData => res.json(gpData))
         .catch(e => {
             console.log(e.stack);
@@ -87,25 +82,21 @@ const handleGoodsPost = (req, res) => {
 
 const parseGoodsJSON = (goods) =>{
 
-    return goods.reduce((elem, acc) => {
-        acc.goods.push(elem);
-        acc.stock.push(elem);
-        acc.prices.push(elem);
-        return acc;
-    },
-        {
-            goods: {},
-            stock: {},
-            prices: {}
-        })
 };
 
-const updateGoods = (goods) =>{
+const updateGoodsData = (goods, clearTables=false) =>{
+
+    if (clearTables){
+        clearGoodsTables();
+    }
 
     const insertedValues = goods.reduce((accum,elem,i,arr) => {
-        const {code, folder, description, measure} = elem;
-        return(accum + `(${code}, '${folder}', '${description}','${measure}',true,CURRENT_TIMESTAMP)` + ((i===arr.length-1) ?' ':', '));
-    }, '');
+        const {code, folder, description, measure, price, spec, quantity, sort} = elem;
+        accum.goods     += `('${code}', '${folder}', '${description}', '${measure}','${sort}')` + ((i===arr.length-1) ?' ':', ');
+        accum.prices    += `(${code}, '${price}', now(),'${spec}')` + ((i===arr.length-1) ?' ':', ');
+        accum.stock     += `(${code}, '${quantity}', 0, now())` + ((i===arr.length-1) ?' ':', ');
+        return accum;
+    }, {goods:'', prices:'',stock:''});
 
     return (client
             .query('insert into goods (code,folder,description,measure,available,image) \n' +
@@ -113,6 +104,10 @@ const updateGoods = (goods) =>{
                 '  ON CONFLICT (code) DO UPDATE SET \n' +
                 '  folder=EXCLUDED.folder,description=EXCLUDED.description,measure=EXCLUDED.measure,\n' +
                 '  available=EXCLUDED.available,image=EXCLUDED.image,updated=CURRENT_TIMESTAMP'));
+};
+
+const clearGoodsTables = () => {
+
 };
 
 const updateStock = (stock) => {
