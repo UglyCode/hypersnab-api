@@ -90,7 +90,7 @@ const updateGoodsData = async (goods, clearTables=false) =>{
         accum.prices    += `(${code}, '${price}', now(),'${spec}')` + ((i===arr.length-1) ?' ':', ');
         accum.stock     += `(${code}, '${quantity}', 0, now())` + ((i===arr.length-1) ?' ':', ');
         return accum;
-    }, {goods:'', prices:'',stock:''});
+    }, {goods:' ', prices: '',stock: ''});
 
     await updateGoods(insertedValues.goods);
     await updateStock(insertedValues.prices);
