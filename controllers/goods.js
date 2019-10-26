@@ -89,12 +89,16 @@ const updateGoodsData = async (goods, clearTables=false) =>{
         accum.goods     += `('${code}', '${folder}', '${description}', '${measure}','${sort}')` + ((i===arr.length-1) ?' ':', ');
         accum.prices    += `(${code}, '${price}', now(),'${spec}')` + ((i===arr.length-1) ?' ':', ');
         accum.stock     += `(${code}, '${quantity}', 0, now())` + ((i===arr.length-1) ?' ':', ');
+        accum.attributes+= getAttributesInsertString(elem.code, elem.attributes);
         return accum;
-    }, {goods:' ', prices: '',stock: ''});
+    }, {goods:' ', prices: '',stock: '', attributes:''});
 
     await updateGoods(insertedValues.goods);
-    await updateStock(insertedValues.prices);
-    await updatePrices(insertedValues.stock);
+    await Promise.all([
+        updateStock(insertedValues.prices),
+        updatePrices(insertedValues.stock),
+        updateAttributes(insertedValues.attributes)
+    ]);
 
     return 'goods update successfully, smile-smile';
 };
@@ -107,12 +111,23 @@ const updateGoods = (goods) =>{
     return client.query('INSERT INTO goods (code, folder, description, measure, sort) VALUES ' + goods);
 };
 
-const updateStock = (stock) => {
-    return client.query('INSERT INTO stock (good, stock, maxorder, updated) VALUES ' + stock);
-};
-
 const updatePrices = (prices) => {
     return client.query('INSERT INTO public.prices (good, price, updated, spec) VALUES ' + prices);
+};
+
+const updateStock = (stock) => {
+    return client.query('INSERT INTO Columns (good, stock, maxorder, updated) VALUES ' + stock);
+};
+
+const updateAttributes = (attributes) => {
+    return client.query('INSERT INTO stock (good, attribute, value) VALUES ' + attributes);
+};
+
+const getAttributesInsertString = (good,atrArray) => {
+    return atrArray.reduce((accum,elem,i,arr) => {
+        accum += `(${good}, '${elem[0]}', '${elem[1]}'` + ((i===arr.length-1) ?' ':', ');
+        return accum;
+    }, '');
 };
 
 module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet, handleGoodsPost, handleFullGoodsUpdate};
