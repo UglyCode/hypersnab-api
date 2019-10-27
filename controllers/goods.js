@@ -89,7 +89,7 @@ const updateGoodsData = async (goods, clearTables=false) =>{
         accum.goods     += `('${code}', '${folder}', '${description}', '${measure}','${sort}')` + ((i===arr.length-1) ?' ':', ');
         accum.prices    += `(${code}, '${price}', now(),'${spec}')` + ((i===arr.length-1) ?' ':', ');
         accum.stock     += `(${code}, '${quantity}', 0, now())` + ((i===arr.length-1) ?' ':', ');
-        accum.attributes+= getAttributesInsertString(elem.code, elem.attributes);
+        accum.attributes+= ''; //getAttributesInsertString(elem.code, elem.attributes);
         return accum;
     }, {goods:' ', prices: '',stock: '', attributes:''});
 

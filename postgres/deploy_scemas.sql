@@ -1,8 +1,8 @@
 -- deploy fresh db tables
 \i '/docker-entrypoint-initdb.d/tables/0_users.sql'
 \i '/docker-entrypoint-initdb.d/tables/1_login.sql'
-\i '/docker-entrypoint-initdb.d/tables/2_goods.sql'
-\i '/docker-entrypoint-initdb.d/tables/3_folders.sql'
+\i '/docker-entrypoint-initdb.d/tables/2_folders.sql'
+\i '/docker-entrypoint-initdb.d/tables/3_goods.sql'
 \i '/docker-entrypoint-initdb.d/tables/4_attributes.sql'
 \i '/docker-entrypoint-initdb.d/tables/5_goodsattributes.sql'
 \i '/docker-entrypoint-initdb.d/tables/6_foldersattributes.sql'

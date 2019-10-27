@@ -6,10 +6,9 @@
       <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/postgres/deploy_scemas.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/deploy_scemas.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/postgres/seed/seed.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/seed/seed.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/10_ordergoods.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/10_ordergoods.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/5_goodsattributes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/5_goodsattributes.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/6_foldersattributes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/6_foldersattributes.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/new_tables_seed.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/new_tables_seed.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/2_goods.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/3_goods.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/3_folders.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/2_folders.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/4_attributes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/4_attributes.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,14 +100,7 @@
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
       <workItem from="1570646685429" duration="11372000" />
-      <workItem from="1571683779391" duration="10032000" />
-    </task>
-    <task id="LOCAL-00007" summary="sql tables added (all needed)">
-      <created>1556478774052</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1556478774052</updated>
+      <workItem from="1571683779391" duration="11152000" />
     </task>
     <task id="LOCAL-00008" summary="goods table updated">
       <created>1557172938009</created>
@@ -446,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572118167034</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="tables seed updated">
+      <created>1572159568340</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1572159568340</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TodoView">
@@ -479,7 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="backend methods updated for profile page reasons" />
     <MESSAGE value="register methods finished - almost" />
     <MESSAGE value="some update for redis deployment" />
     <MESSAGE value="port log update" />
@@ -504,6 +502,7 @@
     <MESSAGE value="images updated for new ones" />
     <MESSAGE value="goods update function added" />
     <MESSAGE value="attributes update algorithm added" />
-    <option name="LAST_COMMIT_MESSAGE" value="attributes update algorithm added" />
+    <MESSAGE value="tables seed updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="tables seed updated" />
   </component>
 </project>
