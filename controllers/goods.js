@@ -96,8 +96,8 @@ const updateGoodsData = async (goods, clearTables=false) =>{
     await updateGoods(insertedValues.goods);
     await Promise.all([
         updateStock(insertedValues.prices),
-        updatePrices(insertedValues.stock),
-        updateAttributes(insertedValues.attributes)
+        updatePrices(insertedValues.stock)
+     //   updateAttributes(insertedValues.attributes)
     ]);
 
     return 'goods update successfully, smile-smile';
@@ -108,19 +108,23 @@ const clearGoodsTables =  () => {
 };
 
 const updateGoods = (goods) =>{
-    return client.query('INSERT INTO goods (code, folder, description, measure, sort) VALUES ' + goods);
+    return client.query('INSERT INTO goods (code, folder, description, measure, sort) VALUES ' + goods +
+    '\n on conflict (code) do update set folder=excluded.folder, description=excluded.description, measure=excluded.measure, sort=excluded.sort;');
 };
 
 const updatePrices = (prices) => {
-    return client.query('INSERT INTO public.prices (good, price, updated, spec) VALUES ' + prices);
+    return client.query('INSERT INTO prices (good, price, updated, spec) VALUES ' + prices +
+    '\n on conflict (good) do update set price=excluded.price, updated=now(), spec=excluded.spec');
 };
 
 const updateStock = (stock) => {
-    return client.query('INSERT INTO Columns (good, stock, maxorder, updated) VALUES ' + stock);
+    return client.query('INSERT INTO Columns (good, stock, maxorder, updated) VALUES ' + stock +
+        '\n on conflict (good) do update set stock=excluded.stock, updated=now(), maxorder=excluded.maxorder');
 };
 
 const updateAttributes = (attributes) => {
-    return client.query('INSERT INTO stock (good, attribute, value) VALUES ' + attributes);
+    return client.query('INSERT INTO stock (good, attribute, value) VALUES ' + attributes +
+        '\n on conflict (good, attribute) do update set value=excluded.value');
 };
 
 const getAttributesInsertString = (good,atrArray) => {

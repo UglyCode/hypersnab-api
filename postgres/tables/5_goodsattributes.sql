@@ -6,9 +6,9 @@ CREATE TABLE public.goodsattributes (
 	good varchar(16) NOT NULL,
 	"attribute" int4 NOT NULL,
 	value varchar(32) NOT NULL,
-	CONSTRAINT goodsattributes_pk PRIMARY KEY (good, attribute),
-	CONSTRAINT goodsattributes_fk FOREIGN KEY (good) REFERENCES goods(code),
-	CONSTRAINT goodsattributes_fk_1 FOREIGN KEY (attribute) REFERENCES attributes(code)
+	CONSTRAINT goods_attributes_pk PRIMARY KEY (good, attribute),
+	CONSTRAINT goods_attributes_fk FOREIGN KEY (good) REFERENCES goods(code),
+	CONSTRAINT goods_attributes_fk_1 FOREIGN KEY (attribute) REFERENCES attributes(code)
 );
 
 
