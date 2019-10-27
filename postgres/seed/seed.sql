@@ -4,7 +4,7 @@ insert into users (inn, kpp, name, email, phone, contact, address, created)
 insert into login (hash, inn) values ('$2a$10$WAK21U0LWl7C//jJ.DOB2uPP1DJQh7KUDgasdyQeGzkop2Pzl8W7u', 7704409586);
 
 --goods initial data for testing
-insert into folders (code,name,parent)
+insert into folders (code,folder_name,parent)
    values (1, 'Электромонтажные изделия', 0),
    (101, 'Приборы учета электроэнергии', 1),
    (2, 'Низковольтная автоматика', 0),

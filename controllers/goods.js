@@ -5,6 +5,7 @@ const client = new Client({
 });
 client.connect();
 
+//{goods & atributes
 const handleGoodsGet = (req, res) =>{
     client
         .query('select goods.code as code, \n' +
@@ -24,46 +25,6 @@ const handleGoodsGet = (req, res) =>{
             '\ton goods.code = stock.good')
         .then(goods => res.json(goods.rows))
         .catch(e => console.error(e.stack))
-};
-
-const handleFiltersGet = (req, res, pg) => {
-
-};
-
-const handleFoldersGet = (req, res) => {
-    client
-        .query('SELECT f.name AS folder, p.name AS parent\n' +
-            'FROM folders f\n' +
-            'INNER JOIN folders p ON f.parent = p.code\n' +
-            'ORDER BY p.name')
-        .then(folders => res.json(createFoldersStructure(folders.rows)))
-        .catch(e => console.error(e.stack))
-};
-
-const handleFullGoodsUpdate = (req, res) => {
-
-};
-
-const createFoldersStructure = (foldersRows) => {
-
-    let currParent = {};
-    let foldersStructure = [];
-    foldersRows.forEach(elem => {
-        if (currParent.name !== elem.parent) {
-            currParent = createFolderObject(elem.parent);
-            foldersStructure.push(currParent);
-        }
-        currParent.children.push(createFolderObject(elem.folder));
-    });
-
-    return foldersStructure;
-};
-
-const createFolderObject = (folderName) => {
-    return {
-        name: folderName,
-        children: []
-    }
 };
 
 const handleGoodsPost = (req, res) => {
@@ -133,5 +94,72 @@ const getAttributesInsertString = (good,atrArray) => {
         return accum;
     }, '');
 };
+//goods & atributes}
 
-module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet, handleGoodsPost, handleFullGoodsUpdate};
+
+//{folders & filters
+const handleFoldersGet = (req, res) => {
+    client
+        .query('SELECT f.folder_name AS folder, p.folder_name AS parent\n' +
+            'FROM folders f\n' +
+            'INNER JOIN folders p ON f.parent = p.code\n' +
+            'ORDER BY p.name')
+        .then(folders => res.json(createFoldersStructure(folders.rows)))
+        .catch(e => console.error(e.stack));
+};
+
+const createFoldersStructure = (foldersRows) => {
+
+    let currParent = {};
+    let foldersStructure = [];
+    foldersRows.forEach(elem => {
+        if (currParent.name !== elem.parent) {
+            currParent = createFolderObject(elem.parent);
+            foldersStructure.push(currParent);
+        }
+        currParent.children.push(createFolderObject(elem.folder));
+    });
+
+    return foldersStructure;
+};
+
+const createFolderObject = (folderName) => {
+    return {
+        name: folderName,
+        children: []
+    }
+};
+
+const handleFoldersPost = (req, res) => {
+
+    new Promise.resolve(JSON.parse(req.body))
+        .then(foldersObject => updaetFolders(foldersObject))
+        .then(res.json('folders structure updated successfully'))
+        .catch(e => console.error(e.stack));
+
+};
+
+const updateFolders = (foldersObject) => {
+    const updateStrings = foldersObject.reduce((accum, parent)=>{
+        accum.parents += `(${parent.code}, ${parent.name},0),`;
+        accum.children += parent.children.reduce((childrenValues, cjhild)=>{
+            childrenValues += `(${cjhild.code}, ${cjhild.name},${parent.code}),`;
+            return childrenValues;
+        },'');
+        return accum;
+    }, {parents:'', children:''});
+
+    updateStrings.children = updateStrings.children.slice(0,-1);
+
+    return client
+            .query('INSERT INTO public.folders (code,folder_name,parent) ' +
+                updateStrings.parents + updateStrings.children +
+                '\n on conflict (code) do update set folder_name=excluded.folder_name, parent=excluded.parent');
+};
+
+const handleFiltersGet = (req, res, pg) => {
+
+};
+//folders & filters}
+
+module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet, handleGoodsPost, handleFoldersPost};

@@ -4,11 +4,8 @@
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/deploy_scemas.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/deploy_scemas.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/postgres/seed/seed.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/seed/seed.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/2_goods.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/3_goods.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/3_folders.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/2_folders.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/4_attributes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/4_attributes.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/2_folders.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/2_folders.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,14 +97,7 @@
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
       <workItem from="1570646685429" duration="11372000" />
-      <workItem from="1571683779391" duration="11152000" />
-    </task>
-    <task id="LOCAL-00008" summary="goods table updated">
-      <created>1557172938009</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1557172938009</updated>
+      <workItem from="1571683779391" duration="14208000" />
     </task>
     <task id="LOCAL-00009" summary="docker environment set up and tested">
       <created>1557493741050</created>
@@ -445,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572159568340</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="fixes">
+      <created>1572160690208</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1572160690208</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TodoView">
@@ -478,7 +475,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="register methods finished - almost" />
     <MESSAGE value="some update for redis deployment" />
     <MESSAGE value="port log update" />
     <MESSAGE value="static serving added" />
@@ -503,6 +499,19 @@
     <MESSAGE value="goods update function added" />
     <MESSAGE value="attributes update algorithm added" />
     <MESSAGE value="tables seed updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="tables seed updated" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/controllers/infoInn.js</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
