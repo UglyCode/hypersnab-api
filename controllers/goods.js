@@ -30,7 +30,10 @@ const handleGoodsGet = (req, res) =>{
 const handleGoodsPost = (req, res) => {
 
     Promise.resolve(req.body)
-        .then(goodsJSON => JSON.parse(goodsJSON))
+        // .then(goodsJSON => {
+        //     console.log(typeof(goodsJSON));
+        //     return JSON.parse(goodsJSON
+        //     )})
         .then(goodsData => updateGoodsData(goodsData, true))
         .then(gpData => res.json(gpData))
         .catch(e => {
@@ -48,16 +51,16 @@ const updateGoodsData = async (goods, clearTables=false) =>{
     const insertedValues = goods.reduce((accum,elem,i,arr) => {
         const {code, folder, description, measure, price, spec, quantity, sort} = elem;
         accum.goods     += `('${code}', '${folder}', '${description}', '${measure}','${sort}')` + ((i===arr.length-1) ?' ':', ');
-        accum.prices    += `(${code}, '${price}', now(),'${spec}')` + ((i===arr.length-1) ?' ':', ');
-        accum.stock     += `(${code}, '${quantity}', 0, now())` + ((i===arr.length-1) ?' ':', ');
+        accum.prices    += `(${code}, ${price}, now(),'${spec}')` + ((i===arr.length-1) ?' ':', ');
+        accum.stock     += `(${code}, ${quantity}, 0, now())` + ((i===arr.length-1) ?' ':', ');
         accum.attributes+= ''; //getAttributesInsertString(elem.code, elem.attributes);
         return accum;
     }, {goods:' ', prices: '',stock: '', attributes:''});
 
     await updateGoods(insertedValues.goods);
     await Promise.all([
-        updateStock(insertedValues.prices),
-        updatePrices(insertedValues.stock)
+        updateStock(insertedValues.stock),
+        updatePrices(insertedValues.prices)
      //   updateAttributes(insertedValues.attributes)
     ]);
 
@@ -79,7 +82,7 @@ const updatePrices = (prices) => {
 };
 
 const updateStock = (stock) => {
-    return client.query('INSERT INTO Columns (good, stock, maxorder, updated) VALUES ' + stock +
+    return client.query('INSERT INTO stock (good, stock, maxorder, updated) VALUES ' + stock +
         '\n on conflict (good) do update set stock=excluded.stock, updated=now(), maxorder=excluded.maxorder');
 };
 
@@ -103,7 +106,7 @@ const handleFoldersGet = (req, res) => {
         .query('SELECT f.folder_name AS folder, p.folder_name AS parent\n' +
             'FROM folders f\n' +
             'INNER JOIN folders p ON f.parent = p.code\n' +
-            'ORDER BY p.name')
+            'ORDER BY p.folder_name')
         .then(folders => res.json(createFoldersStructure(folders.rows)))
         .catch(e => console.error(e.stack));
 };
@@ -133,13 +136,14 @@ const createFolderObject = (folderName) => {
 const handleFoldersPost = (req, res) => {
 
     new Promise.resolve(JSON.parse(req.body))
-        .then(foldersObject => updaetFolders(foldersObject))
+        .then(foldersObject => updateFolders(foldersObject))
         .then(res.json('folders structure updated successfully'))
         .catch(e => console.error(e.stack));
 
 };
 
 const updateFolders = (foldersObject) => {
+
     const updateStrings = foldersObject.reduce((accum, parent)=>{
         accum.parents += `(${parent.code}, ${parent.name},0),`;
         accum.children += parent.children.reduce((childrenValues, cjhild)=>{
@@ -157,7 +161,7 @@ const updateFolders = (foldersObject) => {
                 '\n on conflict (code) do update set folder_name=excluded.folder_name, parent=excluded.parent');
 };
 
-const handleFiltersGet = (req, res, pg) => {
+const handleFiltersGet = (req, res) => {
 
 };
 //folders & filters}

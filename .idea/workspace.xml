@@ -4,8 +4,7 @@
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/seed/seed.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/seed/seed.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/2_folders.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/2_folders.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,14 +96,7 @@
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
       <workItem from="1570646685429" duration="11372000" />
-      <workItem from="1571683779391" duration="14208000" />
-    </task>
-    <task id="LOCAL-00009" summary="docker environment set up and tested">
-      <created>1557493741050</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1557493741050</updated>
+      <workItem from="1571683779391" duration="16011000" />
     </task>
     <task id="LOCAL-00010" summary="login and register routes has been finished and tested">
       <created>1557516841386</created>
@@ -442,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572160690208</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="folder post handler added">
+      <created>1572163741594</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1572163741594</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TodoView">
@@ -475,7 +474,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="some update for redis deployment" />
     <MESSAGE value="port log update" />
     <MESSAGE value="static serving added" />
     <MESSAGE value="port tort" />
@@ -500,7 +498,8 @@
     <MESSAGE value="attributes update algorithm added" />
     <MESSAGE value="tables seed updated" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="folder post handler added" />
+    <option name="LAST_COMMIT_MESSAGE" value="folder post handler added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
