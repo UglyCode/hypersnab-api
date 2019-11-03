@@ -135,19 +135,22 @@ const createFolderObject = (folderName) => {
 
 const handleFoldersPost = (req, res) => {
 
-    new Promise.resolve(JSON.parse(req.body))
+    Promise.resolve(req.body)
         .then(foldersObject => updateFolders(foldersObject))
-        .then(res.json('folders structure updated successfully'))
-        .catch(e => console.error(e.stack));
+        .then(query => res.json('folders structure updated successfully: ' + query))
+        .catch(e => {
+            console.error(e.stack);
+            res.status(500).json(e);
+        });
 
 };
 
 const updateFolders = (foldersObject) => {
 
     const updateStrings = foldersObject.reduce((accum, parent)=>{
-        accum.parents += `(${parent.code}, ${parent.name},0),`;
+        accum.parents += `('${parent.code}', '${parent.name}','0'),`;
         accum.children += parent.children.reduce((childrenValues, cjhild)=>{
-            childrenValues += `(${cjhild.code}, ${cjhild.name},${parent.code}),`;
+            childrenValues += `('${cjhild.code}', '${cjhild.name}','${parent.code}'),`;
             return childrenValues;
         },'');
         return accum;
@@ -155,10 +158,14 @@ const updateFolders = (foldersObject) => {
 
     updateStrings.children = updateStrings.children.slice(0,-1);
 
+    console.log('INSERT INTO public.folders (code,folder_name,parent) VALUES ' +
+    updateStrings.parents + updateStrings.children +
+    ' on conflict (code) do update set folder_name=excluded.folder_name, parent=excluded.parent');
+
     return client
-            .query('INSERT INTO public.folders (code,folder_name,parent) ' +
+            .query('INSERT INTO public.folders (code,folder_name,parent) VALUES ' +
                 updateStrings.parents + updateStrings.children +
-                '\n on conflict (code) do update set folder_name=excluded.folder_name, parent=excluded.parent');
+                ' on conflict (code) do update set folder_name=excluded.folder_name, parent=excluded.parent');
 };
 
 const handleFiltersGet = (req, res) => {

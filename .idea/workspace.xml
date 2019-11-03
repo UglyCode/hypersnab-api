@@ -4,7 +4,6 @@
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,14 +95,7 @@
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
       <workItem from="1570646685429" duration="11372000" />
-      <workItem from="1571683779391" duration="16011000" />
-    </task>
-    <task id="LOCAL-00010" summary="login and register routes has been finished and tested">
-      <created>1557516841386</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1557516841386</updated>
+      <workItem from="1571683779391" duration="18411000" />
     </task>
     <task id="LOCAL-00011" summary="test">
       <created>1557517495787</created>
@@ -441,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572163741594</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="folders &amp; goods apdate\get">
+      <created>1572291578995</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1572291578996</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView">
@@ -474,7 +473,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="port log update" />
     <MESSAGE value="static serving added" />
     <MESSAGE value="port tort" />
     <MESSAGE value="ENV" />
@@ -499,7 +497,8 @@
     <MESSAGE value="tables seed updated" />
     <MESSAGE value="fixes" />
     <MESSAGE value="folder post handler added" />
-    <option name="LAST_COMMIT_MESSAGE" value="folder post handler added" />
+    <MESSAGE value="folders &amp; goods apdate\get" />
+    <option name="LAST_COMMIT_MESSAGE" value="folders &amp; goods apdate\get" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
