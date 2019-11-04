@@ -158,10 +158,6 @@ const updateFolders = (foldersObject) => {
 
     updateStrings.children = updateStrings.children.slice(0,-1);
 
-    console.log('INSERT INTO public.folders (code,folder_name,parent) VALUES ' +
-    updateStrings.parents + updateStrings.children +
-    ' on conflict (code) do update set folder_name=excluded.folder_name, parent=excluded.parent');
-
     return client
             .query('INSERT INTO public.folders (code,folder_name,parent) VALUES ' +
                 updateStrings.parents + updateStrings.children +

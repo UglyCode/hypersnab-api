@@ -95,14 +95,7 @@
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
       <workItem from="1570646685429" duration="11372000" />
-      <workItem from="1571683779391" duration="18411000" />
-    </task>
-    <task id="LOCAL-00011" summary="test">
-      <created>1557517495787</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1557517495787</updated>
+      <workItem from="1571683779391" duration="18556000" />
     </task>
     <task id="LOCAL-00012" summary="backend methods updated for profile page reasons">
       <created>1557683454433</created>
@@ -440,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572291578996</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="folders &amp; goods apdate fixed">
+      <created>1572780352484</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1572780352484</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TodoView">
@@ -473,7 +473,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="static serving added" />
     <MESSAGE value="port tort" />
     <MESSAGE value="ENV" />
     <MESSAGE value="images added" />
@@ -498,7 +497,8 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="folder post handler added" />
     <MESSAGE value="folders &amp; goods apdate\get" />
-    <option name="LAST_COMMIT_MESSAGE" value="folders &amp; goods apdate\get" />
+    <MESSAGE value="folders &amp; goods apdate fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="folders &amp; goods apdate fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
