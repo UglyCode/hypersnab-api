@@ -2,7 +2,7 @@
 
 -- DROP TABLE public.goodsattributes;
 
-CREATE TABLE public.goodsattributes (
+CREATE TABLE public.goods_attributes (
 	good varchar(16) NOT NULL,
 	"attribute" int4 NOT NULL,
 	value varchar(32) NOT NULL,

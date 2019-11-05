@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/postgres/tables/CreateTablessql.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/10_ordergoods.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/10_ordergoods.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres/tables/5_goodsattributes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/5_goodsattributes.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,14 +97,7 @@
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
       <workItem from="1570646685429" duration="11372000" />
-      <workItem from="1571683779391" duration="18556000" />
-    </task>
-    <task id="LOCAL-00012" summary="backend methods updated for profile page reasons">
-      <created>1557683454433</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1557683454433</updated>
+      <workItem from="1571683779391" duration="19558000" />
     </task>
     <task id="LOCAL-00013" summary="register methods finished - almost">
       <created>1557951498281</created>
@@ -440,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572780352484</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="folders &amp; goods update fixed">
+      <created>1572895495567</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1572895495568</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TodoView">
@@ -473,7 +475,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="port tort" />
     <MESSAGE value="ENV" />
     <MESSAGE value="images added" />
     <MESSAGE value="images updated" />
@@ -498,7 +499,8 @@
     <MESSAGE value="folder post handler added" />
     <MESSAGE value="folders &amp; goods apdate\get" />
     <MESSAGE value="folders &amp; goods apdate fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="folders &amp; goods apdate fixed" />
+    <MESSAGE value="folders &amp; goods update fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="folders &amp; goods update fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
