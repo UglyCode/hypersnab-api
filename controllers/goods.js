@@ -50,11 +50,11 @@ const updateGoodsData = async (goods, clearTables=false) =>{
 
     const insertedValues = goods.reduce((accum,elem,i,arr) => {
         const {code, folder, description, measure, price, spec, quantity, sort} = elem;
-        const lastElem = (i===arr.length);
+        const lastElem = (i===arr.length-1);
         accum.goods     += `('${code}', '${folder}', '${description}', '${measure}','${sort}')` + (lastElem ? ' ':', ');
-        accum.prices    += `(${code}, ${price}, now(),'${spec}')` + (lastElem ? ' ':', ');
-        accum.stock     += `(${code}, ${quantity}, 0, now())` + (lastElem ? ' ':', ');
-        accum.attributes+= ''; //getAttributesInsertString(elem.code, elem.attributes);
+        accum.prices    += `('${code}', ${price}, now(), ${spec})` + (lastElem ? ' ':', ');
+        accum.stock     += `('${code}', ${quantity}, 0, now())` + (lastElem ? ' ':', ');
+        //accum.attributes+= getAttributesInsertString(elem.code, elem.attributes);
         return accum;
     }, {goods:' ', prices: '',stock: '', attributes:''});
 
@@ -75,10 +75,10 @@ const clearGoodsTables =  () => {
 const handlePricePost = (req, res) => {
 
     Promise.resolve(req.body.reduce((accum,elem,i,arr) => {
-        accum += `(${elem.good}, ${elem.price}, now(),'${elem.spec}')` + ((i===arr.length) ? ' ':', ');
+        accum += `('${elem.good}', ${elem.price}, now(), ${elem.spec})` + ((i===arr.length-1) ? ' ':', ');
         return accum;
         },''))
-        .then(updatePrices(prices))
+        .then((prices) => updatePrices(prices))
         .then(res.json('prices was updated successfully'))
         .catch(e => {
             console.log(e.stack);
@@ -90,10 +90,10 @@ const handlePricePost = (req, res) => {
 const handleStockPost = (req, res) => {
 
     Promise.resolve(req.body.reduce((accum,elem,i,arr) => {
-        accum += `(${elem.good}, ${elem.stock}, 0, now())` + ((i===arr.length) ? ' ':', ');
+        accum += `('${elem.good}', ${elem.stock}, 0, now())` + ((i===arr.length-1) ? ' ':', ');
         return accum;
         },''))
-        .then(updatePrices(prices))
+        .then((stock) => updateStock(stock))
         .then(res.json('Stock was updated successfully'))
         .catch(e => {
             console.log(e.stack);
