@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/postgres/tables/CreateTablessql.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/10_ordergoods.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/10_ordergoods.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres/tables/5_goodsattributes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/tables/5_goodsattributes.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,14 +95,8 @@
       <workItem from="1569694585958" duration="15685000" />
       <workItem from="1570214838886" duration="3484000" />
       <workItem from="1570646685429" duration="11372000" />
-      <workItem from="1571683779391" duration="19558000" />
-    </task>
-    <task id="LOCAL-00013" summary="register methods finished - almost">
-      <created>1557951498281</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1557951498281</updated>
+      <workItem from="1571683779391" duration="21526000" />
+      <workItem from="1573295099002" duration="1254000" />
     </task>
     <task id="LOCAL-00014" summary="some update for redis deployment">
       <created>1560104683219</created>
@@ -442,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572895495568</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="folders &amp; goods update fixed">
+      <created>1572981107646</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1572981107646</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TodoView">
@@ -508,7 +507,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controllers/infoInn.js</url>
           <line>8</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

@@ -50,9 +50,10 @@ const updateGoodsData = async (goods, clearTables=false) =>{
 
     const insertedValues = goods.reduce((accum,elem,i,arr) => {
         const {code, folder, description, measure, price, spec, quantity, sort} = elem;
-        accum.goods     += `('${code}', '${folder}', '${description}', '${measure}','${sort}')` + ((i===arr.length-1) ?' ':', ');
-        accum.prices    += `(${code}, ${price}, now(),'${spec}')` + ((i===arr.length-1) ?' ':', ');
-        accum.stock     += `(${code}, ${quantity}, 0, now())` + ((i===arr.length-1) ?' ':', ');
+        const lastElem = (i===arr.length);
+        accum.goods     += `('${code}', '${folder}', '${description}', '${measure}','${sort}')` + (lastElem ? ' ':', ');
+        accum.prices    += `(${code}, ${price}, now(),'${spec}')` + (lastElem ? ' ':', ');
+        accum.stock     += `(${code}, ${quantity}, 0, now())` + (lastElem ? ' ':', ');
         accum.attributes+= ''; //getAttributesInsertString(elem.code, elem.attributes);
         return accum;
     }, {goods:' ', prices: '',stock: '', attributes:''});
@@ -69,6 +70,36 @@ const updateGoodsData = async (goods, clearTables=false) =>{
 
 const clearGoodsTables =  () => {
     return client.query('');
+};
+
+const handlePricePost = (req, res) => {
+
+    Promise.resolve(req.body.reduce((accum,elem,i,arr) => {
+        accum += `(${elem.good}, ${elem.price}, now(),'${elem.spec}')` + ((i===arr.length) ? ' ':', ');
+        return accum;
+        },''))
+        .then(updatePrices(prices))
+        .then(res.json('prices was updated successfully'))
+        .catch(e => {
+            console.log(e.stack);
+            res.status(500).json('can not update prices now');
+        });
+
+};
+
+const handleStockPost = (req, res) => {
+
+    Promise.resolve(req.body.reduce((accum,elem,i,arr) => {
+        accum += `(${elem.good}, ${elem.stock}, 0, now())` + ((i===arr.length) ? ' ':', ');
+        return accum;
+        },''))
+        .then(updatePrices(prices))
+        .then(res.json('Stock was updated successfully'))
+        .catch(e => {
+            console.log(e.stack);
+            res.status(500).json('can not update stock now');
+        });
+
 };
 
 const updateGoods = (goods) =>{
@@ -98,7 +129,6 @@ const getAttributesInsertString = (good,atrArray) => {
     }, '');
 };
 //goods & atributes}
-
 
 //{folders & filters
 const handleFoldersGet = (req, res) => {
@@ -169,4 +199,5 @@ const handleFiltersGet = (req, res) => {
 };
 //folders & filters}
 
-module.exports = {handleGoodsGet, handleFoldersGet, handleFiltersGet, handleGoodsPost, handleFoldersPost};
+module.exports = {handleFoldersGet, handleFiltersGet, handleFoldersPost,
+    handleGoodsGet, handleGoodsPost, handlePricePost, handleStockPost};
