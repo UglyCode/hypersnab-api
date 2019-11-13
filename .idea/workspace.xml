@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/orders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,14 +96,7 @@
       <workItem from="1570214838886" duration="3484000" />
       <workItem from="1570646685429" duration="11372000" />
       <workItem from="1571683779391" duration="21526000" />
-      <workItem from="1573295099002" duration="5359000" />
-    </task>
-    <task id="LOCAL-00017" summary="static serving added">
-      <created>1563507186202</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1563507186202</updated>
+      <workItem from="1573295099002" duration="6690000" />
     </task>
     <task id="LOCAL-00018" summary="port tort">
       <created>1563736193206</created>
@@ -440,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573326324141</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="attributes table">
+      <created>1573587491298</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1573587491298</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TodoView">
@@ -473,7 +474,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="images updated" />
     <MESSAGE value="goods api methods and database tables creation added" />
     <MESSAGE value="pg seed file data updated" />
     <MESSAGE value="first folder query added today!" />
@@ -498,7 +498,8 @@
     <MESSAGE value="folders &amp; goods update fixed" />
     <MESSAGE value="Stock &amp; prices separate update" />
     <MESSAGE value="small fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small fixes" />
+    <MESSAGE value="attributes table" />
+    <option name="LAST_COMMIT_MESSAGE" value="attributes table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
