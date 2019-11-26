@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/orders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +29,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my-cheat-sheets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -96,14 +96,9 @@
       <workItem from="1570214838886" duration="3484000" />
       <workItem from="1570646685429" duration="11372000" />
       <workItem from="1571683779391" duration="21526000" />
-      <workItem from="1573295099002" duration="6690000" />
-    </task>
-    <task id="LOCAL-00018" summary="port tort">
-      <created>1563736193206</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1563736193206</updated>
+      <workItem from="1573295099002" duration="8508000" />
+      <workItem from="1574103137931" duration="1807000" />
+      <workItem from="1574792142920" duration="683000" />
     </task>
     <task id="LOCAL-00019" summary="port tort">
       <created>1564686199694</created>
@@ -441,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573587491298</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="orders added">
+      <created>1573671940784</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1573671940785</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TodoView">
@@ -474,7 +476,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="goods api methods and database tables creation added" />
     <MESSAGE value="pg seed file data updated" />
     <MESSAGE value="first folder query added today!" />
     <MESSAGE value="folders structure get handler added" />
@@ -499,7 +500,8 @@
     <MESSAGE value="Stock &amp; prices separate update" />
     <MESSAGE value="small fixes" />
     <MESSAGE value="attributes table" />
-    <option name="LAST_COMMIT_MESSAGE" value="attributes table" />
+    <MESSAGE value="orders added" />
+    <option name="LAST_COMMIT_MESSAGE" value="orders added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -508,6 +510,12 @@
           <url>file://$PROJECT_DIR$/controllers/infoInn.js</url>
           <line>8</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/controllers/goods.js</url>
+          <line>188</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -27,6 +27,17 @@ const handleGoodsGet = (req, res) =>{
         .catch(e => console.error(e.stack))
 };
 
+const handleAttributesGet = (req, res) => {
+    client
+        .query(`SELECT attribute_name as attr, GA.value as value  \n' +
+            'FROM public.goods_attributes AS GA \n' +
+            'INNER JOIN public."attributes" ON "attribute" = code \n' +
+            'WHERE good = ${req.params.good}`
+)
+        .then(goods => res.json(goods.rows))
+        .catch(e => console.error(e.stack))
+};
+
 const handleGoodsPost = (req, res) => {
 
     Promise.resolve(req.body)
@@ -200,4 +211,4 @@ const handleFiltersGet = (req, res) => {
 //folders & filters}
 
 module.exports = {handleFoldersGet, handleFiltersGet, handleFoldersPost,
-    handleGoodsGet, handleGoodsPost, handlePricePost, handleStockPost};
+    handleGoodsGet, handleGoodsPost, handlePricePost, handleStockPost, handleAttributesGet};
