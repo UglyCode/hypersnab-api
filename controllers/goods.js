@@ -65,15 +65,15 @@ const updateGoodsData = async (goods, clearTables=false) =>{
         accum.goods     += `('${code}', '${folder}', '${description}', '${measure}','${sort}')` + (lastElem ? ' ':', ');
         accum.prices    += `('${code}', ${price}, now(), ${spec})` + (lastElem ? ' ':', ');
         accum.stock     += `('${code}', ${quantity}, 0, now())` + (lastElem ? ' ':', ');
-        //accum.attributes+= getAttributesInsertString(elem.code, elem.attributes);
+        accum.attributes+= getAttributesInsertString(elem.code, elem.attributes);
         return accum;
     }, {goods:' ', prices: '',stock: '', attributes:''});
 
     await updateGoods(insertedValues.goods);
     await Promise.all([
         updateStock(insertedValues.stock),
-        updatePrices(insertedValues.prices)
-     //   updateAttributes(insertedValues.attributes)
+        updatePrices(insertedValues.prices),
+        updateAttributes(insertedValues.attributes)
     ]);
 
     return 'goods update successfully, smile-smile';
@@ -129,11 +129,11 @@ const updateStock = (stock) => {
 };
 
 const updateAttributes = (attributes) => {
-    return client.query('INSERT INTO stock (good, attribute, value) VALUES ' + attributes +
+    return client.query('INSERT INTO public.goods_attributes (good,"attribute",value) VALUES ' + attributes +
         '\n on conflict (good, attribute) do update set value=excluded.value');
 };
 
-const getAttributesInsertString = (good,atrArray) => {
+const getAttributesInsertString = (good, atrArray) => {
     return atrArray.reduce((accum,elem,i,arr) => {
         accum += `(${good}, '${elem[0]}', '${elem[1]}'` + ((i===arr.length-1) ?' ':', ');
         return accum;
