@@ -61,7 +61,11 @@ const updateGoodsData = async (goods, clearTables=false) =>{
 
     const insertedValues = goods.reduce((accum,elem,i,arr) => {
         const {code, folder, description, measure, price, spec, quantity, sort} = elem;
-        const lastElem = (i===arr.length-1);
+        const lastElem = (i === arr.length - 1);
+
+        //TODO:
+        // Separate to diff procedures DRY bitch!
+
         accum.goods     += `('${code}', '${folder}', '${description}', '${measure}','${sort}')` + (lastElem ? ' ':', ');
         accum.prices    += `('${code}', ${price}, now(), ${spec})` + (lastElem ? ' ':', ');
         accum.stock     += `('${code}', ${quantity}, 0, now())` + (lastElem ? ' ':', ');
@@ -100,10 +104,25 @@ const handlePricePost = (req, res) => {
 
 const handleStockPost = (req, res) => {
 
+    Promise.resolve(req.body.reduce((accum,elem) => {
+        accum += getAttributesInsertString(elem.code, elem.attributes);
+        return accum;
+        },''))
+        .then((attributesString) => updateAttributes(attributesString))
+        .then(res.json('Attributes was updated successfully'))
+        .catch(e => {
+            console.log(e.stack);
+            res.status(500).json('can not update attributes now');
+        });
+
+};
+
+const handleAtttributesPost = (req, res) => {
+
     Promise.resolve(req.body.reduce((accum,elem,i,arr) => {
         accum += `('${elem.good}', ${elem.stock}, 0, now())` + ((i===arr.length-1) ? ' ':', ');
         return accum;
-        },''))
+    },''))
         .then((stock) => updateStock(stock))
         .then(res.json('Stock was updated successfully'))
         .catch(e => {
