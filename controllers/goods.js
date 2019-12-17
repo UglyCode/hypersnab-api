@@ -226,8 +226,11 @@ const updateFolders = (foldersObject) => {
 
 const handleFiltersGet = (req, res) => {
 
+    return [
+        {filterName:'Power', filterValues: ['1W, 10W, 100w, 1111w']},
+    ];
 };
 //folders & filters}
 
-module.exports = {handleFoldersGet, handleFiltersGet, handleFoldersPost,
+module.exports = {handleFoldersGet, handleFiltersGet, handleFoldersPost, handleFiltersGet,
     handleGoodsGet, handleGoodsPost, handlePricePost, handleStockPost, handleAttributesGet};
