@@ -228,6 +228,7 @@ const handleFiltersGet = (req, res) => {
 
     return [
         {filterName:'Power', filterValues: ['1W, 10W, 100w, 1111w']},
+        {filterName:'Сurrent', filterValues: ['1A, 10A, 100A, 1111A']}
     ];
 };
 //folders & filters}
