@@ -5,7 +5,7 @@ const client = new Client({
 });
 client.connect();
 
-//{goods & atributes
+//{goods
 const handleGoodsGet = (req, res) =>{
     client
         .query('select goods.code as code, \n' +
@@ -22,20 +22,34 @@ const handleGoodsGet = (req, res) =>{
             'left join prices as prices\n' +
             '\ton goods.code = prices.good\n' +
             'left join stock as stock\n' +
-            '\ton goods.code = stock.good')
+            '\ton goods.code = stock.good' +
+            (req.params.folder ? `\n where goods.folder = '${req.params.folder}'` : '')
+            + parseAttributeFilter(req.query.attribure_filter)
+        )
         .then(goods => res.json(goods.rows))
         .catch(e => console.error(e.stack))
 };
 
-const handleAttributesGet = (req, res) => {
-    client
-        .query(`SELECT attribute_name as attr, GA.value as value  \n' +
-            'FROM public.goods_attributes AS GA \n' +
-            'INNER JOIN public."attributes" ON "attribute" = code \n' +
-            'WHERE good = ${req.params.good}`
-)
-        .then(goods => res.json(goods.rows))
-        .catch(e => console.error(e.stack))
+const  parseAttributeFilter = (filterString) => {
+
+    let filterArray = [];
+    try {
+        filterArray = JSON.parse(filterString);
+        if(!filterArray.length) return '';
+        return filterArray.reduce((accum,elem,i,arr) => {
+            accum += `(attr."attribute" = ${elem.attribute} and attr.value in ${JSON.stringify(elem.values)
+                    .replace('[','(')
+                    .replace(/"/g,"'")
+                    .replace(']',')')})`
+                + ((i===arr.length-1) ? ')':' OR ');
+            return accum;
+        }, `and goods.code in (SELECT distinct attr.good
+            FROM public.goods_attributes as attr
+            where `);
+    } catch (e) {
+        console.log(e.stack);
+        return '';
+    }
 };
 
 const handleGoodsPost = (req, res) => {
@@ -83,26 +97,30 @@ const updateGoodsData = async (goods, clearTables=false) =>{
     return 'goods update successfully, smile-smile';
 };
 
+const updateGoods = (goods) =>{
+    return client.query('INSERT INTO goods (code, folder, description, measure, sort) VALUES ' + goods +
+        '\n on conflict (code) do update set folder=excluded.folder, description=excluded.description, measure=excluded.measure, sort=excluded.sort;');
+};
+
 const clearGoodsTables =  () => {
     return client.query('');
 };
+//goods}
 
-const handlePricePost = (req, res) => {
-
-    Promise.resolve(req.body.reduce((accum,elem,i,arr) => {
-        accum += `('${elem.good}', ${elem.price}, now(), ${elem.spec})` + ((i===arr.length-1) ? ' ':', ');
-        return accum;
-        },''))
-        .then((prices) => updatePrices(prices))
-        .then(res.json('prices was updated successfully'))
-        .catch(e => {
-            console.log(e.stack);
-            res.status(500).json('can not update prices now');
-        });
-
+//{attributes & filters
+const handleAttributesGet = (req, res) => {
+    client
+        .query(
+            `SELECT attribute_name as attr, GA.value as value
+                    FROM public.goods_attributes AS GA 
+                    INNER JOIN public."attributes" ON "attribute" = code
+                    WHERE good = '${req.params.good}'`
+        )
+        .then(goods => res.json(goods.rows))
+        .catch(e => console.error(e.stack))
 };
 
-const handleStockPost = (req, res) => {
+const handleAtttributesPost = (req, res) => {
 
     Promise.resolve(req.body.reduce((accum,elem) => {
         accum += getAttributesInsertString(elem.code, elem.attributes);
@@ -117,7 +135,55 @@ const handleStockPost = (req, res) => {
 
 };
 
-const handleAtttributesPost = (req, res) => {
+const updateAttributes = (attributes) => {
+    return client.query('INSERT INTO public.goods_attributes (good,"attribute",value) VALUES ' + attributes +
+        '\n on conflict (good, attribute) do update set value=excluded.value');
+};
+
+const getAttributesInsertString = (good, atrArray) => {
+    return atrArray.reduce((accum,elem,i,arr) => {
+        accum += `(${good}, '${elem[0]}', '${elem[1]}'` + ((i===arr.length-1) ?' ':', ');
+        return accum;
+    }, '');
+};
+
+const handleFiltersGet = (req, res) => {
+
+    client
+        .query(
+            `select attr.code as filter_code, attr.attribute_name as filter_name
+                    from public."attributes" as attr
+                    where attr.code IN 
+                        \t(SELECT distinct "attribute"
+                        \tFROM public.goods_attributes as attr
+                        \tinner join public.goods as goods
+                        \ton attr.good = goods.code
+                        \twhere goods.folder = '${req.params.folder}')`
+        )
+        .then(filters => res.json(filters.rows))
+        .catch(e => console.error(e.stack))
+
+
+};
+//attributes & filters}
+
+//{prices & stock
+const handlePricePost = (req, res) => {
+
+    Promise.resolve(req.body.reduce((accum,elem,i,arr) => {
+        accum += `('${elem.good}', ${elem.price}, now(), ${elem.spec})` + ((i===arr.length-1) ? ' ':', ');
+        return accum;
+    },''))
+        .then((prices) => updatePrices(prices))
+        .then(res.json('prices was updated successfully'))
+        .catch(e => {
+            console.log(e.stack);
+            res.status(500).json('can not update prices now');
+        });
+
+};
+
+const handleStockPost = (req, res) => {
 
     Promise.resolve(req.body.reduce((accum,elem,i,arr) => {
         accum += `('${elem.good}', ${elem.stock}, 0, now())` + ((i===arr.length-1) ? ' ':', ');
@@ -132,11 +198,6 @@ const handleAtttributesPost = (req, res) => {
 
 };
 
-const updateGoods = (goods) =>{
-    return client.query('INSERT INTO goods (code, folder, description, measure, sort) VALUES ' + goods +
-    '\n on conflict (code) do update set folder=excluded.folder, description=excluded.description, measure=excluded.measure, sort=excluded.sort;');
-};
-
 const updatePrices = (prices) => {
     return client.query('INSERT INTO prices (good, price, updated, spec) VALUES ' + prices +
     '\n on conflict (good) do update set price=excluded.price, updated=now(), spec=excluded.spec');
@@ -146,21 +207,9 @@ const updateStock = (stock) => {
     return client.query('INSERT INTO stock (good, stock, maxorder, updated) VALUES ' + stock +
         '\n on conflict (good) do update set stock=excluded.stock, updated=now(), maxorder=excluded.maxorder');
 };
+//prices & stock}
 
-const updateAttributes = (attributes) => {
-    return client.query('INSERT INTO public.goods_attributes (good,"attribute",value) VALUES ' + attributes +
-        '\n on conflict (good, attribute) do update set value=excluded.value');
-};
-
-const getAttributesInsertString = (good, atrArray) => {
-    return atrArray.reduce((accum,elem,i,arr) => {
-        accum += `(${good}, '${elem[0]}', '${elem[1]}'` + ((i===arr.length-1) ?' ':', ');
-        return accum;
-    }, '');
-};
-//goods & atributes}
-
-//{folders & filters
+//{folders
 const handleFoldersGet = (req, res) => {
     client
         .query('SELECT f.folder_name AS folder, p.folder_name AS parent\n' +
@@ -223,15 +272,7 @@ const updateFolders = (foldersObject) => {
                 updateStrings.parents + updateStrings.children +
                 ' on conflict (code) do update set folder_name=excluded.folder_name, parent=excluded.parent');
 };
+//folders}
 
-const handleFiltersGet = (req, res) => {
-
-    return [
-        {filterName:'Power', filterValues: ['1W, 10W, 100w, 1111w']},
-        {filterName:'Сurrent', filterValues: ['1A, 10A, 100A, 1111A']}
-    ];
-};
-//folders & filters}
-
-module.exports = {handleFoldersGet, handleFiltersGet, handleFoldersPost, handleFiltersGet,
-    handleGoodsGet, handleGoodsPost, handlePricePost, handleStockPost, handleAttributesGet};
+module.exports = {handleFoldersGet, handleFoldersPost, handleGoodsGet, handleGoodsPost,
+    handleAttributesGet, handleAtttributesPost, handlePricePost, handleStockPost, handleFiltersGet};
