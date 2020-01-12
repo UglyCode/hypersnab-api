@@ -217,7 +217,7 @@ const updateStock = (stock) => {
 //{folders
 const handleFoldersGet = (req, res) => {
     client
-        .query('SELECT f.code as code, f.folder_name AS folder, p.folder_name AS parent\n' +
+        .query('SELECT f.code as code, f.folder_name AS folder, p.code as parent_code, p.folder_name AS parent\n' +
             'FROM folders f\n' +
             'INNER JOIN folders p ON f.parent = p.code\n' +
             'ORDER BY p.folder_name')
@@ -231,17 +231,18 @@ const createFoldersStructure = (foldersRows) => {
     let foldersStructure = [];
     foldersRows.forEach(elem => {
         if (currParent.name !== elem.parent) {
-            currParent = createFolderObject(elem.parent);
+            currParent = createFolderObject(elem.parent, elem.parent_code);
             foldersStructure.push(currParent);
         }
-        currParent.children.push(createFolderObject(elem.folder));
+        currParent.children.push(createFolderObject(elem.folder, elem.code));
     });
 
     return foldersStructure;
 };
 
-const createFolderObject = (folderName) => {
+const createFolderObject = (folderName, folderCode) => {
     return {
+        code: folderCode,
         name: folderName,
         children: []
     }
