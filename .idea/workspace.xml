@@ -4,7 +4,6 @@
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,14 +100,7 @@
       <workItem from="1574103137931" duration="1807000" />
       <workItem from="1574792142920" duration="3838000" />
       <workItem from="1576607512117" duration="3618000" />
-      <workItem from="1578569012752" duration="8730000" />
-    </task>
-    <task id="LOCAL-00025" summary="images updated">
-      <created>1568918864368</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1568918864368</updated>
+      <workItem from="1578569012752" duration="9535000" />
     </task>
     <task id="LOCAL-00026" summary="goods api methods and database tables creation added">
       <created>1569180274202</created>
@@ -446,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576693247177</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="goods GET big updated added">
+      <created>1578773743624</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1578773743625</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TodoView">
@@ -479,7 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="images update" />
     <MESSAGE value="attributes added to pg" />
     <MESSAGE value="goods POST methods structure added" />
     <MESSAGE value="goods POST parsing method updated" />
@@ -504,7 +502,8 @@
     <MESSAGE value="attributes update procedure updated genially" />
     <MESSAGE value="attributes update procedures updated genially" />
     <MESSAGE value="folder attributes &amp; filters fetching" />
-    <option name="LAST_COMMIT_MESSAGE" value="folder attributes &amp; filters fetching" />
+    <MESSAGE value="goods GET big updated added" />
+    <option name="LAST_COMMIT_MESSAGE" value="goods GET big updated added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

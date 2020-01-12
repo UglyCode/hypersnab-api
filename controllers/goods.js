@@ -23,11 +23,16 @@ const handleGoodsGet = (req, res) =>{
             '\ton goods.code = prices.good\n' +
             'left join stock as stock\n' +
             '\ton goods.code = stock.good' +
-            (req.params.folder ? `\n where goods.folder = '${req.params.folder}'` : '')
-            + parseAttributeFilter(req.query.attribure_filter)
+            getFullFiltertext(req)
         )
         .then(goods => res.json(goods.rows))
         .catch(e => console.error(e.stack))
+};
+
+const getFullFiltertext = (req)=>{
+    if (!req.params.folder) return '';
+    return `\n where goods.folder = '${req.params.folder}'`
+        + parseAttributeFilter(req.query.attribure_filter)
 };
 
 const  parseAttributeFilter = (filterString) => {
