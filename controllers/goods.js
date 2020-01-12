@@ -217,7 +217,7 @@ const updateStock = (stock) => {
 //{folders
 const handleFoldersGet = (req, res) => {
     client
-        .query('SELECT f.folder_name AS folder, p.folder_name AS parent\n' +
+        .query('SELECT f.code as code, f.folder_name AS folder, p.folder_name AS parent\n' +
             'FROM folders f\n' +
             'INNER JOIN folders p ON f.parent = p.code\n' +
             'ORDER BY p.folder_name')
