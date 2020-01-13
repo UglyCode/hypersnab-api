@@ -156,16 +156,32 @@ const handleFiltersGet = (req, res) => {
 
     client
         .query(
-            `select attr.code as filter_code, attr.attribute_name as filter_name
-                    from public."attributes" as attr
-                    where attr.code IN 
-                        \t(SELECT distinct "attribute"
-                        \tFROM public.goods_attributes as attr
-                        \tinner join public.goods as goods
-                        \ton attr.good = goods.code
-                        \twhere goods.folder = '${req.params.folder}')`
+            `select attr.code as filter_code, attr.attribute_name as filter_name, goods_attr.val as value
+                        from public."attributes" as attr
+                        inner join
+                            (SELECT distinct "attribute" as good_attr, value as val
+                            FROM public.goods_attributes as attr
+                            inner join public.goods as goods
+                            on attr.good = goods.code
+                            where goods.folder = '${req.params.folder}') as goods_attr
+                        on attr.code = goods_attr.good_attr
+                        order by filter_code`
         )
-        .then(filters => res.json(filters.rows))
+        .then(filters => {
+            const filterObject =  filters.rows.reduce((accum,elem,i,arr)=>{
+                if(i===0 || elem.filter_code !== arr[i-1].filter_code){
+                    accum.push({
+                        filter_code: elem.filter_code,
+                        filter_name: elem.filter_name,
+                        filter_values: [elem.value]
+                    });
+                } else {
+                    accum[accum.length-1].filter_values.push(elem.value);
+                }
+                return accum;
+            },[]);
+            res.json(filterObject);
+        })
         .catch(e => console.error(e.stack))
 
 
