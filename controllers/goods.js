@@ -35,7 +35,7 @@ const getFullFiltertext = (req)=>{
         + parseAttributeFilter(req.query.attribure_filter)
 };
 
-const  parseAttributeFilter = (filterString) => {
+const parseAttributeFilter = (filterString) => {
 
     let filterArray = [];
     try {
@@ -96,7 +96,7 @@ const updateGoodsData = async (goods, clearTables=false) =>{
     await Promise.all([
         updateStock(insertedValues.stock),
         updatePrices(insertedValues.prices),
-        updateAttributes(insertedValues.attributes)
+        updateGoodAttributes(insertedValues.attributes)
     ]);
 
     return 'goods update successfully, smile-smile';
@@ -125,7 +125,7 @@ const handleAttributesGet = (req, res) => {
         .catch(e => console.error(e.stack))
 };
 
-const handleAtttributesPost = (req, res) => {
+const handleGoodAttributesPost = (req, res) => {
 
     Promise.resolve(req.body.reduce((accum,elem) => {
         accum += getAttributesInsertString(elem.code, elem.attributes);
@@ -140,9 +140,29 @@ const handleAtttributesPost = (req, res) => {
 
 };
 
-const updateAttributes = (attributes) => {
+const handleAttributesPost = (req, res) => {
+
+    Promise.resolve(req.body.reduce((accum,elem,i,arr) => {
+        accum += `('${elem.code}', '${elem.name}', '${elem.measure}')` + ((i===arr.length-1) ? ' ':', ');
+        return accum;
+        },''))
+        .then((attributesString) => updateGoodAttributes(attributesString))
+        .then(res.json('Attributes was updated successfully'))
+        .catch(e => {
+            console.log(e.stack);
+            res.status(500).json('can not update attributes now');
+        });
+
+};
+
+const updateGoodAttributes = (attributes) => {
     return client.query('INSERT INTO public.goods_attributes (good,"attribute",value) VALUES ' + attributes +
         '\n on conflict (good, attribute) do update set value=excluded.value');
+};
+
+const updateAttributes = (attributes) => {
+    return client.query('INSERT INTO public."attributes" (code,attribute_name,measure)\n' + attributes +
+        '\n on conflict (code) do update set code=excluded.code, attribute_name=excluded.attribute_name, measure=excluded.measure;');
 };
 
 const getAttributesInsertString = (good, atrArray) => {
@@ -296,5 +316,5 @@ const updateFolders = (foldersObject) => {
 };
 //folders}
 
-module.exports = {handleFoldersGet, handleFoldersPost, handleGoodsGet, handleGoodsPost,
-    handleAttributesGet, handleAtttributesPost, handlePricePost, handleStockPost, handleFiltersGet};
+module.exports = {handleFoldersGet, handleFoldersPost, handleGoodsGet, handleGoodsPost, handleAttributesPost,
+    handleAttributesGet, handleGoodAttributesPost, handlePricePost, handleStockPost, handleFiltersGet};
