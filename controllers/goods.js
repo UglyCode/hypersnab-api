@@ -132,7 +132,7 @@ const handleGoodAttributesPost = (req, res) => {
         return accum;
         },''))
         .then((attributesString) => updateAttributes(attributesString))
-        .then(res.json('Attributes was updated successfully'))
+        .then(res.json('Goods attributes was updated successfully'))
         .catch(e => {
             console.log(e.stack);
             res.status(500).json('can not update attributes now');
@@ -146,7 +146,7 @@ const handleAttributesPost = (req, res) => {
         accum += `('${elem.code}', '${elem.name}', '${elem.measure}')` + ((i===arr.length-1) ? ' ':', ');
         return accum;
         },''))
-        .then((attributesString) => updateGoodAttributes(attributesString))
+        .then((attributesString) => updateAttributes(attributesString))
         .then(res.json('Attributes was updated successfully'))
         .catch(e => {
             console.log(e.stack);
@@ -161,7 +161,7 @@ const updateGoodAttributes = (attributes) => {
 };
 
 const updateAttributes = (attributes) => {
-    return client.query('INSERT INTO public."attributes" (code,attribute_name,measure)\n' + attributes +
+    return client.query('INSERT INTO public."attributes" (code,attribute_name,measure)\n VALUES' + attributes +
         '\n on conflict (code) do update set code=excluded.code, attribute_name=excluded.attribute_name, measure=excluded.measure;');
 };
 

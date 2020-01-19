@@ -102,14 +102,7 @@
       <workItem from="1574792142920" duration="3838000" />
       <workItem from="1576607512117" duration="3618000" />
       <workItem from="1578569012752" duration="16018000" />
-      <workItem from="1579200902776" duration="4250000" />
-    </task>
-    <task id="LOCAL-00030" summary="pg seed file data updated">
-      <created>1569436773598</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1569436773598</updated>
+      <workItem from="1579200902776" duration="4868000" />
     </task>
     <task id="LOCAL-00031" summary="pg seed file data updated">
       <created>1569525265145</created>
@@ -447,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578946141306</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="attributes update handler added">
+      <created>1579425241358</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1579425241358</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TodoView">
@@ -480,7 +480,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="minor update" />
     <MESSAGE value="img" />
     <MESSAGE value="db structure revised and updated" />
     <MESSAGE value="images updated for new ones" />
@@ -505,7 +504,8 @@
     <MESSAGE value="goods GET big minor added" />
     <MESSAGE value="folders GET big minor added" />
     <MESSAGE value="filters GET returning value updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="filters GET returning value updated" />
+    <MESSAGE value="attributes update handler added" />
+    <option name="LAST_COMMIT_MESSAGE" value="attributes update handler added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
