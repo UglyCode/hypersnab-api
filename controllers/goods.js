@@ -96,7 +96,7 @@ const updateGoodsData = async (goods, clearTables=false) =>{
     await Promise.all([
         updateStock(insertedValues.stock),
         updatePrices(insertedValues.prices),
-        updateGoodAttributes(insertedValues.attributes)
+        updateGoodAttributes(insertedValues.attributes.slice(0,insertedValues.attributes.length-1))
     ]);
 
     return 'goods update successfully, smile-smile';
@@ -167,7 +167,7 @@ const updateAttributes = (attributes) => {
 
 const getAttributesInsertString = (good, atrArray) => {
     return atrArray.reduce((accum,elem,i,arr) => {
-        accum += `(${good}, '${elem[0]}', '${elem[1]}'` + ((i===arr.length-1) ?' ':', ');
+        accum += `(${good}, '${elem[0]}', '${elem[1]}'),`; //+ ((i===arr.length-1) ?' ':', ');
         return accum;
     }, '');
 };
