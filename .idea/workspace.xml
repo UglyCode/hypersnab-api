@@ -101,14 +101,7 @@
       <workItem from="1574792142920" duration="3838000" />
       <workItem from="1576607512117" duration="3618000" />
       <workItem from="1578569012752" duration="16018000" />
-      <workItem from="1579200902776" duration="8421000" />
-    </task>
-    <task id="LOCAL-00032" summary="pg seed file data updated">
-      <created>1569525647805</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1569525647805</updated>
+      <workItem from="1579200902776" duration="10446000" />
     </task>
     <task id="LOCAL-00033" summary="first folder query added today!">
       <created>1569526297501</created>
@@ -446,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579425899046</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="bug at goods pest fixedd">
+      <created>1579632734967</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1579632734968</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TodoView">
@@ -479,7 +479,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="db structure revised and updated" />
     <MESSAGE value="images updated for new ones" />
     <MESSAGE value="goods update function added" />
     <MESSAGE value="attributes update algorithm added" />
@@ -504,7 +503,8 @@
     <MESSAGE value="filters GET returning value updated" />
     <MESSAGE value="attributes update handler added" />
     <MESSAGE value="attributes update handler bugs fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="attributes update handler bugs fixed" />
+    <MESSAGE value="bug at goods pest fixedd" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug at goods pest fixedd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

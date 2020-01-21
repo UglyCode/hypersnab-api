@@ -31,8 +31,11 @@ const handleGoodsGet = (req, res) =>{
 
 const getFullFiltertext = (req)=>{
     if (!req.params.folder) return '';
+    console.log(req.params.folder);
+    console.log(req.query.attributes_filter);
+    console.log(parseAttributeFilter(req.query.attributes_filter));
     return `\n where goods.folder = '${req.params.folder}'`
-        + parseAttributeFilter(req.query.attribure_filter)
+        + parseAttributeFilter(req.query.attributes_filter);
 };
 
 const parseAttributeFilter = (filterString) => {
