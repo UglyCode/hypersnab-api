@@ -101,14 +101,7 @@
       <workItem from="1574792142920" duration="3838000" />
       <workItem from="1576607512117" duration="3618000" />
       <workItem from="1578569012752" duration="16018000" />
-      <workItem from="1579200902776" duration="10446000" />
-    </task>
-    <task id="LOCAL-00033" summary="first folder query added today!">
-      <created>1569526297501</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1569526297501</updated>
+      <workItem from="1579200902776" duration="10991000" />
     </task>
     <task id="LOCAL-00034" summary="folders structure get handler added">
       <created>1569697251870</created>
@@ -446,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579632734968</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="filters updated">
+      <created>1579639354524</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1579639354524</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TodoView">
@@ -479,7 +479,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="images updated for new ones" />
     <MESSAGE value="goods update function added" />
     <MESSAGE value="attributes update algorithm added" />
     <MESSAGE value="tables seed updated" />
@@ -504,7 +503,8 @@
     <MESSAGE value="attributes update handler added" />
     <MESSAGE value="attributes update handler bugs fixed" />
     <MESSAGE value="bug at goods pest fixedd" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug at goods pest fixedd" />
+    <MESSAGE value="filters updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="filters updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

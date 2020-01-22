@@ -49,7 +49,7 @@ const parseAttributeFilter = (filterString) => {
                     .replace('[','(')
                     .replace(/"/g,"'")
                     .replace(']',')')})`
-                + ((i===arr.length-1) ? ')':' OR ');
+                + ((i===arr.length-1) ? ')':' AND ');
             return accum;
         }, `and goods.code in (SELECT distinct attr.good
             FROM public.goods_attributes as attr
