@@ -37,9 +37,9 @@ const getFullFiltertext = (req)=>{
 
 const parseAttributeFilter = (filterString) => {
 
-    let filterArray = [];
     try {
-        filterArray = JSON.parse(filterString);
+        const fullFilterArray = JSON.parse(filterString);
+        const filterArray = fullFilterArray.filter(elem => elem.values.length);
         if(!filterArray.length) return '';
 
         let subQuery =" and goods.code in (select distinct attr0.good from \n" +

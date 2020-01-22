@@ -101,14 +101,7 @@
       <workItem from="1574792142920" duration="3838000" />
       <workItem from="1576607512117" duration="3618000" />
       <workItem from="1578569012752" duration="16018000" />
-      <workItem from="1579200902776" duration="13504000" />
-    </task>
-    <task id="LOCAL-00035" summary="goods GET API point added">
-      <created>1569785695332</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1569785695332</updated>
+      <workItem from="1579200902776" duration="14342000" />
     </task>
     <task id="LOCAL-00036" summary="goods POST API point added">
       <created>1569874253067</created>
@@ -446,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579718537699</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="filters behavior updated gorgeously">
+      <created>1579721314671</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1579721314671</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TodoView">
