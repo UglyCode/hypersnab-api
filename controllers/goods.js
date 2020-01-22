@@ -31,10 +31,7 @@ const handleGoodsGet = (req, res) =>{
 
 const getFullFiltertext = (req)=>{
     if (!req.params.folder) return '';
-    console.log(req.params.folder);
-    console.log(req.query.attributes_filter);
-    console.log(parseAttributeFilter(req.query.attributes_filter));
-    return `\n where goods.folder = '${req.params.folder}'`
+     return `\n where goods.folder = '${req.params.folder}'`
         + parseAttributeFilter(req.query.attributes_filter);
 };
 
@@ -44,16 +41,23 @@ const parseAttributeFilter = (filterString) => {
     try {
         filterArray = JSON.parse(filterString);
         if(!filterArray.length) return '';
-        return filterArray.reduce((accum,elem,i,arr) => {
-            accum += `(attr."attribute" = ${elem.attribute} and attr.value in ${JSON.stringify(elem.values)
+
+        let subQuery =" and goods.code in (select distinct attr0.good from \n" +
+            filterArray.reduce((accum,elem,i,arr) => {
+            accum += `(select attr.good as good
+                    FROM public.goods_attributes as attr
+                    where (attr."attribute" = ${elem.attribute} and attr.value in ${JSON.stringify(elem.values)
                     .replace('[','(')
                     .replace(/"/g,"'")
-                    .replace(']',')')})`
-                + ((i===arr.length-1) ? ')':' AND ');
+                    .replace(']',')')})) as attr${i}`
+                + ((i>0) ? ` on attr0.good = attr${i}.good` : '')
+                + ((i===arr.length-1) ? ' )':'\n inner join \n');
             return accum;
-        }, `and goods.code in (SELECT distinct attr.good
-            FROM public.goods_attributes as attr
-            where `);
+        }, '');
+
+        console.log(subQuery);
+        return subQuery;
+
     } catch (e) {
         console.log(e.stack);
         return '';

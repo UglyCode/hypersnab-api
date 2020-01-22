@@ -101,14 +101,7 @@
       <workItem from="1574792142920" duration="3838000" />
       <workItem from="1576607512117" duration="3618000" />
       <workItem from="1578569012752" duration="16018000" />
-      <workItem from="1579200902776" duration="10991000" />
-    </task>
-    <task id="LOCAL-00034" summary="folders structure get handler added">
-      <created>1569697251870</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1569697251870</updated>
+      <workItem from="1579200902776" duration="13504000" />
     </task>
     <task id="LOCAL-00035" summary="goods GET API point added">
       <created>1569785695332</created>
@@ -446,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579639354524</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="filters behavior updated gorgeously">
+      <created>1579718537699</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1579718537699</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TodoView">
@@ -479,7 +479,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="goods update function added" />
     <MESSAGE value="attributes update algorithm added" />
     <MESSAGE value="tables seed updated" />
     <MESSAGE value="fixes" />
@@ -504,7 +503,8 @@
     <MESSAGE value="attributes update handler bugs fixed" />
     <MESSAGE value="bug at goods pest fixedd" />
     <MESSAGE value="filters updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="filters updated" />
+    <MESSAGE value="filters behavior updated gorgeously" />
+    <option name="LAST_COMMIT_MESSAGE" value="filters behavior updated gorgeously" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
