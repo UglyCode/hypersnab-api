@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,14 +102,7 @@
       <workItem from="1578569012752" duration="16018000" />
       <workItem from="1579200902776" duration="22181000" />
       <workItem from="1581532669280" duration="599000" />
-      <workItem from="1581619286963" duration="2323000" />
-    </task>
-    <task id="LOCAL-00037" summary="goods POST API point added">
-      <created>1569956705251</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1569956705251</updated>
+      <workItem from="1581619286963" duration="2416000" />
     </task>
     <task id="LOCAL-00038" summary="images update">
       <created>1569995965765</created>
@@ -449,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579722144303</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="order get &amp; post methods">
+      <created>1581621631884</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1581621631884</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TodoView">
@@ -482,7 +480,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="attributes update algorithm added" />
     <MESSAGE value="tables seed updated" />
     <MESSAGE value="fixes" />
     <MESSAGE value="folder post handler added" />
@@ -507,7 +504,8 @@
     <MESSAGE value="bug at goods pest fixedd" />
     <MESSAGE value="filters updated" />
     <MESSAGE value="filters behavior updated gorgeously" />
-    <option name="LAST_COMMIT_MESSAGE" value="filters behavior updated gorgeously" />
+    <MESSAGE value="order get &amp; post methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="order get &amp; post methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

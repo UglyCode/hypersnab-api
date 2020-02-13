@@ -25,7 +25,7 @@ const handleOrderStatusUpdate = (req, res) => {
 
     client
         .query(`UPDATE public.orders SET status='${req.body.status}' WHERE id=${req.params.order}`)
-        .then(orders => res.json(orders.rows))
+        .then(orders => res.json('status for order ' + req.params.order + ' updated successfully'))
         .catch(e => console.error(e.stack));
 
 };
