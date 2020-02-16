@@ -21,6 +21,10 @@ const handleOrdersGet = (req, res) => {
 
 };
 
+const handleOrderPost = (req, res) => {
+
+};
+
 const handleOrderStatusUpdate = (req, res) => {
 
     client
@@ -30,5 +34,24 @@ const handleOrderStatusUpdate = (req, res) => {
 
 };
 
+const handleClientsGet = (req, res) => {
 
-module.exports = {handleOrdersGet, handleOrderStatusUpdate};
+    const inn = req.query.inn;
+    const created = req.query.created;
+
+    let condition = "";
+    if (inn) {
+        condition = `where inn = ${inn};`;
+    } else if (created) {
+        condition = `where created >= '${created}';`;
+    }
+
+    client
+        .query('SELECT inn, kpp, "name", email, phone, contact, address, created\n' +
+            'FROM public.users\n' +
+            condition)
+        .then(clients => res.json(clients.rows))
+        .catch(e => console.error(e.stack));
+};
+
+module.exports = {handleOrdersGet, handleOrderStatusUpdate, handleClientsGet};
