@@ -25,7 +25,7 @@ const handleRegister = (req, res, pg, bcrypt) => {
                         email: email,
                         phone: phone,
                         name: name,
-                        joined: new Date()})
+                        created: new Date()})
                     .then(userData => res.json(userData[0]))
             })
             .then(trx.commit)
