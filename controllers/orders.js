@@ -41,6 +41,25 @@ const handleOrdersGet = (req, res) => {
 
 const handleOrderPost = (req, res) => {
 
+    const body = req.body;
+
+    client
+        .query(`INSERT INTO public.orders (client,status,comm) 
+            VALUES (${body.inn},'новый','${body.comment}') RETURNING id;`)
+        .then( result => {
+            return client.query('INSERT INTO public.ordered_goods ("order",good,amount,price) VALUES ' +
+                body.orderedGoods.reduce((accum, elem, i, arr) => {
+                    accum += `(${result.rows[0].id}, '${elem.good}', ${elem.ammount}, ${elem.price})` + ((i===arr.length-1) ? ' ':', ');
+                    return accum;
+                }, '')
+            )
+        })
+        .then(result => res.json('order was created'))
+        .catch(e => console.error(e.stack));
+
+    // 'INSERT INTO public.ordered_goods ("order",good,amount,price)\n' +
+    // '\tVALUES (22,\'14605\',1111,121);'
+
 };
 
 const handleOrderStatusUpdate = (req, res) => {
@@ -72,4 +91,4 @@ const handleClientsGet = (req, res) => {
         .catch(e => console.error(e.stack));
 };
 
-module.exports = {handleOrdersGet, handleOrderStatusUpdate, handleClientsGet};
+module.exports = {handleOrdersGet, handleOrderStatusUpdate, handleClientsGet, handleOrderPost};

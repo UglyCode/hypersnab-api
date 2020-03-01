@@ -58,6 +58,7 @@ app.get('/filters/:folder', (req,res) => goods.handleFiltersGet(req,res));
 app.get('/clients', (req,res) => orders.handleClientsGet(req, res));
 
 app.get('/orders', (req,res) => orders.handleOrdersGet(req, res));
+app.post('/orders', (req,res) => orders.handleOrderPost(req, res));
 app.post('/orders/:order', (req,res) => orders.handleOrderStatusUpdate(req, res));
 
 
