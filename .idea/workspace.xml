@@ -104,14 +104,7 @@
       <workItem from="1579200902776" duration="22181000" />
       <workItem from="1581532669280" duration="599000" />
       <workItem from="1581619286963" duration="7933000" />
-      <workItem from="1582520791568" duration="6945000" />
-    </task>
-    <task id="LOCAL-00041" summary="goods POST methods structure added">
-      <created>1570474931925</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1570474931925</updated>
+      <workItem from="1582520791568" duration="7720000" />
     </task>
     <task id="LOCAL-00042" summary="goods POST parsing method updated">
       <created>1570560294509</created>
@@ -449,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582140906042</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="orders GET method updated">
+      <created>1583060628160</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1583060628160</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TodoView">
@@ -482,7 +482,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="folders &amp; goods apdate\get" />
     <MESSAGE value="folders &amp; goods apdate fixed" />
     <MESSAGE value="folders &amp; goods update fixed" />
     <MESSAGE value="Stock &amp; prices separate update" />
@@ -507,7 +506,8 @@
     <MESSAGE value="orders get &amp; post methods" />
     <MESSAGE value="client get method added" />
     <MESSAGE value="bug with joined column fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug with joined column fixed" />
+    <MESSAGE value="orders GET method updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="orders GET method updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
