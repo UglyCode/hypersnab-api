@@ -7,14 +7,32 @@ client.connect();
 
 const handleOrdersGet = (req, res) => {
 
-    let statusFilter = req.query.status;
+    const statusFilter = req.query.status;
+    const clientFilter = req.query.client;
+
+    let filterText = '';
+
+    if (statusFilter && clientFilter){
+        filterText = `where ord.status = ${statusFilter} 
+        and ord.client = ${clientFilter} \n`;
+    } else if (statusFilter){
+        filterText = `where ord.status = '${statusFilter}' \n`;
+    } else if (clientFilter){
+        filterText = `where ord.client = ${clientFilter} \n`;
+    };
 
     client
-        .query('SELECT ord.id as orderId, ord.client, ord.status, ogd.good, ogd.amount, ogd.price\n' +
+        .query('SELECT ord.id as orderId, ord.updated, ord.client, ord.status, ogd.good, ogd.amount, ogd.price,\n' +
+            '\tround(cast(ogd.amount*ogd.price as numeric), 2 ) as sum\n' +
             'FROM public.orders as ord \n' +
-            'inner join public.ordered_goods as ogd\n' +
+            'inner join (\n' +
+            '\tselect ordered."order", ordered.good, ordered.amount, ordered.price, goods.description\n' +
+            '\tfrom public.ordered_goods as ordered\n' +
+            '\tleft join public.goods as goods\n' +
+            '\ton ordered.good = goods.code\n' +
+            ') as ogd\n' +
             'on ord.id = ogd."order"\n' +
-            ((statusFilter) ? `where ord.status = '${statusFilter}'\n` : '') +
+            filterText +
             'order by ord.id;')
         .then(orders => res.json(orders.rows))
         .catch(e => console.error(e.stack));
