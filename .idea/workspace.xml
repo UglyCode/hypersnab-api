@@ -4,7 +4,6 @@
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,14 +104,7 @@
       <workItem from="1579200902776" duration="22181000" />
       <workItem from="1581532669280" duration="599000" />
       <workItem from="1581619286963" duration="7933000" />
-      <workItem from="1582520791568" duration="11351000" />
-    </task>
-    <task id="LOCAL-00043" summary="minor update">
-      <created>1570880267127</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1570880267127</updated>
+      <workItem from="1582520791568" duration="14111000" />
     </task>
     <task id="LOCAL-00044" summary="img">
       <created>1571079493539</created>
@@ -450,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583061419752</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="orders post method created honorary">
+      <created>1583065915341</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1583065915341</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TodoView">
@@ -483,7 +482,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="folders &amp; goods update fixed" />
     <MESSAGE value="Stock &amp; prices separate update" />
     <MESSAGE value="small fixes" />
     <MESSAGE value="attributes table" />
@@ -508,7 +506,8 @@
     <MESSAGE value="bug with joined column fixed" />
     <MESSAGE value="orders GET method updated" />
     <MESSAGE value="orders GET method description added" />
-    <option name="LAST_COMMIT_MESSAGE" value="orders GET method description added" />
+    <MESSAGE value="orders post method created honorary" />
+    <option name="LAST_COMMIT_MESSAGE" value="orders post method created honorary" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
