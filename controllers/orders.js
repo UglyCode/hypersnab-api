@@ -22,7 +22,8 @@ const handleOrdersGet = (req, res) => {
     };
 
     client
-        .query('SELECT ord.id as orderId, ord.updated, ord.client, ord.status, ogd.good, ogd.amount, ogd.price,\n' +
+        .query('SELECT ord.id as orderId, ord.updated, ord.client, ord.status, ord.delivery, ord.delivery_address,' +
+            'ogd.good, ogd.amount, ogd.price,\n' +
             '\togd.description, round(cast(ogd.amount*ogd.price as numeric), 2 ) as sum, ord.comm as comment\n' +
             'FROM public.orders as ord \n' +
             'inner join (\n' +
