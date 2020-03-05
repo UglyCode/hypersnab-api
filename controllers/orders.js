@@ -45,8 +45,8 @@ const handleOrderPost = (req, res) => {
     const body = req.body;
 
     client
-        .query(`INSERT INTO public.orders (client,status,comm) 
-            VALUES (${body.inn},'новый','${body.comment}') RETURNING id;`)
+        .query(`INSERT INTO public.orders (client,status,comm, delivery, delivery_address) 
+            VALUES (${body.inn},'новый','${body.comment}', ${body.delivery}, '${body.delivery_address}') RETURNING id;`)
         .then( result => {
             return client.query('INSERT INTO public.ordered_goods ("order",good,amount,price) VALUES ' +
                 body.orderedGoods.reduce((accum, elem, i, arr) => {
