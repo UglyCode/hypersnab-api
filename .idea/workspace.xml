@@ -104,21 +104,7 @@
       <workItem from="1581532669280" duration="599000" />
       <workItem from="1581619286963" duration="7933000" />
       <workItem from="1582520791568" duration="19076000" />
-      <workItem from="1583422921534" duration="3628000" />
-    </task>
-    <task id="LOCAL-00050" summary="db structure revised and updated">
-      <created>1571774114246</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1571774114246</updated>
-    </task>
-    <task id="LOCAL-00051" summary="images updated for new ones">
-      <created>1571861066765</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1571861066765</updated>
+      <workItem from="1583422921534" duration="3917000" />
     </task>
     <task id="LOCAL-00052" summary="goods update function added">
       <created>1571945370983</created>
@@ -449,7 +435,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583576660938</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="price round added">
+      <created>1583576932052</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1583576932052</updated>
+    </task>
+    <task id="LOCAL-00100" summary="price round added">
+      <created>1583576959127</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1583576959127</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TodoView">
@@ -482,7 +482,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="attributes update updated procedure" />
     <MESSAGE value="attributes update procedure updated genially" />
     <MESSAGE value="attributes update procedures updated genially" />
     <MESSAGE value="folder attributes &amp; filters fetching" />
@@ -507,7 +506,8 @@
     <MESSAGE value="delivery &amp; delivery address fixed" />
     <MESSAGE value="sroting for goods DET added" />
     <MESSAGE value="measure added" />
-    <option name="LAST_COMMIT_MESSAGE" value="measure added" />
+    <MESSAGE value="price round added" />
+    <option name="LAST_COMMIT_MESSAGE" value="price round added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
