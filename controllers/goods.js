@@ -24,6 +24,7 @@ const handleGoodsGet = (req, res) =>{
             'left join stock as stock\n' +
             '\ton goods.code = stock.good' +
             getFullFiltertext(req)
+            +'\t order by goods.sort'
         )
         .then(goods => res.json(goods.rows))
         .catch(e => console.error(e.stack))
