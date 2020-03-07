@@ -23,11 +23,11 @@ const handleOrdersGet = (req, res) => {
 
     client
         .query('SELECT ord.id as orderId, ord.updated, ord.client, ord.status, ord.delivery, ord.delivery_address,' +
-            'ogd.good, ogd.amount, ogd.price,\n' +
+            'ogd.good, ogd.amount, ogd.price, ogd.measure\n' +
             '\togd.description, round(cast(ogd.amount*ogd.price as numeric), 2 ) as sum, ord.comm as comment\n' +
             'FROM public.orders as ord \n' +
             'inner join (\n' +
-            '\tselect ordered."order", ordered.good, ordered.amount, ordered.price, goods.description\n' +
+            '\tselect ordered."order", ordered.good, ordered.amount, ordered.price, goods.description, goods.measure\n' +
             '\tfrom public.ordered_goods as ordered\n' +
             '\tleft join public.goods as goods\n' +
             '\ton ordered.good = goods.code\n' +
