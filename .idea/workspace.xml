@@ -109,14 +109,7 @@
       <workItem from="1584529258025" duration="1799000" />
       <workItem from="1586789859570" duration="1316000" />
       <workItem from="1588771461567" duration="599000" />
-      <workItem from="1590241818098" duration="2783000" />
-    </task>
-    <task id="LOCAL-00055" summary="attributes update algorithm added">
-      <created>1572118167034</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1572118167034</updated>
+      <workItem from="1590241818098" duration="4105000" />
     </task>
     <task id="LOCAL-00056" summary="tables seed updated">
       <created>1572159568340</created>
@@ -454,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586789955455</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="delivery date added to orders">
+      <created>1590316733185</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1590316733185</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TodoView">
@@ -487,7 +487,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="attributes update procedures updated genially" />
     <MESSAGE value="folder attributes &amp; filters fetching" />
     <MESSAGE value="goods GET big updated added" />
     <MESSAGE value="goods GET big minor added" />
@@ -512,7 +511,8 @@
     <MESSAGE value="measure added" />
     <MESSAGE value="price round added" />
     <MESSAGE value="img folder deleted -&gt; CDN rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="img folder deleted -&gt; CDN rules" />
+    <MESSAGE value="delivery date added to orders" />
+    <option name="LAST_COMMIT_MESSAGE" value="delivery date added to orders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
