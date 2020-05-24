@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/orders.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,13 +107,9 @@
       <workItem from="1582520791568" duration="19076000" />
       <workItem from="1583422921534" duration="4328000" />
       <workItem from="1584529258025" duration="1799000" />
-    </task>
-    <task id="LOCAL-00054" summary="goods update function added">
-      <created>1572029901943</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1572029901943</updated>
+      <workItem from="1586789859570" duration="1316000" />
+      <workItem from="1588771461567" duration="599000" />
+      <workItem from="1590241818098" duration="2783000" />
     </task>
     <task id="LOCAL-00055" summary="attributes update algorithm added">
       <created>1572118167034</created>
@@ -450,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583577367357</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="img folder deleted -&gt; CDN rules">
+      <created>1586789955455</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1586789955455</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TodoView">
@@ -483,7 +487,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="attributes update procedure updated genially" />
     <MESSAGE value="attributes update procedures updated genially" />
     <MESSAGE value="folder attributes &amp; filters fetching" />
     <MESSAGE value="goods GET big updated added" />
@@ -508,7 +511,8 @@
     <MESSAGE value="sroting for goods DET added" />
     <MESSAGE value="measure added" />
     <MESSAGE value="price round added" />
-    <option name="LAST_COMMIT_MESSAGE" value="price round added" />
+    <MESSAGE value="img folder deleted -&gt; CDN rules" />
+    <option name="LAST_COMMIT_MESSAGE" value="img folder deleted -&gt; CDN rules" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

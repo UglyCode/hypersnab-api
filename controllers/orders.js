@@ -22,7 +22,7 @@ const handleOrdersGet = (req, res) => {
     };
 
     client
-        .query('SELECT ord.id as orderId, ord.updated, ord.client, ord.status, ord.delivery, ord.delivery_address,' +
+        .query('SELECT ord.id as orderId, ord.updated, ord.client, ord.status, ord.delivery, ord.delivery_address, ord.delivery_date' +
             'ogd.good, ogd.amount, round(cast(ogd.price as numeric),2) as price, ogd.measure, \n' +
             '\togd.description, round(cast(ogd.amount as numeric), 2)*round(cast(ogd.price as numeric), 2) as sum, ord.comm as comment\n' +
             'FROM public.orders as ord \n' +
@@ -45,8 +45,8 @@ const handleOrderPost = (req, res) => {
     const body = req.body;
 
     client
-        .query(`INSERT INTO public.orders (client,status,comm, delivery, delivery_address) 
-            VALUES (${body.inn},'Новый','${body.comment}', ${body.delivery}, '${body.delivery_address}') RETURNING id;`)
+        .query(`INSERT INTO public.orders (client,status,comm, delivery, delivery_address, delivery_date) 
+            VALUES (${body.inn},'Новый','${body.comment}', ${body.delivery}, '${body.delivery_address}','${body.delivery_date}) RETURNING id;`)
         .then( result => {
             return client.query('INSERT INTO public.ordered_goods ("order",good,amount,price) VALUES ' +
                 body.orderedGoods.reduce((accum, elem, i, arr) => {
