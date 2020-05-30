@@ -13,6 +13,7 @@ const handleGoodsGet = (req, res) =>{
             'goods.description as description, \n' +
             'goods.measure as measure, \n' +
             'goods.sort as sort, \n' +
+            'COALESCE (goods.rate, 1) as rate, \n' +
             'prices.price as price,\n' +
             'prices.spec as spec,\n' +
             'stock.stock as quantity\n' +
@@ -89,11 +90,12 @@ const updateGoodsData = async (goods, clearTables=false) =>{
     const insertedValues = goods.reduce((accum,elem,i,arr) => {
         const {code, folder, description, measure, price, spec, quantity, sort} = elem;
         const lastElem = (i === arr.length - 1);
+        let rate = elem.rate || '1';
 
         //TODO:
         // Separate to diff procedures DRY bitch!
 
-        accum.goods     += `('${code}', '${folder}', '${description}', '${measure}','${sort}')` + (lastElem ? ' ':', ');
+        accum.goods     += `('${code}', '${folder}', '${description}', '${measure}','${sort}', ${rate})` + (lastElem ? ' ':', ');
         accum.prices    += `('${code}', ${price}, now(), ${spec})` + (lastElem ? ' ':', ');
         accum.stock     += `('${code}', ${quantity}, 0, now())` + (lastElem ? ' ':', ');
         accum.attributes+= getAttributesInsertString(elem.code, elem.attributes);
@@ -111,7 +113,7 @@ const updateGoodsData = async (goods, clearTables=false) =>{
 };
 
 const updateGoods = (goods) =>{
-    return client.query('INSERT INTO goods (code, folder, description, measure, sort) VALUES ' + goods +
+    return client.query('INSERT INTO goods (code, folder, description, measure, sort, rate) VALUES ' + goods +
         '\n on conflict (code) do update set folder=excluded.folder, description=excluded.description, measure=excluded.measure, sort=excluded.sort;');
 };
 
