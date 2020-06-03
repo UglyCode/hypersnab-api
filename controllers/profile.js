@@ -28,4 +28,20 @@ const handleProfileUpdate = (req, res, pg) => {
         .catch(err => res.status(500).json('error appeared while updating'))
 };
 
-module.exports = {handleProfileGet, handleProfileUpdate};
+const handleSpecPricePost = (req, res, og) => {
+    const {inn} = req.params;
+    const spec_price = req.body.spec_price;
+    pg('users')
+        .where({inn})
+        .update({spec_price})
+        .then(response =>{
+            if (response) {
+                res.json('all done')
+            } else{
+                res.status(400).json('smth went wrong')
+            }
+        })
+        .catch(err => res.status(500).json('error appeared while updating spec_price'))
+};
+
+module.exports = {handleProfileGet, handleProfileUpdate, handleSpecPricePost};

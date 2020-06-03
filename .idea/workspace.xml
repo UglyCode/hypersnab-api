@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,14 +113,7 @@
       <workItem from="1590241818098" duration="5365000" />
       <workItem from="1590831091249" duration="6392000" />
       <workItem from="1590911764642" duration="621000" />
-      <workItem from="1591212401331" duration="905000" />
-    </task>
-    <task id="LOCAL-00061" summary="folders &amp; goods update fixed">
-      <created>1572895495567</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1572895495568</updated>
+      <workItem from="1591212401331" duration="1454000" />
     </task>
     <task id="LOCAL-00062" summary="folders &amp; goods update fixed">
       <created>1572981107646</created>
@@ -456,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591213135735</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="new method POST spec_prices added">
+      <created>1591213441559</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1591213441559</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TodoView">
