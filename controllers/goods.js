@@ -262,7 +262,7 @@ const updateStock = (stock) => {
 const handleSpecPricePost = (req, res) => {
 
     Promise.resolve(req.body.reduce((accum,elem,i,arr) => {
-        accum += `('${elem.good}', ${elem.price}, now(), ${elem.sort})` + ((i===arr.length-1) ? ' ':', ');
+        accum += `('${elem.good}', ${elem.price}, now(), '${elem.sort}')` + ((i===arr.length-1) ? ' ':', ');
         return accum;
     },''))
         .then((prices) => updateSpecPrices(prices))

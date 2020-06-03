@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,14 +111,7 @@
       <workItem from="1590241818098" duration="5365000" />
       <workItem from="1590831091249" duration="6392000" />
       <workItem from="1590911764642" duration="621000" />
-      <workItem from="1591212401331" duration="264000" />
-    </task>
-    <task id="LOCAL-00059" summary="folders &amp; goods apdate\get">
-      <created>1572291578995</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1572291578996</updated>
+      <workItem from="1591212401331" duration="637000" />
     </task>
     <task id="LOCAL-00060" summary="folders &amp; goods apdate fixed">
       <created>1572780352484</created>
@@ -458,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590840095539</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="new method POST spec_prices added">
+      <created>1591212699102</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1591212699103</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TodoView">
@@ -491,7 +489,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="goods GET big minor added" />
     <MESSAGE value="folders GET big minor added" />
     <MESSAGE value="filters GET returning value updated" />
     <MESSAGE value="attributes update handler added" />
@@ -516,7 +513,8 @@
     <MESSAGE value="delivery date added to orders" />
     <MESSAGE value="delivery date fixed at orders" />
     <MESSAGE value="rate added to goods table" />
-    <option name="LAST_COMMIT_MESSAGE" value="rate added to goods table" />
+    <MESSAGE value="new method POST spec_prices added" />
+    <option name="LAST_COMMIT_MESSAGE" value="new method POST spec_prices added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
