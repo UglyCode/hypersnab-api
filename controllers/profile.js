@@ -28,7 +28,7 @@ const handleProfileUpdate = (req, res, pg) => {
         .catch(err => res.status(500).json('error appeared while updating'))
 };
 
-const handleSpecPricePost = (req, res, og) => {
+const handleSpecPricePost = (req, res, pg) => {
     const {inn} = req.params;
     const spec_price = req.body.spec_price;
     pg('users')
