@@ -43,6 +43,7 @@ app.get('/goods/:folder', (req,res) => goods.handleGoodsGet(req,res));
 app.post('/goods', (req,res) => goods.handleGoodsPost(req,res));
 
 app.post('/prices', (req,res) => goods.handlePricePost(req,res));
+app.post('/spec_prices', (req,res) => goods.handleSpecPricePost(req,res));
 
 app.post('/stock', (req,res) => goods.handleStockPost(req,res));
 

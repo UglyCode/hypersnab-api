@@ -111,14 +111,9 @@
       <workItem from="1586789859570" duration="1316000" />
       <workItem from="1588771461567" duration="599000" />
       <workItem from="1590241818098" duration="5365000" />
-      <workItem from="1590831091249" duration="5046000" />
-    </task>
-    <task id="LOCAL-00058" summary="folder post handler added">
-      <created>1572163741594</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1572163741594</updated>
+      <workItem from="1590831091249" duration="6392000" />
+      <workItem from="1590911764642" duration="621000" />
+      <workItem from="1591212401331" duration="264000" />
     </task>
     <task id="LOCAL-00059" summary="folders &amp; goods apdate\get">
       <created>1572291578995</created>
@@ -456,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590348216726</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="rate added to goods table">
+      <created>1590840095539</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1590840095539</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TodoView">
@@ -489,7 +491,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="goods GET big updated added" />
     <MESSAGE value="goods GET big minor added" />
     <MESSAGE value="folders GET big minor added" />
     <MESSAGE value="filters GET returning value updated" />
@@ -514,7 +515,8 @@
     <MESSAGE value="img folder deleted -&gt; CDN rules" />
     <MESSAGE value="delivery date added to orders" />
     <MESSAGE value="delivery date fixed at orders" />
-    <option name="LAST_COMMIT_MESSAGE" value="delivery date fixed at orders" />
+    <MESSAGE value="rate added to goods table" />
+    <option name="LAST_COMMIT_MESSAGE" value="rate added to goods table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

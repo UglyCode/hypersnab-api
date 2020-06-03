@@ -258,6 +258,27 @@ const updateStock = (stock) => {
     return client.query('INSERT INTO stock (good, stock, maxorder, updated) VALUES ' + stock +
         '\n on conflict (good) do update set stock=excluded.stock, updated=now(), maxorder=excluded.maxorder');
 };
+
+const handleSpecPricePost = (req, res) => {
+
+    Promise.resolve(req.body.reduce((accum,elem,i,arr) => {
+        accum += `('${elem.good}', ${elem.price}, now(), ${elem.sort})` + ((i===arr.length-1) ? ' ':', ');
+        return accum;
+    },''))
+        .then((prices) => updateSpecPrices(prices))
+        .then(res.json('prices was updated successfully'))
+        .catch(e => {
+            console.log(e.stack);
+            res.status(500).json('can not update prices now');
+        });
+
+};
+
+const updateSpecPrices = (prices) => {
+    return client.query('INSERT INTO spec_prices (good, price, updated, sort) VALUES ' + prices +
+        '\n on conflict (good) do update set price=excluded.price, updated=now(), sort=excluded.sort');
+};
+
 //prices & stock}
 
 //{folders
@@ -327,4 +348,5 @@ const updateFolders = (foldersObject) => {
 //folders}
 
 module.exports = {handleFoldersGet, handleFoldersPost, handleGoodsGet, handleGoodsPost, handleAttributesPost,
-    handleAttributesGet, handleGoodAttributesPost, handlePricePost, handleStockPost, handleFiltersGet};
+    handleAttributesGet, handleGoodAttributesPost, handlePricePost, handleStockPost, handleFiltersGet,
+    handleSpecPricePost};
