@@ -111,14 +111,7 @@
       <workItem from="1590241818098" duration="5365000" />
       <workItem from="1590831091249" duration="6392000" />
       <workItem from="1590911764642" duration="621000" />
-      <workItem from="1591212401331" duration="637000" />
-    </task>
-    <task id="LOCAL-00060" summary="folders &amp; goods apdate fixed">
-      <created>1572780352484</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1572780352484</updated>
+      <workItem from="1591212401331" duration="905000" />
     </task>
     <task id="LOCAL-00061" summary="folders &amp; goods update fixed">
       <created>1572895495567</created>
@@ -456,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591212699103</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="new method POST spec_prices added">
+      <created>1591213135735</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1591213135735</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TodoView">

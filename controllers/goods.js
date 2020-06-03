@@ -276,7 +276,7 @@ const handleSpecPricePost = (req, res) => {
 
 const updateSpecPrices = (prices) => {
     return client.query('INSERT INTO spec_prices (good, price, updated, sort) VALUES ' + prices +
-        '\n on conflict (good) do update set price=excluded.price, updated=now(), sort=excluded.sort');
+        '\n on conflict (good, sort) do update set price=excluded.price, updated=now()');
 };
 
 //prices & stock}
