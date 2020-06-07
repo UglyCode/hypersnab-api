@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/middleware/authorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/authorization.js" afterDir="false" />
-    </list>
+    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,14 +110,7 @@
       <workItem from="1590831091249" duration="6392000" />
       <workItem from="1590911764642" duration="621000" />
       <workItem from="1591212401331" duration="2529000" />
-      <workItem from="1591522198509" duration="2506000" />
-    </task>
-    <task id="LOCAL-00065" summary="small fixes">
-      <created>1573326324141</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1573326324141</updated>
+      <workItem from="1591522198509" duration="2751000" />
     </task>
     <task id="LOCAL-00066" summary="attributes table">
       <created>1573587491298</created>
@@ -457,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591524983890</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="spec prices added at \GET_goods">
+      <created>1591525606784</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1591525606784</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TodoView">

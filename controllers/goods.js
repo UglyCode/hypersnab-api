@@ -26,7 +26,7 @@ const handleGoodsGet = (req, res) =>{
             'on goods.code = stock.good\n' +
             'left join\n' +
             '   (SELECT sp.good, sp.price\n' +
-            '   ROM public.spec_prices as sp\n' +
+            '   FROM spec_prices as sp\n' +
             '   inner join users \n' +
             '   on sp.sort = users.spec_price\n' +
             `   where users.inn = ${req.headers.inn}) as spec\n` +
