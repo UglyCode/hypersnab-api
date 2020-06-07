@@ -16,4 +16,16 @@ const requireAuth = (req, res, next) => {
 
 };
 
-module.exports = {requireAuth};
+const parseInnFromToken = (req, res, next) => {
+    const {authorization} = req.headers;
+    return redisClient.get(authorization, (err, reply) =>{
+        if (!err && reply){
+            req.headers.inn = reply;
+        } else {
+            req.headers.inn = 0;
+        }
+    });
+    return next();
+};
+
+module.exports = {requireAuth, parseInnFromToken};

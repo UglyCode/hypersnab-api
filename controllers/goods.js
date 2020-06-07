@@ -8,24 +8,31 @@ client.connect();
 //{goods
 const handleGoodsGet = (req, res) =>{
     client
-        .query('select goods.code as code, \n' +
-            'folders.folder_name as folder, \n' +
-            'goods.description as description, \n' +
-            'goods.measure as measure, \n' +
+        .query('select goods.code as code,\n' +
+            'folders.folder_name as folder,\n' +
+            'goods.description as description,\n' +
+            'goods.measure as measure,\n' +
             'goods.sort as sort, \n' +
-            'COALESCE (goods.rate, 1) as rate, \n' +
-            'prices.price as price,\n' +
+            'coalesce (goods.rate, 1) as rate, \n' +
+            'coalesce(spec.price, prices.price) as price,\n' +
             'prices.spec as spec,\n' +
             'stock.stock as quantity\n' +
-            '\tfrom goods as goods\n' +
+            'from goods as goods\n' +
             'left join   folders as folders\n' +
-            '\ton goods.folder = folders.code\n' +
+            'on goods.folder = folders.code\n' +
             'left join prices as prices\n' +
-            '\ton goods.code = prices.good\n' +
+            'on goods.code = prices.good\n' +
             'left join stock as stock\n' +
-            '\ton goods.code = stock.good' +
-            getFullFiltertext(req)
-            +'\t order by goods.sort'
+            'on goods.code = stock.good\n' +
+            'left join\n' +
+            '   (SELECT sp.good, sp.price\n' +
+            '   ROM public.spec_prices as sp\n' +
+            '   inner join users \n' +
+            '   on sp.sort = users.spec_price\n' +
+            `   where users.inn = ${req.headers.inn}) as spec\n` +
+            '   on goods.code = spec.good\t\n' +
+            getFullFiltertext(req) +
+            'order by goods.sort'
         )
         .then(goods => res.json(goods.rows))
         .catch(e => console.error(e.stack))
