@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middleware/authorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/authorization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +28,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hypersnab" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -115,14 +112,7 @@
       <workItem from="1590831091249" duration="6392000" />
       <workItem from="1590911764642" duration="621000" />
       <workItem from="1591212401331" duration="2529000" />
-      <workItem from="1591522198509" duration="1963000" />
-    </task>
-    <task id="LOCAL-00064" summary="Stock &amp; prices separate update">
-      <created>1573296549400</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1573296549400</updated>
+      <workItem from="1591522198509" duration="2506000" />
     </task>
     <task id="LOCAL-00065" summary="small fixes">
       <created>1573326324141</created>
@@ -460,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591214044313</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="spec prices added at \GET_goods">
+      <created>1591524983890</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1591524983890</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TodoView">
@@ -493,7 +490,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="filters GET returning value updated" />
     <MESSAGE value="attributes update handler added" />
     <MESSAGE value="attributes update handler bugs fixed" />
     <MESSAGE value="bug at goods pest fixedd" />
@@ -518,7 +514,8 @@
     <MESSAGE value="rate added to goods table" />
     <MESSAGE value="new method POST spec_prices added" />
     <MESSAGE value="new method POST spec_prices\:inn added" />
-    <option name="LAST_COMMIT_MESSAGE" value="new method POST spec_prices\:inn added" />
+    <MESSAGE value="spec prices added at \GET_goods" />
+    <option name="LAST_COMMIT_MESSAGE" value="spec prices added at \GET_goods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
