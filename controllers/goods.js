@@ -7,6 +7,7 @@ client.connect();
 
 //{goods
 const handleGoodsGet = (req, res) =>{
+    console.log('!!! inn header:' + req.headers.inn);
     client
         .query('select goods.code as code,\n' +
             'folders.folder_name as folder,\n' +
