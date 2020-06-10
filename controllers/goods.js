@@ -30,7 +30,7 @@ const handleGoodsGet = (req, res) =>{
             '   FROM spec_prices as sp\n' +
             '   inner join users \n' +
             '   on sp.sort = users.spec_price\n' +
-            `   where users.inn = ${req.headers.inn}) as spec\n` +
+            `   where users.inn = ${(req.headers.inn) ? req.headers.inn : 0}) as spec\n` +
             '   on goods.code = spec.good\t\n' +
             getFullFiltertext(req) +
             'order by goods.sort'

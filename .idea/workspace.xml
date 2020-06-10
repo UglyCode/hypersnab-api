@@ -114,14 +114,7 @@
       <workItem from="1590911764642" duration="621000" />
       <workItem from="1591212401331" duration="2529000" />
       <workItem from="1591522198509" duration="3948000" />
-      <workItem from="1591817181530" duration="247000" />
-    </task>
-    <task id="LOCAL-00068" summary="attributes get added">
-      <created>1574793014021</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1574793014021</updated>
+      <workItem from="1591817181530" duration="1464000" />
     </task>
     <task id="LOCAL-00069" summary="attributes get added">
       <created>1574793113121</created>
@@ -459,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591526325303</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="bug fixed">
+      <created>1591817501244</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1591817501244</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TodoView">
@@ -492,7 +492,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="attributes update handler added" />
     <MESSAGE value="attributes update handler bugs fixed" />
     <MESSAGE value="bug at goods pest fixedd" />
     <MESSAGE value="filters updated" />
@@ -517,7 +516,8 @@
     <MESSAGE value="new method POST spec_prices added" />
     <MESSAGE value="new method POST spec_prices\:inn added" />
     <MESSAGE value="spec prices added at \GET_goods" />
-    <option name="LAST_COMMIT_MESSAGE" value="spec prices added at \GET_goods" />
+    <MESSAGE value="bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

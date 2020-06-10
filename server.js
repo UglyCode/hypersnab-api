@@ -40,7 +40,7 @@ app.get('/info/:inn', (req,res) => infoInn.checkInnInfo(req,res,pg));
 app.get('/data/:inn', (req,res) => infoInn.getInfoByInn(req,res,pg));
 
 app.get('/goods', auth.parseInnFromToken, (req,res) => goods.handleGoodsGet(req,res));
-app.get('/goods/:folder', (req,res) => goods.handleGoodsGet(req,res));
+app.get('/goods/:folder', auth.parseInnFromToken, (req,res) => goods.handleGoodsGet(req,res));
 app.post('/goods', (req,res) => goods.handleGoodsPost(req,res));
 
 app.post('/prices', (req,res) => goods.handlePricePost(req,res));
