@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/pricexls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/price.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,14 +116,9 @@
       <workItem from="1590911764642" duration="621000" />
       <workItem from="1591212401331" duration="2529000" />
       <workItem from="1591522198509" duration="3948000" />
-      <workItem from="1591817181530" duration="1464000" />
-    </task>
-    <task id="LOCAL-00069" summary="attributes get added">
-      <created>1574793113121</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1574793113121</updated>
+      <workItem from="1591817181530" duration="1706000" />
+      <workItem from="1592152272200" duration="33000" />
+      <workItem from="1592248452509" duration="1743000" />
     </task>
     <task id="LOCAL-00070" summary="attributes update procedure updated genially">
       <created>1574881233912</created>
@@ -459,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591817501244</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="bug fixed">
+      <created>1591818784036</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1591818784036</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TodoView">

@@ -11,6 +11,7 @@ const auth = require('./middleware/authorization');
 const infoInn = require('./controllers/infoInn');
 const goods = require('./controllers/goods');
 const orders = require('./controllers/orders');
+const pricexls = require('./controllers/pricexls');
 const DATABASE_LINK = process.env.DATABASE_URL;
 
 const pg = knex({
@@ -64,6 +65,7 @@ app.get('/orders', (req,res) => orders.handleOrdersGet(req, res));
 app.post('/orders', auth.requireAuth, (req,res) => orders.handleOrderPost(req, res));
 app.post('/orders/:order', (req,res) => orders.handleOrderStatusUpdate(req, res));
 
+app.post('/pricexls', (req,res) => pricexls.handlePricePost(req,res));
 
 const PORT = process.env.PORT || 3001;
 
