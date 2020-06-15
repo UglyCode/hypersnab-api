@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/pricexls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/price.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +28,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hypersnab" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -118,14 +115,7 @@
       <workItem from="1591522198509" duration="3948000" />
       <workItem from="1591817181530" duration="1706000" />
       <workItem from="1592152272200" duration="33000" />
-      <workItem from="1592248452509" duration="1743000" />
-    </task>
-    <task id="LOCAL-00070" summary="attributes update procedure updated genially">
-      <created>1574881233912</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1574881233913</updated>
+      <workItem from="1592248452509" duration="2485000" />
     </task>
     <task id="LOCAL-00071" summary="attributes update procedures updated genially">
       <created>1574881499295</created>
@@ -463,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591818784036</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="price xls post method added">
+      <created>1592250295682</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1592250295683</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TodoView">
@@ -496,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="attributes update handler bugs fixed" />
     <MESSAGE value="bug at goods pest fixedd" />
     <MESSAGE value="filters updated" />
     <MESSAGE value="filters behavior updated gorgeously" />
@@ -521,7 +517,8 @@
     <MESSAGE value="new method POST spec_prices\:inn added" />
     <MESSAGE value="spec prices added at \GET_goods" />
     <MESSAGE value="bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixed" />
+    <MESSAGE value="price xls post method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="price xls post method added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
