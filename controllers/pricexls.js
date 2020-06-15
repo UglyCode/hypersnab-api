@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const handlePricePost = (req, res) => {
-    const filePath = `${process.cwd()}/public/price.xls`;
+    const filePath = `${__dirname}/public/price.xls`;
     receiveFile(filePath,req,res);
 };
 
