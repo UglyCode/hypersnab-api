@@ -66,6 +66,8 @@ app.post('/orders', auth.requireAuth, (req,res) => orders.handleOrderPost(req, r
 app.post('/orders/:order', (req,res) => orders.handleOrderStatusUpdate(req, res));
 
 app.post('/pricexls', (req,res) => pricexls.handlePricePost(req,res, process.cwd() + '/public'));
+app.get('/pricexls', (req,res) => pricexls.handlePriceGet(req,res, process.cwd() + '/public'));
+
 
 const PORT = process.env.PORT || 3001;
 
