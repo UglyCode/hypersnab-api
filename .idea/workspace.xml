@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/pricexls.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pricexls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,21 +115,7 @@
       <workItem from="1591522198509" duration="3948000" />
       <workItem from="1591817181530" duration="1706000" />
       <workItem from="1592152272200" duration="33000" />
-      <workItem from="1592248452509" duration="2801000" />
-    </task>
-    <task id="LOCAL-00072" summary="folder attributes &amp; filters fetching">
-      <created>1576609923957</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1576609923958</updated>
-    </task>
-    <task id="LOCAL-00073" summary="folder attributes &amp; filters fetching">
-      <created>1576693247177</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1576693247177</updated>
+      <workItem from="1592248452509" duration="3728000" />
     </task>
     <task id="LOCAL-00074" summary="goods GET big updated added">
       <created>1578773743624</created>
@@ -460,7 +446,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592251256546</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="price xls post method added">
+      <created>1592251374657</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1592251374657</updated>
+    </task>
+    <task id="LOCAL-00122" summary="price xls post method added">
+      <created>1592251477584</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1592251477584</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TodoView">

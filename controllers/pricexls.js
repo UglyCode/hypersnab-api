@@ -17,7 +17,7 @@ function receiveFile(filepath, req, res) {
 
     let size = 0;
 
-    let writeStream = new fs.WriteStream(filepath, {flags: 'w'});
+    let writeStream = new fs.WriteStream(filepath, {flags: 'w', mode: 0o755 });
 
     req
         .on('data', chunk => {
