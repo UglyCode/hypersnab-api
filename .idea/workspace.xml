@@ -116,14 +116,7 @@
       <workItem from="1591522198509" duration="3948000" />
       <workItem from="1591817181530" duration="1706000" />
       <workItem from="1592152272200" duration="33000" />
-      <workItem from="1592248452509" duration="7281000" />
-    </task>
-    <task id="LOCAL-00081" summary="bug at goods pest fixedd">
-      <created>1579632734967</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1579632734968</updated>
+      <workItem from="1592248452509" duration="8952000" />
     </task>
     <task id="LOCAL-00082" summary="filters updated">
       <created>1579639354524</created>
@@ -461,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592286300929</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="bug fixed price post update">
+      <created>1592286684047</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1592286684047</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TodoView">

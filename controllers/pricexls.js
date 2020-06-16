@@ -19,7 +19,7 @@ function receiveFile(filepath, req, res) {
 
     let size = 0;
 
-    let writeStream = new fs.WriteStream(filepath, {flags: 'w', mode: 0o755 });
+    let writeStream = new fs.WriteStream(filepath, {flags: 'w'});
 
     req
         .on('data', chunk => {
@@ -68,6 +68,13 @@ function receiveFile(filepath, req, res) {
         })
         .on('close', () => {
                res.end('OK');
+               fs.chmod(filepath, 0o777, (err) => {
+                if (err) {
+                    console.log(err);
+                    return;
+                }
+                console.log(`The permissions for file '${filepath}' have been changed!`);
+            });
         });
 
 }
