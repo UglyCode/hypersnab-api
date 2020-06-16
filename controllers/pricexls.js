@@ -87,7 +87,7 @@ function sendFile(filepath, req, res) {
         .on('error', err => {
             if (err.code === 'ENOENT') {
                 res.statusCode = 404;
-                res.end('Not found');
+                res.end('Not found: \n' + err + '\n' + err.stack);
             } else {
                 console.error(err);
                 if (!res.headersSent) {

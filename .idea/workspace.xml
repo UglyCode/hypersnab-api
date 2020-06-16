@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/pricexls.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pricexls.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -115,14 +116,7 @@
       <workItem from="1591522198509" duration="3948000" />
       <workItem from="1591817181530" duration="1706000" />
       <workItem from="1592152272200" duration="33000" />
-      <workItem from="1592248452509" duration="6758000" />
-    </task>
-    <task id="LOCAL-00080" summary="attributes update handler bugs fixed">
-      <created>1579425899046</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1579425899046</updated>
+      <workItem from="1592248452509" duration="7281000" />
     </task>
     <task id="LOCAL-00081" summary="bug at goods pest fixedd">
       <created>1579632734967</created>
@@ -460,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592254767914</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="bug fixed price post update">
+      <created>1592286300929</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1592286300929</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TodoView">
@@ -493,7 +494,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="bug at goods pest fixedd" />
     <MESSAGE value="filters updated" />
     <MESSAGE value="filters behavior updated gorgeously" />
     <MESSAGE value="order get &amp; post methods" />
@@ -518,7 +518,8 @@
     <MESSAGE value="spec prices added at \GET_goods" />
     <MESSAGE value="bug fixed" />
     <MESSAGE value="price xls post method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="price xls post method added" />
+    <MESSAGE value="bug fixed price post update" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixed price post update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
