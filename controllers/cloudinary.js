@@ -6,7 +6,7 @@ handlePricePost = (req, res) => {
         console.log(result);
         res.send('Ok');
     }, { public_id: 'price.xls' });
-    fs.createReadStream(req, {encoding: 'binary'}).on('data', stream.write).on('end', stream.end);
+    req.on('data', stream.write).on('end', stream.end);
 };
 
 module.exports = {handlePricePost};
