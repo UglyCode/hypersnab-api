@@ -12,6 +12,8 @@ const infoInn = require('./controllers/infoInn');
 const goods = require('./controllers/goods');
 const orders = require('./controllers/orders');
 const pricexls = require('./controllers/pricexls');
+const cloud = require('./controllers/cloudinary');
+
 const DATABASE_LINK = process.env.DATABASE_URL;
 
 const pg = knex({
@@ -65,7 +67,7 @@ app.get('/orders', (req,res) => orders.handleOrdersGet(req, res));
 app.post('/orders', auth.requireAuth, (req,res) => orders.handleOrderPost(req, res));
 app.post('/orders/:order', (req,res) => orders.handleOrderStatusUpdate(req, res));
 
-app.post('/pricexls', (req,res) => pricexls.handlePricePost(req,res, process.cwd() + '/public'));
+app.post('/pricexls', (req,res) => cloud.handlePricePost(req,res));
 app.get('/pricexls', (req,res) => pricexls.handlePriceGet(req,res, process.cwd() + '/public'));
 
 
