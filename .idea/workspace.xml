@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/cloudinary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/cloudinary.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/cloudinary.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,14 +116,7 @@
       <workItem from="1591522198509" duration="3948000" />
       <workItem from="1591817181530" duration="1706000" />
       <workItem from="1592152272200" duration="33000" />
-      <workItem from="1592248452509" duration="10852000" />
-    </task>
-    <task id="LOCAL-00085" summary="filters behavior updated gorgeously">
-      <created>1579722144302</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1579722144303</updated>
+      <workItem from="1592248452509" duration="11399000" />
     </task>
     <task id="LOCAL-00086" summary="order get &amp; post methods">
       <created>1581621631884</created>
@@ -464,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592290140929</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="cloudinary added to project cooly">
+      <created>1592294169879</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1592294169879</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TodoView">
@@ -497,7 +494,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="filters updated" />
     <MESSAGE value="filters behavior updated gorgeously" />
     <MESSAGE value="order get &amp; post methods" />
     <MESSAGE value="orders get &amp; post methods" />
@@ -522,7 +518,8 @@
     <MESSAGE value="bug fixed" />
     <MESSAGE value="price xls post method added" />
     <MESSAGE value="bug fixed price post update" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixed price post update" />
+    <MESSAGE value="cloudinary added to project cooly" />
+    <option name="LAST_COMMIT_MESSAGE" value="cloudinary added to project cooly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
