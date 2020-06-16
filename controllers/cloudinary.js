@@ -2,7 +2,7 @@ const fs = require('fs');
 const cloudinary = require('cloudinary');
 
 handlePricePost = (req, res) => {
-    stream = cloudinary.uploader.upload_stream(function(result) {
+    let stream = cloudinary.uploader.upload_stream(function(result) {
         console.log(result);
         res.send('Ok');
     }, { public_id: 'price.xls' });

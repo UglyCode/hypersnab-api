@@ -115,14 +115,7 @@
       <workItem from="1591522198509" duration="3948000" />
       <workItem from="1591817181530" duration="1706000" />
       <workItem from="1592152272200" duration="33000" />
-      <workItem from="1592248452509" duration="11582000" />
-    </task>
-    <task id="LOCAL-00087" summary="orders get &amp; post methods">
-      <created>1581621711830</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1581621711830</updated>
+      <workItem from="1592248452509" duration="11984000" />
     </task>
     <task id="LOCAL-00088" summary="client get method added">
       <created>1581835625726</created>
@@ -460,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592294691106</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="cloudinary added to project coolly">
+      <created>1592294861143</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1592294861144</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TodoView">
@@ -493,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="filters behavior updated gorgeously" />
     <MESSAGE value="order get &amp; post methods" />
     <MESSAGE value="orders get &amp; post methods" />
     <MESSAGE value="client get method added" />
@@ -518,7 +517,8 @@
     <MESSAGE value="price xls post method added" />
     <MESSAGE value="bug fixed price post update" />
     <MESSAGE value="cloudinary added to project cooly" />
-    <option name="LAST_COMMIT_MESSAGE" value="cloudinary added to project cooly" />
+    <MESSAGE value="cloudinary added to project coolly" />
+    <option name="LAST_COMMIT_MESSAGE" value="cloudinary added to project coolly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
