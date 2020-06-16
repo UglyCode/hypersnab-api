@@ -116,14 +116,7 @@
       <workItem from="1591522198509" duration="3948000" />
       <workItem from="1591817181530" duration="1706000" />
       <workItem from="1592152272200" duration="33000" />
-      <workItem from="1592248452509" duration="12972000" />
-    </task>
-    <task id="LOCAL-00089" summary="bug with joined column fixed">
-      <created>1582140906042</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1582140906042</updated>
+      <workItem from="1592248452509" duration="13495000" />
     </task>
     <task id="LOCAL-00090" summary="orders GET method updated">
       <created>1583060628160</created>
@@ -461,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592295267413</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="cloudinary added to project coolly">
+      <created>1592296249411</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1592296249411</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TodoView">
