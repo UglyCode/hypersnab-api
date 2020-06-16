@@ -15,6 +15,8 @@ function receiveFile(filepath, req, res) {
         return;
     }
 
+    console.log(filepath);
+
     let size = 0;
 
     let writeStream = new fs.WriteStream(filepath, {flags: 'w', mode: 0o755 });
@@ -78,6 +80,8 @@ const handlePriceGet = (req,res, publicPath) => {
 function sendFile(filepath, req, res) {
     let fileStream = fs.createReadStream(filepath);
     fileStream.pipe(res);
+
+    console.log(filepath);
 
     fileStream
         .on('error', err => {
