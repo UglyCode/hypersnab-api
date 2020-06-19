@@ -2,7 +2,8 @@ const fs = require('fs');
 const cloudinary = require('cloudinary').v2;
 
 handlePricePost = (req, res) => {
-    let stream = cloudinary.uploader.upload_stream({ public_id: 'price.xls', resource_type: "raw"},
+    let stream = cloudinary.uploader.upload_stream({ public_id: 'price.xls', resource_type: "raw",
+            invalidate: true},
         function(error, result) {
             console.log(error, result);
             res.send('Ok');
