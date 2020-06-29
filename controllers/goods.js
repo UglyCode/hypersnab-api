@@ -161,7 +161,7 @@ const handleGoodAttributesPost = (req, res) => {
 const handleAttributesPost = (req, res) => {
 
     Promise.resolve(req.body.reduce((accum,elem,i,arr) => {
-        accum += `('${elem.code}', '${elem.name}', '${elem.measure}')` + ((i===arr.length-1) ? ' ':', ');
+        accum += `('${elem.code}', '${elem.name}', 'empty')` + ((i===arr.length-1) ? ' ':', ');
         return accum;
         },''))
         .then((attributesString) => updateAttributes(attributesString))

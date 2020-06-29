@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +29,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hypersnab" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -116,13 +117,8 @@
       <workItem from="1591817181530" duration="1706000" />
       <workItem from="1592152272200" duration="33000" />
       <workItem from="1592248452509" duration="14731000" />
-    </task>
-    <task id="LOCAL-00091" summary="orders GET method description added">
-      <created>1583061419752</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1583061419752</updated>
+      <workItem from="1592556470649" duration="1123000" />
+      <workItem from="1592905432197" duration="2864000" />
     </task>
     <task id="LOCAL-00092" summary="orders post method created honorary">
       <created>1583065915341</created>
@@ -460,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592296774069</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="invalidate prev data due uploading">
+      <created>1592556531205</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1592556531205</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TodoView">
@@ -493,7 +496,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="order get &amp; post methods" />
     <MESSAGE value="orders get &amp; post methods" />
     <MESSAGE value="client get method added" />
     <MESSAGE value="bug with joined column fixed" />
@@ -518,7 +520,8 @@
     <MESSAGE value="bug fixed price post update" />
     <MESSAGE value="cloudinary added to project cooly" />
     <MESSAGE value="cloudinary added to project coolly" />
-    <option name="LAST_COMMIT_MESSAGE" value="cloudinary added to project coolly" />
+    <MESSAGE value="invalidate prev data due uploading" />
+    <option name="LAST_COMMIT_MESSAGE" value="invalidate prev data due uploading" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
