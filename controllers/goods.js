@@ -122,7 +122,8 @@ const updateGoodsData = async (goods, clearTables=false) =>{
 
 const updateGoods = (goods) =>{
     return client.query('INSERT INTO goods (code, folder, description, measure, sort, rate) VALUES ' + goods +
-        '\n on conflict (code) do update set folder=excluded.folder, description=excluded.description, measure=excluded.measure, sort=excluded.sort;');
+        '\n on conflict (code) do update set folder=excluded.folder, description=excluded.description, measure=excluded.measure, ' +
+        'sort=excluded.sort, rate=excluded.rate;');
 };
 
 const clearGoodsTables =  () => {
