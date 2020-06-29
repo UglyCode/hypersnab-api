@@ -98,7 +98,7 @@ const updateGoodsData = async (goods, clearTables=false) =>{
     const insertedValues = goods.reduce((accum,elem,i,arr) => {
         const {code, folder, description, measure, price, spec, quantity, sort} = elem;
         const lastElem = (i === arr.length - 1);
-        let rate = elem.rate || '1';
+        let rate = elem.rate || 1;
 
         //TODO:
         // Separate to diff procedures DRY bitch!
