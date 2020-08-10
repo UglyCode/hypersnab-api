@@ -20,9 +20,9 @@
     "morgan": "^1.9.1",
     "node-fetch": "^2.3.0",
     "pg": "^7.12.1",
-    "redis": "^2.8.0"
+    "redis": "^2.8.0",
+    "nodemon": "^1.18.10"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
   }
 }
