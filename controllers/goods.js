@@ -114,7 +114,7 @@ const updateGoodsData = async (goods, clearTables=false) =>{
     await Promise.all([
         updateStock(insertedValues.stock),
         updatePrices(insertedValues.prices),
-        updateGoodAttributes(insertedValues.attributes.slice(0,insertedValues.attributes.length-1))
+        //updateGoodAttributes(insertedValues.attributes.slice(0,insertedValues.attributes.length-1))
     ]);
 
     return 'goods update successfully, smile-smile';
