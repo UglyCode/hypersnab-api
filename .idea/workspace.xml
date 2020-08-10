@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="" />
+    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,14 +118,7 @@
       <workItem from="1592248452509" duration="14731000" />
       <workItem from="1592556470649" duration="1123000" />
       <workItem from="1592905432197" duration="4453000" />
-      <workItem from="1597049199664" duration="3553000" />
-    </task>
-    <task id="LOCAL-00098" summary="measure added">
-      <created>1583576660938</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1583576660938</updated>
+      <workItem from="1597049199664" duration="3798000" />
     </task>
     <task id="LOCAL-00099" summary="price round added">
       <created>1583576932052</created>
@@ -461,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597055725716</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="goods update error logs added">
+      <created>1597056130028</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1597056130028</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TodoView">

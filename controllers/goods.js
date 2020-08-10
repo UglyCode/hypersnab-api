@@ -114,7 +114,7 @@ const updateGoodsData = async (goods, clearTables=false) =>{
     await Promise.all([
         updateStock(insertedValues.stock),
         updatePrices(insertedValues.prices),
-        //updateGoodAttributes(insertedValues.attributes.slice(0,insertedValues.attributes.length-1))
+        updateGoodAttributes(insertedValues.attributes.slice(0,insertedValues.attributes.length-1))
     ]);
 
     return 'goods update successfully, smile-smile';
@@ -179,7 +179,7 @@ const handleAttributesPost = (req, res) => {
 };
 
 const updateGoodAttributes = (attributes) => {
-    //console.log(attributes);
+    console.log(attributes);
     return client.query('INSERT INTO public.goods_attributes (good,"attribute",value) VALUES ' + attributes +
         '\n on conflict (good, attribute) do update set value=excluded.value')
         .then(console.log('attributes - Ok'));
