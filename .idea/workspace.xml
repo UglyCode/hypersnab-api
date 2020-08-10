@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="" />
+    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,14 +119,7 @@
       <workItem from="1592248452509" duration="14731000" />
       <workItem from="1592556470649" duration="1123000" />
       <workItem from="1592905432197" duration="4453000" />
-      <workItem from="1597049199664" duration="1190000" />
-    </task>
-    <task id="LOCAL-00096" summary="sroting for goods DET added">
-      <created>1583562071175</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1583562071175</updated>
+      <workItem from="1597049199664" duration="3265000" />
     </task>
     <task id="LOCAL-00097" summary="measure added">
       <created>1583576485197</created>
@@ -461,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597049529203</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="goods update error logs added">
+      <created>1597053408322</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1597053408322</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TodoView">
@@ -494,7 +497,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="orders GET method updated" />
     <MESSAGE value="orders GET method description added" />
     <MESSAGE value="orders post method created honorary" />
     <MESSAGE value="orders GET now returns comm" />
@@ -519,7 +521,8 @@
     <MESSAGE value="attributes update fixed - no measure" />
     <MESSAGE value="rate update bug huyzk fixed" />
     <MESSAGE value="nodemon to prod dep -&gt; mv" />
-    <option name="LAST_COMMIT_MESSAGE" value="nodemon to prod dep -&gt; mv" />
+    <MESSAGE value="goods update error logs added" />
+    <option name="LAST_COMMIT_MESSAGE" value="goods update error logs added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

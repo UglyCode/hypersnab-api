@@ -121,11 +121,12 @@ const updateGoodsData = async (goods, clearTables=false) =>{
 };
 
 const updateGoods = (goods) =>{
-    console.log(goods);
+    //console.log(goods);
 
     return client.query('INSERT INTO goods (code, folder, description, measure, sort, rate) VALUES ' + goods +
         '\n on conflict (code) do update set folder=excluded.folder, description=excluded.description, measure=excluded.measure, ' +
-        'sort=excluded.sort, rate=excluded.rate;');
+        'sort=excluded.sort, rate=excluded.rate;')
+        .then(console.log('goods - Ok'));
 
 };
 
@@ -178,13 +179,14 @@ const handleAttributesPost = (req, res) => {
 };
 
 const updateGoodAttributes = (attributes) => {
-    console.log(attributes);
+    //console.log(attributes);
     return client.query('INSERT INTO public.goods_attributes (good,"attribute",value) VALUES ' + attributes +
-        '\n on conflict (good, attribute) do update set value=excluded.value');
+        '\n on conflict (good, attribute) do update set value=excluded.value')
+        .then(console.log('attributes - Ok'));
 };
 
 const updateAttributes = (attributes) => {
-    console.log(attributes);
+   // console.log(attributes);
     return client.query('INSERT INTO public."attributes" (code,attribute_name,measure)\n VALUES' + attributes +
         '\n on conflict (code) do update set code=excluded.code, attribute_name=excluded.attribute_name, measure=excluded.measure;');
 };
@@ -264,15 +266,17 @@ const handleStockPost = (req, res) => {
 };
 
 const updatePrices = (prices) => {
-    console.log(prices);
+    //console.log(prices);
     return client.query('INSERT INTO prices (good, price, updated, spec) VALUES ' + prices +
-    '\n on conflict (good) do update set price=excluded.price, updated=now(), spec=excluded.spec');
+    '\n on conflict (good) do update set price=excluded.price, updated=now(), spec=excluded.spec')
+        .then(console.log('prices - Ok'));
 };
 
 const updateStock = (stock) => {
-    console.log(stock);
+    //console.log(stock);
     return client.query('INSERT INTO stock (good, stock, maxorder, updated) VALUES ' + stock +
-        '\n on conflict (good) do update set stock=excluded.stock, updated=now(), maxorder=excluded.maxorder');
+        '\n on conflict (good) do update set stock=excluded.stock, updated=now(), maxorder=excluded.maxorder')
+        .then(console.log('stock - Ok'));
 };
 
 const handleSpecPricePost = (req, res) => {
