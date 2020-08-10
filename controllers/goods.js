@@ -179,14 +179,13 @@ const handleAttributesPost = (req, res) => {
 };
 
 const updateGoodAttributes = (attributes) => {
-    console.log(attributes);
+    if (!attributes) return Promise.resolve(true);
     return client.query('INSERT INTO public.goods_attributes (good,"attribute",value) VALUES ' + attributes +
         '\n on conflict (good, attribute) do update set value=excluded.value')
         .then(console.log('attributes - Ok'));
 };
 
 const updateAttributes = (attributes) => {
-   // console.log(attributes);
     return client.query('INSERT INTO public."attributes" (code,attribute_name,measure)\n VALUES' + attributes +
         '\n on conflict (code) do update set code=excluded.code, attribute_name=excluded.attribute_name, measure=excluded.measure;');
 };
