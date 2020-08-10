@@ -121,9 +121,12 @@ const updateGoodsData = async (goods, clearTables=false) =>{
 };
 
 const updateGoods = (goods) =>{
+    console.log(goods);
+
     return client.query('INSERT INTO goods (code, folder, description, measure, sort, rate) VALUES ' + goods +
         '\n on conflict (code) do update set folder=excluded.folder, description=excluded.description, measure=excluded.measure, ' +
         'sort=excluded.sort, rate=excluded.rate;');
+
 };
 
 const clearGoodsTables =  () => {
@@ -175,11 +178,13 @@ const handleAttributesPost = (req, res) => {
 };
 
 const updateGoodAttributes = (attributes) => {
+    console.log(attributes);
     return client.query('INSERT INTO public.goods_attributes (good,"attribute",value) VALUES ' + attributes +
         '\n on conflict (good, attribute) do update set value=excluded.value');
 };
 
 const updateAttributes = (attributes) => {
+    console.log(attributes);
     return client.query('INSERT INTO public."attributes" (code,attribute_name,measure)\n VALUES' + attributes +
         '\n on conflict (code) do update set code=excluded.code, attribute_name=excluded.attribute_name, measure=excluded.measure;');
 };
@@ -259,11 +264,13 @@ const handleStockPost = (req, res) => {
 };
 
 const updatePrices = (prices) => {
+    console.log(prices);
     return client.query('INSERT INTO prices (good, price, updated, spec) VALUES ' + prices +
     '\n on conflict (good) do update set price=excluded.price, updated=now(), spec=excluded.spec');
 };
 
 const updateStock = (stock) => {
+    console.log(stock);
     return client.query('INSERT INTO stock (good, stock, maxorder, updated) VALUES ' + stock +
         '\n on conflict (good) do update set stock=excluded.stock, updated=now(), maxorder=excluded.maxorder');
 };
