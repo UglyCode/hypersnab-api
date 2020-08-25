@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -118,21 +119,8 @@
       <workItem from="1592248452509" duration="14731000" />
       <workItem from="1592556470649" duration="1123000" />
       <workItem from="1592905432197" duration="4453000" />
-      <workItem from="1597049199664" duration="3798000" />
-    </task>
-    <task id="LOCAL-00099" summary="price round added">
-      <created>1583576932052</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1583576932052</updated>
-    </task>
-    <task id="LOCAL-00100" summary="price round added">
-      <created>1583576959127</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1583576959127</updated>
+      <workItem from="1597049199664" duration="5864000" />
+      <workItem from="1598383480438" duration="992000" />
     </task>
     <task id="LOCAL-00101" summary="price round added">
       <created>1583577270827</created>
@@ -463,7 +451,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597056130028</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="goods update error logs added">
+      <created>1597056257269</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1597056257269</updated>
+    </task>
+    <task id="LOCAL-00149" summary="fix to attr update empty">
+      <created>1597056503034</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1597056503034</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TodoView">
@@ -496,7 +498,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="orders GET method description added" />
     <MESSAGE value="orders post method created honorary" />
     <MESSAGE value="orders GET now returns comm" />
     <MESSAGE value="delivery &amp; delivery address added" />
@@ -521,7 +522,8 @@
     <MESSAGE value="rate update bug huyzk fixed" />
     <MESSAGE value="nodemon to prod dep -&gt; mv" />
     <MESSAGE value="goods update error logs added" />
-    <option name="LAST_COMMIT_MESSAGE" value="goods update error logs added" />
+    <MESSAGE value="fix to attr update empty" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix to attr update empty" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -529,7 +531,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controllers/infoInn.js</url>
           <line>8</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

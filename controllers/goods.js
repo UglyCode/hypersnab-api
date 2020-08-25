@@ -33,7 +33,7 @@ const handleGoodsGet = (req, res) =>{
             `   where users.inn = ${(req.headers.inn) ? req.headers.inn : 0}) as spec\n` +
             '   on goods.code = spec.good\t\n' +
             getFullFiltertext(req) +
-            'order by goods.sort'
+            'order by goods.sort::bytea'
         )
         .then(goods => res.json(goods.rows))
         .catch(e => console.error(e.stack))
