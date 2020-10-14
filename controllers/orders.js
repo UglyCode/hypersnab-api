@@ -34,7 +34,7 @@ const handleOrdersGet = (req, res) => {
             ') as ogd\n' +
             'on ord.id = ogd."order"\n' +
             filterText +
-            'order by ord.id;')
+            'order by ord.id DESC;')
         .then(orders => res.json(orders.rows))
         .catch(e => console.error(e.stack));
 

@@ -12,12 +12,25 @@ const handleProfileGet = (req, res, pg) =>{
         .catch(err => res.status('400').json("can't get user"));
 };
 
-const handleProfileUpdate = (req, res, pg) => {
+const handleProfileUpdate = (req, res, pg, bcrypt) => {
     const {inn} = req.params;
-    const {name, kpp, contact, address, phone, email} = req.body.formInput;
+    const {name, kpp, contact, address, phone, email, password} = req.body.formInput;
+
+    const prom = Promise.resolve(true);
+
     pg('users')
         .where({inn})
         .update({name, inn, kpp, contact, address, phone, email})
+        .then( response =>{
+            if (password) {
+                const hash = bcrypt.hashSync(password);
+                return (pg('login')
+                    .where({inn})
+                    .update({hash}))
+            } else {
+                return Promise.resolve(response);
+            }
+        })
         .then(response =>{
             if (response) {
                 res.json('all done')

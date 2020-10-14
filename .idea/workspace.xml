@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
+    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="sort by corrected ::bytea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,14 +122,10 @@
       <workItem from="1592556470649" duration="1123000" />
       <workItem from="1592905432197" duration="4453000" />
       <workItem from="1597049199664" duration="5864000" />
-      <workItem from="1598383480438" duration="992000" />
-    </task>
-    <task id="LOCAL-00101" summary="price round added">
-      <created>1583577270827</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1583577270827</updated>
+      <workItem from="1598383480438" duration="1470000" />
+      <workItem from="1598432033219" duration="1231000" />
+      <workItem from="1600369724631" duration="3994000" />
+      <workItem from="1601890506176" duration="2282000" />
     </task>
     <task id="LOCAL-00102" summary="price round added">
       <created>1583577367357</created>
@@ -465,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597056503034</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="sort by corrected ::bytea">
+      <created>1598384507039</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1598384507039</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TodoView">
@@ -498,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="orders post method created honorary" />
     <MESSAGE value="orders GET now returns comm" />
     <MESSAGE value="delivery &amp; delivery address added" />
     <MESSAGE value="delivery &amp; delivery address fixed" />
@@ -523,7 +527,8 @@
     <MESSAGE value="nodemon to prod dep -&gt; mv" />
     <MESSAGE value="goods update error logs added" />
     <MESSAGE value="fix to attr update empty" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix to attr update empty" />
+    <MESSAGE value="sort by corrected ::bytea" />
+    <option name="LAST_COMMIT_MESSAGE" value="sort by corrected ::bytea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
