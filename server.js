@@ -14,7 +14,7 @@ const orders = require('./controllers/orders');
 const pricexls = require('./controllers/pricexls');
 const cloud = require('./controllers/cloudinary');
 
-const DATABASE_LINK = process.env.DATABASE_URL + "?ssl=true";
+const DATABASE_LINK = process.env.DATABASE_URL;
 
 const pg = knex({
    client: 'pg',

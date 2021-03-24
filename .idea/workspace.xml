@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -125,14 +126,7 @@
       <workItem from="1600369724631" duration="3994000" />
       <workItem from="1601890506176" duration="2967000" />
       <workItem from="1605120796883" duration="95000" />
-      <workItem from="1616588029600" duration="334000" />
-    </task>
-    <task id="LOCAL-00103" summary="img folder deleted -&gt; CDN rules">
-      <created>1586789955455</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1586789955455</updated>
+      <workItem from="1616588029600" duration="653000" />
     </task>
     <task id="LOCAL-00104" summary="delivery date added to orders">
       <created>1590316733185</created>
@@ -470,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602701707225</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="pwd update added, order sort">
+      <created>1616588386694</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1616588386694</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TodoView">
