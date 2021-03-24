@@ -302,6 +302,7 @@ const updateSpecPrices = (prices) => {
 
 //{folders
 const handleFoldersGet = (req, res) => {
+    console.log(connectionString);
     client
         .query('SELECT f.code as code, f.folder_name AS folder, p.code as parent_code, p.folder_name AS parent\n' +
             'FROM folders f\n' +
