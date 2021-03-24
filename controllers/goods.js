@@ -1,18 +1,15 @@
 const {Client} = require('pg');
 const connectionString = process.env.DATABASE_URL;
+const { Client } = require('pg');
+
 const client = new Client({
-    connectionString: connectionString,
+    connectionString: process.env.DATABASE_URL,
     ssl: {
         rejectUnauthorized: false
     }
 });
-client.connect(err => {
-    if (err) {
-        console.error('connection error', err.stack)
-    } else {
-        console.log('!!!!! PG connected')
-    }
-});
+
+client.connect();
 
 //{goods
 const handleGoodsGet = (req, res) =>{
