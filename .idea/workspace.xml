@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,28 +125,7 @@
       <workItem from="1600369724631" duration="3994000" />
       <workItem from="1601890506176" duration="2967000" />
       <workItem from="1605120796883" duration="95000" />
-      <workItem from="1616588029600" duration="2148000" />
-    </task>
-    <task id="LOCAL-00108" summary="new method POST spec_prices added">
-      <created>1591212699102</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1591212699103</updated>
-    </task>
-    <task id="LOCAL-00109" summary="new method POST spec_prices added">
-      <created>1591213135735</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1591213135735</updated>
-    </task>
-    <task id="LOCAL-00110" summary="new method POST spec_prices added">
-      <created>1591213441559</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1591213441559</updated>
+      <workItem from="1616588029600" duration="2953000" />
     </task>
     <task id="LOCAL-00111" summary="new method POST spec_prices\:inn added">
       <created>1591213895257</created>
@@ -469,7 +449,28 @@
       <option name="project" value="LOCAL" />
       <updated>1616589656398</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="ssl pg">
+      <created>1616590205776</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1616590205776</updated>
+    </task>
+    <task id="LOCAL-00158" summary="ssl pg">
+      <created>1616590415057</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1616590415057</updated>
+    </task>
+    <task id="LOCAL-00159" summary="ssl pg">
+      <created>1616590426824</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1616590426824</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TodoView">
