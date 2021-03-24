@@ -6,7 +6,9 @@ const client = new Client({
     }
 });
 
-client.connect();
+client.connect()
+    .then(() => console.log('connected'))
+    .catch(err => console.error('error connecting', err.stack));
 
 //{goods
 const handleGoodsGet = (req, res) =>{
