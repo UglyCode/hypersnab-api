@@ -4,7 +4,13 @@ const client = new Client({
     connectionString: connectionString,
     ssl: true
 });
-client.connect();
+client.connect(err => {
+    if (err) {
+        console.error('connection error', err.stack)
+    } else {
+        console.log('connected')
+    }
+});
 
 //{goods
 const handleGoodsGet = (req, res) =>{
