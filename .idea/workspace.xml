@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,35 +124,7 @@
       <workItem from="1600369724631" duration="3994000" />
       <workItem from="1601890506176" duration="2967000" />
       <workItem from="1605120796883" duration="95000" />
-      <workItem from="1616588029600" duration="9471000" />
-    </task>
-    <task id="LOCAL-00123" summary="price xls post method added">
-      <created>1592252338538</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1592252338539</updated>
-    </task>
-    <task id="LOCAL-00124" summary="price xls post method added">
-      <created>1592252769646</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1592252769646</updated>
-    </task>
-    <task id="LOCAL-00125" summary="price xls post method added">
-      <created>1592253168579</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1592253168579</updated>
-    </task>
-    <task id="LOCAL-00126" summary="price xls post method added">
-      <created>1592253378658</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1592253378658</updated>
+      <workItem from="1616588029600" duration="9852000" />
     </task>
     <task id="LOCAL-00127" summary="price xls post method added">
       <created>1592254018470</created>
@@ -469,7 +441,35 @@
       <option name="project" value="LOCAL" />
       <updated>1617074849636</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="ssl pg no knex">
+      <created>1617075128414</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1617075128414</updated>
+    </task>
+    <task id="LOCAL-00173" summary="ssl pg no knex">
+      <created>1617075159046</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1617075159046</updated>
+    </task>
+    <task id="LOCAL-00174" summary="ssl pg no knex">
+      <created>1617075168930</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1617075168930</updated>
+    </task>
+    <task id="LOCAL-00175" summary="ssl pg no knex">
+      <created>1617075274704</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1617075274704</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TodoView">
