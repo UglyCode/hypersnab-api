@@ -1,48 +1,25 @@
-// console.log('connecting ....');
-// const { Client } = require('pg');
-// const client = new Client({
-//     connectionString: process.env.DATABASE_URL,
-//     ssl: {
-//         rejectUnauthorized: false,
-//         connectionTimeoutMillis: 20000
-//     }
-// });
-//
-// client.connect()
-//     .then(() => console.log(' @@@@@ connected'))
-//     .catch(err => console.error(' @@@@ error connecting', err.stack));
-//
-// client.on('error', err => {
-//     console.error(' @@@ something bad has happened!', err.stack)
-// });
-//
-// console.log('waiting for connect');
+console.log('connecting ....');
+const { Client } = require('pg');
+const client = new Client({
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false,
+        connectionTimeoutMillis: 20000
+    }
+});
+
+client.connect()
+    .then(() => console.log(' @@@@@ connected'))
+    .catch(err => console.error(' @@@@ error connecting', err.stack));
+
+client.on('error', err => {
+    console.error(' @@@ something bad has happened!', err.stack)
+});
+
+console.log('waiting for connect');
 
 //{goods
-const handleGoodsGet = (req, res) =>{1
-
-    console.log('connecting ....');
-    const { Client } = require('pg');
-    const client = new Client({
-        connectionString: process.env.DATABASE_URL,
-        ssl: {
-            rejectUnauthorized: false,
-            connectionTimeoutMillis: 20000
-        }
-    });
-
-    client.connect()
-        .then(() => console.log(' @@@@@ connected'))
-        .catch(err => console.error(' @@@@ error connecting', err.stack));
-
-    client.on('error', err => {
-        console.error(' @@@ something bad has happened!', err.stack)
-    });
-
-    console.log('waiting for connect');
-
-
-    console.log('!!! inn header:' + req.headers.inn);
+const handleGoodsGet = (req, res) =>{
     client
         .query('select goods.code as code,\n' +
             'folders.folder_name as folder,\n' +
