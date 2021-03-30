@@ -1,14 +1,17 @@
+console.log('connecting ....');
 const { Client } = require('pg');
 const client = new Client({
     connectionString: process.env.DATABASE_URL,
     ssl: {
-        rejectUnauthorized: false
+        rejectUnauthorized: false,
+        connectionTimeoutMillis: 20000
     }
 });
 
 client.connect()
-    .then(() => console.log('connected'))
-    .catch(err => console.error('error connecting', err.stack));
+    .then(() => console.log(' @@@@@ connected'))
+    .catch(err => console.error(' @@@@ error connecting', err.stack));
+console.log('waiting for connect');
 
 //{goods
 const handleGoodsGet = (req, res) =>{
