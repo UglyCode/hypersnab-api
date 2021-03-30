@@ -16,13 +16,13 @@ const cloud = require('./controllers/cloudinary');
 
 const DATABASE_LINK = process.env.DATABASE_URL;
 
-// const pg = knex({
-//    client: 'pg',
-//    connection: {
-//       connectionString: DATABASE_LINK,
-//       ssl: false
-//    }
-// });
+const pg = knex({
+   client: 'pg',
+   connection: {
+      connectionString: DATABASE_LINK,
+      ssl: false
+   }
+});
 
 const pg = undefined;
 
