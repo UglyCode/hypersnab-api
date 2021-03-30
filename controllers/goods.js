@@ -11,6 +11,11 @@ const client = new Client({
 client.connect()
     .then(() => console.log(' @@@@@ connected'))
     .catch(err => console.error(' @@@@ error connecting', err.stack));
+
+client.on('error', err => {
+    console.error('something bad has happened!', err.stack)
+});
+
 console.log('waiting for connect');
 
 //{goods
