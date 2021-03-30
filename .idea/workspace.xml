@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,28 +124,7 @@
       <workItem from="1600369724631" duration="3994000" />
       <workItem from="1601890506176" duration="2967000" />
       <workItem from="1605120796883" duration="95000" />
-      <workItem from="1616588029600" duration="13317000" />
-    </task>
-    <task id="LOCAL-00133" summary="bug fixed price post update">
-      <created>1592290140929</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1592290140929</updated>
-    </task>
-    <task id="LOCAL-00134" summary="cloudinary added to project cooly">
-      <created>1592294169879</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1592294169879</updated>
-    </task>
-    <task id="LOCAL-00135" summary="cloudinary added to project cooly">
-      <created>1592294691105</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1592294691106</updated>
+      <workItem from="1616588029600" duration="13581000" />
     </task>
     <task id="LOCAL-00136" summary="cloudinary added to project coolly">
       <created>1592294861143</created>
@@ -469,7 +448,28 @@
       <option name="project" value="LOCAL" />
       <updated>1617079786521</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="mose ssl in link">
+      <created>1617080559672</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1617080559672</updated>
+    </task>
+    <task id="LOCAL-00183" summary="mose ssl in link">
+      <created>1617080579379</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1617080579379</updated>
+    </task>
+    <task id="LOCAL-00184" summary="no knex">
+      <created>1617080697509</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1617080697509</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TodoView">
@@ -502,7 +502,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="measure added" />
     <MESSAGE value="price round added" />
     <MESSAGE value="img folder deleted -&gt; CDN rules" />
     <MESSAGE value="delivery date added to orders" />
@@ -527,7 +526,8 @@
     <MESSAGE value="ssl pg" />
     <MESSAGE value="ssl pg no knex" />
     <MESSAGE value="mose ssl in link" />
-    <option name="LAST_COMMIT_MESSAGE" value="mose ssl in link" />
+    <MESSAGE value="no knex" />
+    <option name="LAST_COMMIT_MESSAGE" value="no knex" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
