@@ -48,7 +48,7 @@ const handleGoodsGet = (req, res) =>{
             'order by goods.sort::bytea'
         )
         .then(goods => res.json(goods.rows))
-        .catch(e => console.error(e.stack))
+        .catch(e => console.error('no goods today' + e.stack))
 };
 
 const getFullFiltertext = (req)=>{
