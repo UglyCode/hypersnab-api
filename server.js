@@ -24,8 +24,6 @@ const pg = knex({
    }
 });
 
-const pg = undefined;
-
 const app = express();
 app.use(cors());
 app.use(morgan('tiny'));
