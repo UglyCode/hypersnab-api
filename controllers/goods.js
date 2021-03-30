@@ -5,7 +5,8 @@ const client = new Client({
     ssl: {
         rejectUnauthorized: false
     },
-    connectionTimeoutMillis: 20000
+    connectionTimeoutMillis: 20000,
+    statement_timeout: 20000
 });
 
 client.connect()
