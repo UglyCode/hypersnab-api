@@ -16,6 +16,18 @@ const cloud = require('./controllers/cloudinary');
 
 const DATABASE_LINK = process.env.DATABASE_URL;
 
+const { Client } = require('pg');
+const client = new Client({
+   connectionString: process.env.DATABASE_URL,
+   ssl: {
+      rejectUnauthorized: false
+   }
+});
+
+client.connect()
+    .then(() => console.log(' @@@@@ connected'))
+    .catch(err => console.error(' @@@@ error connecting', err.stack));
+
 // const pg = knex({
 //    client: 'pg',
 //    connection: {

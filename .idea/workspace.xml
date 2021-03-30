@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,14 +125,7 @@
       <workItem from="1600369724631" duration="3994000" />
       <workItem from="1601890506176" duration="2967000" />
       <workItem from="1605120796883" duration="95000" />
-      <workItem from="1616588029600" duration="6848000" />
-    </task>
-    <task id="LOCAL-00116" summary="spec prices added at \GET_goods">
-      <created>1591526325303</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1591526325303</updated>
+      <workItem from="1616588029600" duration="7392000" />
     </task>
     <task id="LOCAL-00117" summary="bug fixed">
       <created>1591817501244</created>
@@ -469,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616594129217</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="ssl pg no knex">
+      <created>1617072683406</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1617072683406</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TodoView">
@@ -502,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delivery &amp; delivery address fixed" />
     <MESSAGE value="sroting for goods DET added" />
     <MESSAGE value="measure added" />
     <MESSAGE value="price round added" />
@@ -527,7 +527,8 @@
     <MESSAGE value="sort by corrected ::bytea" />
     <MESSAGE value="pwd update added, order sort" />
     <MESSAGE value="ssl pg" />
-    <option name="LAST_COMMIT_MESSAGE" value="ssl pg" />
+    <MESSAGE value="ssl pg no knex" />
+    <option name="LAST_COMMIT_MESSAGE" value="ssl pg no knex" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
