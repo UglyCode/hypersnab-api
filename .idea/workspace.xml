@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/goods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/orders.js" afterDir="false" />
-    </list>
+    <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,21 +122,7 @@
       <workItem from="1600369724631" duration="3994000" />
       <workItem from="1601890506176" duration="2967000" />
       <workItem from="1605120796883" duration="95000" />
-      <workItem from="1616588029600" duration="15739000" />
-    </task>
-    <task id="LOCAL-00140" summary="invalidate prev data due uploading">
-      <created>1592556531205</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1592556531205</updated>
-    </task>
-    <task id="LOCAL-00141" summary="attributes update fixed - no measure">
-      <created>1593427058034</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1593427058034</updated>
+      <workItem from="1616588029600" duration="16006000" />
     </task>
     <task id="LOCAL-00142" summary="rate update bug huyzk fixed">
       <created>1593427660690</created>
@@ -470,7 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617343631299</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="pg update">
+      <created>1617343742957</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1617343742957</updated>
+    </task>
+    <task id="LOCAL-00190" summary="knex returned">
+      <created>1617343964383</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1617343964383</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="TodoView">
@@ -503,7 +500,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="img folder deleted -&gt; CDN rules" />
     <MESSAGE value="delivery date added to orders" />
     <MESSAGE value="delivery date fixed at orders" />
     <MESSAGE value="rate added to goods table" />
@@ -528,7 +524,8 @@
     <MESSAGE value="mose ssl in link" />
     <MESSAGE value="no knex" />
     <MESSAGE value="pg update" />
-    <option name="LAST_COMMIT_MESSAGE" value="pg update" />
+    <MESSAGE value="knex returned" />
+    <option name="LAST_COMMIT_MESSAGE" value="knex returned" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
