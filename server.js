@@ -2,7 +2,7 @@ const express = require('express');
 const bp = require('body-parser');
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
-//const knex = require('knex');
+const knex = require('knex');
 const morgan = require('morgan');
 const register = require('./controllers/register');
 const signIn = require('./controllers/signIn');
@@ -14,16 +14,16 @@ const orders = require('./controllers/orders');
 const pricexls = require('./controllers/pricexls');
 const cloud = require('./controllers/cloudinary');
 
-const pg = undefined;
-// const DATABASE_LINK = process.env.DATABASE_URL;
-//
-// const pg = knex({
-//    client: 'pg',
-//    connection: {
-//       connectionString: DATABASE_LINK,
-//       ssl: true
-//    }
-// });
+//const pg = undefined;
+const DATABASE_LINK = process.env.DATABASE_URL;
+
+const pg = knex({
+   client: 'pg',
+   connection: {
+      connectionString: DATABASE_LINK,
+      ssl: true
+   }
+});
 
 const app = express();
 app.use(cors());
