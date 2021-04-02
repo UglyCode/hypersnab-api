@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7486f84f-9004-4e0e-9934-ea208ca7ad79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -124,21 +125,7 @@
       <workItem from="1600369724631" duration="3994000" />
       <workItem from="1601890506176" duration="2967000" />
       <workItem from="1605120796883" duration="95000" />
-      <workItem from="1616588029600" duration="13581000" />
-    </task>
-    <task id="LOCAL-00136" summary="cloudinary added to project coolly">
-      <created>1592294861143</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1592294861144</updated>
-    </task>
-    <task id="LOCAL-00137" summary="cloudinary added to project coolly">
-      <created>1592295267413</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1592295267413</updated>
+      <workItem from="1616588029600" duration="15196000" />
     </task>
     <task id="LOCAL-00138" summary="cloudinary added to project coolly">
       <created>1592296249411</created>
@@ -469,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617080697509</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="no knex">
+      <created>1617080825112</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1617080825112</updated>
+    </task>
+    <task id="LOCAL-00186" summary="pg update">
+      <created>1617080945823</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1617080945823</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TodoView">
@@ -502,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="price round added" />
     <MESSAGE value="img folder deleted -&gt; CDN rules" />
     <MESSAGE value="delivery date added to orders" />
     <MESSAGE value="delivery date fixed at orders" />
@@ -527,7 +527,8 @@
     <MESSAGE value="ssl pg no knex" />
     <MESSAGE value="mose ssl in link" />
     <MESSAGE value="no knex" />
-    <option name="LAST_COMMIT_MESSAGE" value="no knex" />
+    <MESSAGE value="pg update" />
+    <option name="LAST_COMMIT_MESSAGE" value="pg update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
