@@ -1,9 +1,23 @@
-const {Client} = require('pg');
-const connectionString = process.env.DATABASE_URL;
+console.log('connecting orders .... testing heroku-20');
+const { Client } = require('pg');
 const client = new Client({
-    connectionString: connectionString,
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false
+    },
+    connectionTimeoutMillis: 20000,
+    statement_timeout: 20000
 });
-client.connect();
+
+client.connect()
+    .then(() => console.log(' @@@@@ connected'))
+    .catch(err => console.error(' @@@@ error connecting', err.stack));
+
+client.on('error', err => {
+    console.error(' @@@ something bad has happened!', err.stack)
+});
+
+console.log('waiting for connect');
 
 const handleOrdersGet = (req, res) => {
 
