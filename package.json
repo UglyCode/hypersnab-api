@@ -18,7 +18,7 @@
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.16.5",
     "morgan": "^1.9.1",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^2.6.7",
     "nodemon": "^1.18.10",
     "pg": "^8.5.1",
     "redis": "^2.8.0"
