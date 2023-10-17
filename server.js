@@ -37,18 +37,18 @@ app.post('/register', (req,res) => register.handleRegister(req, res, pg, bcrypt)
 
 app.get('/profile/:inn', auth.requireAuth, (req, res) => {profile.handleProfileGet(req, res, pg)});
 app.post('/profile/:inn', auth.requireAuth, (req, res) => {profile.handleProfileUpdate(req,res,pg,bcrypt)});
-app.post('/spec_prices/:inn', (req,res) => {profile.handleSpecPricePost(req,res,pg)});
 
 app.get('/info/:inn', (req,res) => infoInn.checkInnInfo(req,res,pg));
 
 app.get('/data/:inn', (req,res) => infoInn.getInfoByInn(req,res,pg));
 
 app.get('/goods', auth.parseInnFromToken, (req,res) => goods.handleGoodsGet(req,res));
-app.get('/goods/:folder', auth.parseInnFromToken, (req,res) => goods.handleGoodsGet(req,res));
 app.post('/goods', (req,res) => goods.handleGoodsPost(req,res));
+app.get('/goods/:folder', auth.parseInnFromToken, (req,res) => goods.handleGoodsGet(req,res));
 
 app.post('/prices', (req,res) => goods.handlePricePost(req,res));
 app.post('/spec_prices', (req,res) => goods.handleSpecPricePost(req,res));
+app.post('/spec_prices/:inn', (req,res) => {profile.handleSpecPricePost(req,res,pg)});
 
 
 app.post('/stock', (req,res) => goods.handleStockPost(req,res));
